@@ -89,8 +89,8 @@ class StampProcessor:
             progress_callback(30, f"Détection ({self.detector.get_backend_name()})...")
 
         # Calculer la surface minimale adaptée au DPI
-        # Seuil abaissé à 12mm x 12mm pour capturer aussi les petits timbres
-        min_area = calculate_min_stamp_area(dpi, min_width_mm=12.0, min_height_mm=12.0)
+        # Seuil optimal : 13mm x 13mm (compromis entre petits et grands timbres)
+        min_area = calculate_min_stamp_area(dpi, min_width_mm=13.0, min_height_mm=13.0)
 
         detections = self.detector.detect(image, min_area=min_area)
         

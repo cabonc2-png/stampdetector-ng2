@@ -50,30 +50,21 @@ class OpenCVDetector:
 
         blurred = cv2.GaussianBlur(gray, (3, 3), 0)
 
-        # Approche multi-échelle pour capturer différentes intensités de contours
+        # Approche double pour capturer différentes intensités de contours
         all_contours = []
 
         # Méthode 1: Canny avec seuils bas (pour contours faibles)
-        edges_low = cv2.Canny(blurred, 20, 60)
-        kernel_small = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
-        dilated_low = cv2.dilate(edges_low, kernel_small, iterations=1)
+        edges_low = cv2.Canny(blurred, 30, 80)
+        kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
+        dilated_low = cv2.dilate(edges_low, kernel, iterations=1)
         contours_low, _ = cv2.findContours(dilated_low, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         all_contours.extend(contours_low)
 
         # Méthode 2: Canny avec seuils moyens (pour contours normaux)
-        edges_mid = cv2.Canny(blurred, 40, 120)
-        kernel_mid = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
-        dilated_mid = cv2.dilate(edges_mid, kernel_mid, iterations=1)
+        edges_mid = cv2.Canny(blurred, 50, 150)
+        dilated_mid = cv2.dilate(edges_mid, kernel, iterations=1)
         contours_mid, _ = cv2.findContours(dilated_mid, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         all_contours.extend(contours_mid)
-
-        # Méthode 3: Seuillage adaptatif (pour timbres sur fond variable)
-        thresh = cv2.adaptiveThreshold(blurred, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
-                                       cv2.THRESH_BINARY_INV, 21, 5)
-        kernel_thresh = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
-        thresh = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel_thresh, iterations=2)
-        contours_thresh, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        all_contours.extend(contours_thresh)
 
         logger.info(f"Contours détectés (bruts): {len(all_contours)}")
 
@@ -111,14 +102,23 @@ class OpenCVDetector:
                 rejected_by_ratio += 1
                 continue
 
-            # Vérifier la circularité pour éviter les formes bizarres
+            # Vérifier la circularité ET la compacité pour filtrer les formes bizarres
             perimeter = cv2.arcLength(cnt, True)
             if perimeter > 0:
                 circularity = 4 * np.pi * area / (perimeter * perimeter)
-                # Très permissif pour timbres dentelés (dentelures créent périmètre irrégulier)
-                if circularity < 0.05:  # Abaissé de 0.15 à 0.05
+                # Équilibré pour timbres dentelés : ni trop strict, ni trop permissif
+                if circularity < 0.10:  # Compromis entre précision et rappel
                     rejected_by_circularity += 1
                     continue
+
+                # Compacité : rapport entre aire du contour et aire du rectangle englobant
+                # Élimine les formes trop irrégulières (plages, artefacts)
+                rect_area = w_box * h_box
+                if rect_area > 0:
+                    compactness = area / rect_area
+                    if compactness < 0.5:  # Le timbre doit remplir au moins 50% de son rectangle
+                        rejected_by_circularity += 1  # Compter dans rejets circularité
+                        continue
 
             # Déduplication : vérifier si ce contour chevauche un contour déjà détecté
             bbox = (x, y, x + w_box, y + h_box)
