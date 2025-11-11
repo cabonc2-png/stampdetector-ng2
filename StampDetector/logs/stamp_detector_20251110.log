@@ -1,0 +1,250 @@
+2025-11-10 17:53:10,047 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-11-10 17:53:10,696 | [32mINFO[0m | stamp_recognition:24 | ✓ Tesseract configuré: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-11-10 17:53:10,697 | [32mINFO[0m | stamp_recognition:29 | ✓ Données françaises disponibles
+2025-11-10 17:53:11,447 | [32mINFO[0m | main_window:42 | ✓ Reconnaissance visuelle intelligente disponible
+2025-11-10 17:53:14,125 | [32mINFO[0m | main_window:54 | Google Vision disponible mais credentials non configurés
+2025-11-10 17:53:14,158 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-11-10 17:53:14,344 | [32mINFO[0m | scanner_utils:42 | ✓ 1 scanner(s) trouvé(s)
+2025-11-10 17:53:15,123 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-11-10 17:53:15,216 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-11-10 17:53:15,216 | [32mINFO[0m | opencv_detector:15 | ✓ OpenCV disponible (fallback)
+2025-11-10 17:53:15,216 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-11-10 17:53:15,217 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-11-10 18:05:29,919 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-10 18:05:29,943 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: (-2147024809, 'Paramètre incorrect.', ('Paramètre incorrect.\r\n', None, None, 0, None))
+2025-11-10 18:05:35,312 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-10 18:05:35,325 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: (-2147024809, 'Paramètre incorrect.', ('Paramètre incorrect.\r\n', None, None, 0, None))
+2025-11-10 18:06:12,398 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-10 18:06:12,409 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: (-2147024809, 'Paramètre incorrect.', ('Paramètre incorrect.\r\n', None, None, 0, None))
+2025-11-10 18:07:30,816 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-10 18:07:30,828 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: (-2147024809, 'Paramètre incorrect.', ('Paramètre incorrect.\r\n', None, None, 0, None))
+2025-11-10 18:07:33,902 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-10 18:07:33,914 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: (-2147024809, 'Paramètre incorrect.', ('Paramètre incorrect.\r\n', None, None, 0, None))
+2025-11-10 18:07:49,444 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-10 18:07:49,465 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 400DPI, color...
+2025-11-10 18:07:56,860 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251110_180749.png
+2025-11-10 18:08:07,941 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-10 18:08:07,953 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: (-2147024809, 'Paramètre incorrect.', ('Paramètre incorrect.\r\n', None, None, 0, None))
+2025-11-10 18:08:16,380 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-10 18:08:16,402 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 500DPI, color...
+2025-11-10 18:08:23,731 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251110_180816.png
+2025-11-10 18:08:43,133 | [32mINFO[0m | processor:63 | ============================================================
+2025-11-10 18:08:43,133 | [32mINFO[0m | processor:64 | Traitement: scan_20251110_180816.png
+2025-11-10 18:08:43,133 | [32mINFO[0m | processor:65 | ============================================================
+2025-11-10 18:08:43,137 | [32mINFO[0m | processor:76 | Dimensions: 1239x1753px
+2025-11-10 18:08:43,276 | [32mINFO[0m | image_utils:30 | DPI détecté: 149
+2025-11-10 18:08:43,276 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 6px @ 149DPI
+2025-11-10 18:08:43,276 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-11-10 18:08:43,292 | [32mINFO[0m | opencv_detector:89 | OpenCV: 13 timbre(s)/bloc(s) détecté(s)
+2025-11-10 18:08:43,292 | [32mINFO[0m | processor:104 | ✓ 13 timbre(s) détecté(s)
+2025-11-10 18:08:43,303 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_001.png
+2025-11-10 18:08:43,311 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_002.png
+2025-11-10 18:08:43,317 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_003.png
+2025-11-10 18:08:43,323 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_004.png
+2025-11-10 18:08:43,330 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_005.png
+2025-11-10 18:08:43,336 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_006.png
+2025-11-10 18:08:43,345 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_007.png
+2025-11-10 18:08:43,351 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_008.png
+2025-11-10 18:08:43,359 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_009.png
+2025-11-10 18:08:43,366 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_010.png
+2025-11-10 18:08:43,371 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_011.png
+2025-11-10 18:08:43,379 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_012.png
+2025-11-10 18:08:43,386 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_013.png
+2025-11-10 18:08:43,387 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 13 fichier(s) généré(s)
+2025-11-10 18:08:48,963 | [32mINFO[0m | processor:63 | ============================================================
+2025-11-10 18:08:48,963 | [32mINFO[0m | processor:64 | Traitement: scan_20251110_180816.png
+2025-11-10 18:08:48,964 | [32mINFO[0m | processor:65 | ============================================================
+2025-11-10 18:08:48,968 | [32mINFO[0m | processor:76 | Dimensions: 1239x1753px
+2025-11-10 18:08:48,969 | [32mINFO[0m | image_utils:30 | DPI détecté: 149
+2025-11-10 18:08:48,970 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 6px @ 149DPI
+2025-11-10 18:08:48,970 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-11-10 18:08:48,976 | [32mINFO[0m | opencv_detector:89 | OpenCV: 13 timbre(s)/bloc(s) détecté(s)
+2025-11-10 18:08:48,976 | [32mINFO[0m | processor:104 | ✓ 13 timbre(s) détecté(s)
+2025-11-10 18:08:48,984 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_001.png
+2025-11-10 18:08:48,991 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_002.png
+2025-11-10 18:08:48,997 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_003.png
+2025-11-10 18:08:49,003 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_004.png
+2025-11-10 18:08:49,009 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_005.png
+2025-11-10 18:08:49,015 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_006.png
+2025-11-10 18:08:49,022 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_007.png
+2025-11-10 18:08:49,029 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_008.png
+2025-11-10 18:08:49,035 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_009.png
+2025-11-10 18:08:49,042 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_010.png
+2025-11-10 18:08:49,045 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_011.png
+2025-11-10 18:08:49,054 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_012.png
+2025-11-10 18:08:49,060 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_180816_stamp_013.png
+2025-11-10 18:08:49,060 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 13 fichier(s) généré(s)
+2025-11-10 18:11:41,068 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-11-10 18:11:41,779 | [32mINFO[0m | stamp_recognition:24 | ✓ Tesseract configuré: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-11-10 18:11:41,779 | [32mINFO[0m | stamp_recognition:29 | ✓ Données françaises disponibles
+2025-11-10 18:11:42,495 | [32mINFO[0m | main_window:42 | ✓ Reconnaissance visuelle intelligente disponible
+2025-11-10 18:11:45,029 | [32mINFO[0m | main_window:54 | Google Vision disponible mais credentials non configurés
+2025-11-10 18:11:45,053 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-11-10 18:11:45,187 | [32mINFO[0m | scanner_utils:42 | ✓ 1 scanner(s) trouvé(s)
+2025-11-10 18:11:45,916 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-11-10 18:11:46,003 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-11-10 18:11:46,003 | [32mINFO[0m | opencv_detector:15 | ✓ OpenCV disponible (fallback)
+2025-11-10 18:11:46,003 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-11-10 18:11:46,003 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-11-10 18:15:27,296 | [32mINFO[0m | processor:63 | ============================================================
+2025-11-10 18:15:27,296 | [32mINFO[0m | processor:64 | Traitement: IMG_20251110_0001.jpg
+2025-11-10 18:15:27,296 | [32mINFO[0m | processor:65 | ============================================================
+2025-11-10 18:15:27,543 | [32mINFO[0m | processor:76 | Dimensions: 4976x6968px
+2025-11-10 18:15:27,553 | [32mINFO[0m | image_utils:30 | DPI détecté: 600
+2025-11-10 18:15:27,554 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 24px @ 600DPI
+2025-11-10 18:15:27,554 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-11-10 18:15:27,644 | [32mINFO[0m | opencv_detector:89 | OpenCV: 26 timbre(s)/bloc(s) détecté(s)
+2025-11-10 18:15:27,649 | [32mINFO[0m | processor:104 | ✓ 26 timbre(s) détecté(s)
+2025-11-10 18:15:27,703 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_001.png
+2025-11-10 18:15:27,751 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_002.png
+2025-11-10 18:15:27,847 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_003.png
+2025-11-10 18:15:27,910 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_004.png
+2025-11-10 18:15:27,973 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_005.png
+2025-11-10 18:15:28,028 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_006.png
+2025-11-10 18:15:28,100 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_007.png
+2025-11-10 18:15:28,170 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_008.png
+2025-11-10 18:15:28,203 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_009.png
+2025-11-10 18:15:28,272 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_010.png
+2025-11-10 18:15:28,319 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_011.png
+2025-11-10 18:15:28,401 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_012.png
+2025-11-10 18:15:28,470 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_013.png
+2025-11-10 18:15:28,543 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_014.png
+2025-11-10 18:15:28,618 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_015.png
+2025-11-10 18:15:28,677 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_016.png
+2025-11-10 18:15:28,748 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_017.png
+2025-11-10 18:15:28,837 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_018.png
+2025-11-10 18:15:28,927 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_019.png
+2025-11-10 18:15:28,984 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_020.png
+2025-11-10 18:15:29,066 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_021.png
+2025-11-10 18:15:29,116 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_022.png
+2025-11-10 18:15:29,179 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_023.png
+2025-11-10 18:15:29,276 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_024.png
+2025-11-10 18:15:29,358 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_025.png
+2025-11-10 18:15:29,426 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_026.png
+2025-11-10 18:15:29,427 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 26 fichier(s) généré(s)
+2025-11-10 21:51:49,193 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: Pixel 7 Pro
+2025-11-10 21:51:49,202 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: (-2145320853, None, ('L’index est hors limites.', None, None, 0, None))
+2025-11-10 21:51:56,761 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: Pixel 7 Pro
+2025-11-10 21:51:56,765 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: (-2145320853, None, ('L’index est hors limites.', None, None, 0, None))
+2025-11-10 21:51:58,837 | [32mINFO[0m | processor:63 | ============================================================
+2025-11-10 21:51:58,837 | [32mINFO[0m | processor:64 | Traitement: IMG_20251110_0001.jpg
+2025-11-10 21:51:58,837 | [32mINFO[0m | processor:65 | ============================================================
+2025-11-10 21:51:59,094 | [32mINFO[0m | processor:76 | Dimensions: 4976x6968px
+2025-11-10 21:51:59,096 | [32mINFO[0m | image_utils:30 | DPI détecté: 600
+2025-11-10 21:51:59,097 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 24px @ 600DPI
+2025-11-10 21:51:59,097 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-11-10 21:51:59,184 | [32mINFO[0m | opencv_detector:89 | OpenCV: 26 timbre(s)/bloc(s) détecté(s)
+2025-11-10 21:51:59,189 | [32mINFO[0m | processor:104 | ✓ 26 timbre(s) détecté(s)
+2025-11-10 21:51:59,236 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_001.png
+2025-11-10 21:51:59,284 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_002.png
+2025-11-10 21:51:59,395 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_003.png
+2025-11-10 21:51:59,458 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_004.png
+2025-11-10 21:51:59,519 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_005.png
+2025-11-10 21:51:59,575 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_006.png
+2025-11-10 21:51:59,645 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_007.png
+2025-11-10 21:51:59,721 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_008.png
+2025-11-10 21:51:59,757 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_009.png
+2025-11-10 21:51:59,832 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_010.png
+2025-11-10 21:51:59,889 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_011.png
+2025-11-10 21:51:59,981 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_012.png
+2025-11-10 21:52:00,056 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_013.png
+2025-11-10 21:52:00,135 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_014.png
+2025-11-10 21:52:00,210 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_015.png
+2025-11-10 21:52:00,270 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_016.png
+2025-11-10 21:52:00,345 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_017.png
+2025-11-10 21:52:00,442 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_018.png
+2025-11-10 21:52:00,535 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_019.png
+2025-11-10 21:52:00,591 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_020.png
+2025-11-10 21:52:00,673 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_021.png
+2025-11-10 21:52:00,732 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_022.png
+2025-11-10 21:52:00,811 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_023.png
+2025-11-10 21:52:00,914 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_024.png
+2025-11-10 21:52:01,005 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_025.png
+2025-11-10 21:52:01,078 | [32mINFO[0m | image_utils:272 | ✓ PNG: IMG_20251110_0001_stamp_026.png
+2025-11-10 21:52:01,078 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 26 fichier(s) généré(s)
+2025-11-10 21:52:09,316 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: Pixel 7 Pro
+2025-11-10 21:52:09,320 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: (-2145320853, None, ('L’index est hors limites.', None, None, 0, None))
+2025-11-10 21:52:24,849 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: Pixel 7 Pro
+2025-11-10 21:52:24,853 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: (-2145320853, None, ('L’index est hors limites.', None, None, 0, None))
+2025-11-10 21:52:35,059 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-11-10 21:52:35,473 | [32mINFO[0m | stamp_recognition:24 | ✓ Tesseract configuré: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-11-10 21:52:35,473 | [32mINFO[0m | stamp_recognition:29 | ✓ Données françaises disponibles
+2025-11-10 21:52:36,063 | [32mINFO[0m | main_window:42 | ✓ Reconnaissance visuelle intelligente disponible
+2025-11-10 21:52:37,767 | [32mINFO[0m | main_window:54 | Google Vision disponible mais credentials non configurés
+2025-11-10 21:52:37,791 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-11-10 21:52:37,913 | [32mINFO[0m | scanner_utils:42 | ✓ 1 scanner(s) trouvé(s)
+2025-11-10 21:52:38,640 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-11-10 21:52:38,726 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-11-10 21:52:38,726 | [32mINFO[0m | opencv_detector:15 | ✓ OpenCV disponible (fallback)
+2025-11-10 21:52:38,726 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-11-10 21:52:38,726 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-11-10 21:52:48,595 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: Pixel 7 Pro
+2025-11-10 21:52:48,601 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: (-2145320853, None, ('L’index est hors limites.', None, None, 0, None))
+2025-11-10 21:53:17,914 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: Pixel 7 Pro
+2025-11-10 21:53:17,918 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: (-2145320853, None, ('L’index est hors limites.', None, None, 0, None))
+2025-11-10 21:53:21,603 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: Pixel 7 Pro
+2025-11-10 21:53:21,607 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: (-2145320853, None, ('L’index est hors limites.', None, None, 0, None))
+2025-11-10 21:53:28,458 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: Pixel 7 Pro
+2025-11-10 21:53:28,463 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: (-2145320853, None, ('L’index est hors limites.', None, None, 0, None))
+2025-11-10 21:54:57,089 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-10 21:54:57,112 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 600DPI, color...
+2025-11-10 21:55:07,526 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251110_215457.png
+2025-11-10 21:55:26,100 | [32mINFO[0m | processor:63 | ============================================================
+2025-11-10 21:55:26,100 | [32mINFO[0m | processor:64 | Traitement: scan_20251110_215457.png
+2025-11-10 21:55:26,100 | [32mINFO[0m | processor:65 | ============================================================
+2025-11-10 21:55:26,105 | [32mINFO[0m | processor:76 | Dimensions: 1240x1753px
+2025-11-10 21:55:26,246 | [32mINFO[0m | image_utils:30 | DPI détecté: 149
+2025-11-10 21:55:26,247 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 6px @ 149DPI
+2025-11-10 21:55:26,247 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-11-10 21:55:26,253 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-11-10 21:55:26,254 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-11-10 21:55:26,261 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_215457_stamp_001.png
+2025-11-10 21:55:26,271 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251110_215457_stamp_002.png
+2025-11-10 21:55:26,272 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-11-10 21:57:51,055 | [32mINFO[0m | processor:63 | ============================================================
+2025-11-10 21:57:51,056 | [32mINFO[0m | processor:64 | Traitement: Sans titre.png
+2025-11-10 21:57:51,056 | [32mINFO[0m | processor:65 | ============================================================
+2025-11-10 21:57:51,562 | [32mINFO[0m | processor:76 | Dimensions: 5104x7016px
+2025-11-10 21:57:51,563 | [32mINFO[0m | image_utils:30 | DPI détecté: 599
+2025-11-10 21:57:51,563 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 24px @ 599DPI
+2025-11-10 21:57:51,563 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-11-10 21:57:51,666 | [32mINFO[0m | opencv_detector:89 | OpenCV: 37 timbre(s)/bloc(s) détecté(s)
+2025-11-10 21:57:51,673 | [32mINFO[0m | processor:104 | ✓ 37 timbre(s) détecté(s)
+2025-11-10 21:57:51,742 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_001.png
+2025-11-10 21:57:51,803 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_002.png
+2025-11-10 21:57:51,903 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_003.png
+2025-11-10 21:57:51,972 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_004.png
+2025-11-10 21:57:52,071 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_005.png
+2025-11-10 21:57:52,140 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_006.png
+2025-11-10 21:57:52,222 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_007.png
+2025-11-10 21:57:52,315 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_008.png
+2025-11-10 21:57:52,413 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_009.png
+2025-11-10 21:57:52,507 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_010.png
+2025-11-10 21:57:52,605 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_011.png
+2025-11-10 21:57:52,668 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_012.png
+2025-11-10 21:57:52,759 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_013.png
+2025-11-10 21:57:52,859 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_014.png
+2025-11-10 21:57:52,954 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_015.png
+2025-11-10 21:57:53,059 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_016.png
+2025-11-10 21:57:53,160 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_017.png
+2025-11-10 21:57:53,250 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_018.png
+2025-11-10 21:57:53,359 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_019.png
+2025-11-10 21:57:53,425 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_020.png
+2025-11-10 21:57:53,513 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_021.png
+2025-11-10 21:57:53,594 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_022.png
+2025-11-10 21:57:53,678 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_023.png
+2025-11-10 21:57:53,754 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_024.png
+2025-11-10 21:57:53,810 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_025.png
+2025-11-10 21:57:53,894 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_026.png
+2025-11-10 21:57:54,003 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_027.png
+2025-11-10 21:57:54,106 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_028.png
+2025-11-10 21:57:54,182 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_029.png
+2025-11-10 21:57:54,247 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_030.png
+2025-11-10 21:57:54,324 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_031.png
+2025-11-10 21:57:54,419 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_032.png
+2025-11-10 21:57:54,519 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_033.png
+2025-11-10 21:57:54,592 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_034.png
+2025-11-10 21:57:54,689 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_035.png
+2025-11-10 21:57:54,780 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_036.png
+2025-11-10 21:57:54,886 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_037.png
+2025-11-10 21:57:54,887 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 37 fichier(s) généré(s)

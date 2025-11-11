@@ -1,0 +1,564 @@
+2025-10-05 16:36:56,441 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-05 16:36:56,556 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-05 16:36:56,614 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-05 16:36:56,615 | [32mINFO[0m | opencv_detector:14 | ✓ OpenCV disponible (fallback)
+2025-10-05 16:36:56,615 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-05 16:36:56,615 | [32mINFO[0m | processor:37 | Processeur initialisé (backend: OpenCV)
+2025-10-05 16:36:57,055 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-05 16:37:31,167 | [32mINFO[0m | processor:40 | ============================================================
+2025-10-05 16:37:31,168 | [32mINFO[0m | processor:41 | Traitement: 3419c6 v 30.png
+2025-10-05 16:37:31,168 | [32mINFO[0m | processor:42 | ============================================================
+2025-10-05 16:37:58,307 | [32mINFO[0m | processor:40 | ============================================================
+2025-10-05 16:37:58,307 | [32mINFO[0m | processor:41 | Traitement: 3419c6 v 30.png
+2025-10-05 16:37:58,307 | [32mINFO[0m | processor:42 | ============================================================
+2025-10-05 16:39:23,813 | [32mINFO[0m | processor:40 | ============================================================
+2025-10-05 16:39:23,813 | [32mINFO[0m | processor:41 | Traitement: 3419c6 v 30.png
+2025-10-05 16:39:23,813 | [32mINFO[0m | processor:42 | ============================================================
+2025-10-05 16:39:23,948 | [32mINFO[0m | processor:52 | Dimensions: 2481x3506px
+2025-10-05 16:39:24,077 | [32mINFO[0m | image_utils:21 | DPI détecté: 299
+2025-10-05 16:39:24,077 | [32mINFO[0m | processor:59 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 16:39:24,077 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 16:39:24,096 | [32mINFO[0m | opencv_detector:54 | OpenCV: 5 timbre(s) détecté(s)
+2025-10-05 16:39:24,099 | [32mINFO[0m | processor:78 | ✓ 5 timbre(s) détecté(s)
+2025-10-05 16:39:24,138 | [32mINFO[0m | image_utils:69 | ✓ PNG: 3419c6 v 30_stamp_001.png
+2025-10-05 16:39:24,171 | [32mINFO[0m | image_utils:83 | ✓ JPG: 3419c6 v 30_stamp_001.jpg
+2025-10-05 16:39:24,209 | [32mINFO[0m | image_utils:69 | ✓ PNG: 3419c6 v 30_stamp_002.png
+2025-10-05 16:39:24,240 | [32mINFO[0m | image_utils:83 | ✓ JPG: 3419c6 v 30_stamp_002.jpg
+2025-10-05 16:39:24,276 | [32mINFO[0m | image_utils:69 | ✓ PNG: 3419c6 v 30_stamp_003.png
+2025-10-05 16:39:24,311 | [32mINFO[0m | image_utils:83 | ✓ JPG: 3419c6 v 30_stamp_003.jpg
+2025-10-05 16:39:24,344 | [32mINFO[0m | image_utils:69 | ✓ PNG: 3419c6 v 30_stamp_004.png
+2025-10-05 16:39:24,373 | [32mINFO[0m | image_utils:83 | ✓ JPG: 3419c6 v 30_stamp_004.jpg
+2025-10-05 16:39:24,406 | [32mINFO[0m | image_utils:69 | ✓ PNG: 3419c6 v 30_stamp_005.png
+2025-10-05 16:39:24,434 | [32mINFO[0m | image_utils:83 | ✓ JPG: 3419c6 v 30_stamp_005.jpg
+2025-10-05 16:39:24,435 | [32mINFO[0m | processor:101 | ✓ Traitement terminé: 10 fichier(s) généré(s)
+2025-10-05 16:47:02,661 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-05 16:47:02,697 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-05 16:47:02,734 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-05 16:47:02,734 | [32mINFO[0m | opencv_detector:14 | ✓ OpenCV disponible (fallback)
+2025-10-05 16:47:02,734 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-05 16:47:02,734 | [32mINFO[0m | processor:37 | Processeur initialisé (backend: OpenCV)
+2025-10-05 16:47:03,156 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-05 16:48:02,079 | [32mINFO[0m | processor:40 | ============================================================
+2025-10-05 16:48:02,079 | [32mINFO[0m | processor:41 | Traitement: PXL_20250311_195123042.MP~2.jpg
+2025-10-05 16:48:02,079 | [32mINFO[0m | processor:42 | ============================================================
+2025-10-05 16:48:02,115 | [32mINFO[0m | processor:52 | Dimensions: 3072x4080px
+2025-10-05 16:48:02,156 | [32mINFO[0m | image_utils:21 | DPI détecté: 72
+2025-10-05 16:48:02,157 | [32mINFO[0m | processor:59 | Marge: 1.0mm = 3px @ 72DPI
+2025-10-05 16:48:02,157 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 16:48:02,188 | [32mINFO[0m | opencv_detector:54 | OpenCV: 24 timbre(s) détecté(s)
+2025-10-05 16:48:02,192 | [32mINFO[0m | processor:78 | ✓ 24 timbre(s) détecté(s)
+2025-10-05 16:48:02,197 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:02,202 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:02,210 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:02,218 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:02,234 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:02,249 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:02,257 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:02,265 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:02,271 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:02,275 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:02,281 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:02,285 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:02,549 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:02,912 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:02,925 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:02,931 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:02,937 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:02,941 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:02,947 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:02,952 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:02,956 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:02,961 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:02,967 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:02,971 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:02,976 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:02,981 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:02,987 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:02,991 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:03,027 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:03,058 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:03,065 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:03,069 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:03,075 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:03,080 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:03,088 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:03,096 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:03,098 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:03,099 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:03,107 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:03,115 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:03,125 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:03,133 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:03,143 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:03,151 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:03,162 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:03,171 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:03,180 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_195123042.png
+2025-10-05 16:48:03,186 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_195123042.jpg
+2025-10-05 16:48:03,187 | [32mINFO[0m | processor:101 | ✓ Traitement terminé: 48 fichier(s) généré(s)
+2025-10-05 16:53:07,205 | [32mINFO[0m | processor:40 | ============================================================
+2025-10-05 16:53:07,205 | [32mINFO[0m | processor:41 | Traitement: PXL_20250311_200531281.LONG_EXPOSURE-01.COVER.jpg
+2025-10-05 16:53:07,205 | [32mINFO[0m | processor:42 | ============================================================
+2025-10-05 16:53:07,236 | [32mINFO[0m | processor:52 | Dimensions: 3072x4080px
+2025-10-05 16:53:07,238 | [32mINFO[0m | image_utils:21 | DPI détecté: 72
+2025-10-05 16:53:07,238 | [32mINFO[0m | processor:59 | Marge: 1.0mm = 3px @ 72DPI
+2025-10-05 16:53:07,239 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 16:53:07,270 | [32mINFO[0m | opencv_detector:54 | OpenCV: 45 timbre(s) détecté(s)
+2025-10-05 16:53:07,274 | [32mINFO[0m | processor:78 | ✓ 45 timbre(s) détecté(s)
+2025-10-05 16:53:07,277 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,279 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,283 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,286 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,294 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,303 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,305 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,306 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,312 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,318 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,325 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,330 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,337 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,342 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,348 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,353 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,359 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,364 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,371 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,375 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,377 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,378 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,380 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,381 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,382 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,383 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,388 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,393 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,400 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,405 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,411 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,415 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,423 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,427 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,433 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,438 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,444 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,448 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,450 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,451 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,458 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,462 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,469 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,474 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,479 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,484 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,491 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,495 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,501 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,506 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,512 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,516 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,518 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,519 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,520 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,521 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,527 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,532 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,538 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,542 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,548 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,552 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,557 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,561 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,567 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,571 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,577 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,581 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,583 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,583 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,588 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,593 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,600 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,604 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,610 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,615 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,621 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,625 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,631 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,636 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,642 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,647 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,648 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,649 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,650 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,650 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,654 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,657 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,736 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_200531281.LONG_EXPOSURE-01.png
+2025-10-05 16:53:07,809 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_200531281.LONG_EXPOSURE-01.jpg
+2025-10-05 16:53:07,811 | [32mINFO[0m | processor:101 | ✓ Traitement terminé: 90 fichier(s) généré(s)
+2025-10-05 16:54:30,383 | [32mINFO[0m | processor:40 | ============================================================
+2025-10-05 16:54:30,384 | [32mINFO[0m | processor:41 | Traitement: PXL_20250311_201932280.jpg
+2025-10-05 16:54:30,384 | [32mINFO[0m | processor:42 | ============================================================
+2025-10-05 16:54:30,413 | [32mINFO[0m | processor:52 | Dimensions: 2854x4080px
+2025-10-05 16:54:30,415 | [32mINFO[0m | image_utils:21 | DPI détecté: 72
+2025-10-05 16:54:30,415 | [32mINFO[0m | processor:59 | Marge: 1.0mm = 3px @ 72DPI
+2025-10-05 16:54:30,415 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 16:54:30,441 | [32mINFO[0m | opencv_detector:54 | OpenCV: 9 timbre(s) détecté(s)
+2025-10-05 16:54:30,444 | [32mINFO[0m | processor:78 | ✓ 9 timbre(s) détecté(s)
+2025-10-05 16:54:30,449 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_201932280_stamp_001.png
+2025-10-05 16:54:30,462 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_201932280_stamp_001.jpg
+2025-10-05 16:54:30,508 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_201932280_stamp_002.png
+2025-10-05 16:54:30,550 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_201932280_stamp_002.jpg
+2025-10-05 16:54:30,562 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_201932280_stamp_003.png
+2025-10-05 16:54:30,571 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_201932280_stamp_003.jpg
+2025-10-05 16:54:30,578 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_201932280_stamp_004.png
+2025-10-05 16:54:30,584 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_201932280_stamp_004.jpg
+2025-10-05 16:54:30,638 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_201932280_stamp_005.png
+2025-10-05 16:54:30,688 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_201932280_stamp_005.jpg
+2025-10-05 16:54:30,695 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_201932280_stamp_006.png
+2025-10-05 16:54:30,698 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_201932280_stamp_006.jpg
+2025-10-05 16:54:30,766 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_201932280_stamp_007.png
+2025-10-05 16:54:30,830 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_201932280_stamp_007.jpg
+2025-10-05 16:54:30,838 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_201932280_stamp_008.png
+2025-10-05 16:54:30,842 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_201932280_stamp_008.jpg
+2025-10-05 16:54:30,852 | [32mINFO[0m | image_utils:69 | ✓ PNG: PXL_20250311_201932280_stamp_009.png
+2025-10-05 16:54:30,859 | [32mINFO[0m | image_utils:83 | ✓ JPG: PXL_20250311_201932280_stamp_009.jpg
+2025-10-05 16:54:30,860 | [32mINFO[0m | processor:101 | ✓ Traitement terminé: 18 fichier(s) généré(s)
+2025-10-05 16:57:17,927 | [32mINFO[0m | processor:40 | ============================================================
+2025-10-05 16:57:17,928 | [32mINFO[0m | processor:41 | Traitement: 3419c6 v 30.png
+2025-10-05 16:57:17,928 | [32mINFO[0m | processor:42 | ============================================================
+2025-10-05 16:57:18,063 | [32mINFO[0m | processor:52 | Dimensions: 2481x3506px
+2025-10-05 16:57:18,064 | [32mINFO[0m | image_utils:21 | DPI détecté: 299
+2025-10-05 16:57:18,065 | [32mINFO[0m | processor:59 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 16:57:18,065 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 16:57:18,081 | [32mINFO[0m | opencv_detector:54 | OpenCV: 5 timbre(s) détecté(s)
+2025-10-05 16:57:18,084 | [32mINFO[0m | processor:78 | ✓ 5 timbre(s) détecté(s)
+2025-10-05 16:57:18,122 | [32mINFO[0m | image_utils:69 | ✓ PNG: 3419c6 v 30_stamp_001.png
+2025-10-05 16:57:18,159 | [32mINFO[0m | image_utils:69 | ✓ PNG: 3419c6 v 30_stamp_002.png
+2025-10-05 16:57:18,196 | [32mINFO[0m | image_utils:69 | ✓ PNG: 3419c6 v 30_stamp_003.png
+2025-10-05 16:57:18,234 | [32mINFO[0m | image_utils:69 | ✓ PNG: 3419c6 v 30_stamp_004.png
+2025-10-05 16:57:18,269 | [32mINFO[0m | image_utils:69 | ✓ PNG: 3419c6 v 30_stamp_005.png
+2025-10-05 16:57:18,269 | [32mINFO[0m | processor:101 | ✓ Traitement terminé: 5 fichier(s) généré(s)
+2025-10-05 16:58:01,911 | [32mINFO[0m | processor:40 | ============================================================
+2025-10-05 16:58:01,912 | [32mINFO[0m | processor:41 | Traitement: 3419c6 v 30.png
+2025-10-05 16:58:01,912 | [32mINFO[0m | processor:42 | ============================================================
+2025-10-05 16:58:02,046 | [32mINFO[0m | processor:52 | Dimensions: 2481x3506px
+2025-10-05 16:58:02,047 | [32mINFO[0m | image_utils:21 | DPI détecté: 299
+2025-10-05 16:58:02,047 | [32mINFO[0m | processor:59 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 16:58:02,048 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 16:58:02,068 | [32mINFO[0m | opencv_detector:54 | OpenCV: 5 timbre(s) détecté(s)
+2025-10-05 16:58:02,071 | [32mINFO[0m | processor:78 | ✓ 5 timbre(s) détecté(s)
+2025-10-05 16:58:02,106 | [32mINFO[0m | image_utils:69 | ✓ PNG: 3419c6 v 30_stamp_001.png
+2025-10-05 16:58:02,140 | [32mINFO[0m | image_utils:69 | ✓ PNG: 3419c6 v 30_stamp_002.png
+2025-10-05 16:58:02,173 | [32mINFO[0m | image_utils:69 | ✓ PNG: 3419c6 v 30_stamp_003.png
+2025-10-05 16:58:02,204 | [32mINFO[0m | image_utils:69 | ✓ PNG: 3419c6 v 30_stamp_004.png
+2025-10-05 16:58:02,236 | [32mINFO[0m | image_utils:69 | ✓ PNG: 3419c6 v 30_stamp_005.png
+2025-10-05 16:58:02,237 | [32mINFO[0m | processor:101 | ✓ Traitement terminé: 5 fichier(s) généré(s)
+2025-10-05 17:10:31,669 | [32mINFO[0m | processor:40 | ============================================================
+2025-10-05 17:10:31,669 | [32mINFO[0m | processor:41 | Traitement: Sans titre.png
+2025-10-05 17:10:31,670 | [32mINFO[0m | processor:42 | ============================================================
+2025-10-05 17:10:31,806 | [32mINFO[0m | processor:52 | Dimensions: 2481x3506px
+2025-10-05 17:10:31,808 | [32mINFO[0m | image_utils:21 | DPI détecté: 299
+2025-10-05 17:10:31,808 | [32mINFO[0m | processor:59 | Marge: 2.000000000000001mm = 24px @ 299DPI
+2025-10-05 17:10:31,809 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 17:10:31,826 | [32mINFO[0m | opencv_detector:54 | OpenCV: 5 timbre(s) détecté(s)
+2025-10-05 17:10:31,829 | [32mINFO[0m | processor:78 | ✓ 5 timbre(s) détecté(s)
+2025-10-05 17:10:31,872 | [32mINFO[0m | image_utils:69 | ✓ PNG: Sans titre_stamp_001.png
+2025-10-05 17:10:31,916 | [32mINFO[0m | image_utils:69 | ✓ PNG: Sans titre_stamp_002.png
+2025-10-05 17:10:31,959 | [32mINFO[0m | image_utils:69 | ✓ PNG: Sans titre_stamp_003.png
+2025-10-05 17:10:31,998 | [32mINFO[0m | image_utils:69 | ✓ PNG: Sans titre_stamp_004.png
+2025-10-05 17:10:32,032 | [32mINFO[0m | image_utils:69 | ✓ PNG: Sans titre_stamp_005.png
+2025-10-05 17:10:32,032 | [32mINFO[0m | processor:101 | ✓ Traitement terminé: 5 fichier(s) généré(s)
+2025-10-05 17:31:41,501 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-05 17:33:02,621 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-05 17:34:47,620 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-05 17:34:47,660 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-05 17:34:47,692 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-05 17:34:47,692 | [32mINFO[0m | opencv_detector:14 | ✓ OpenCV disponible (fallback)
+2025-10-05 17:34:47,692 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-05 17:34:47,692 | [32mINFO[0m | processor:39 | Processeur initialisé (backend: OpenCV)
+2025-10-05 17:34:48,096 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-05 17:35:13,437 | [32mINFO[0m | processor:42 | ============================================================
+2025-10-05 17:35:13,437 | [32mINFO[0m | processor:43 | Traitement: Sans titre.png
+2025-10-05 17:35:13,438 | [32mINFO[0m | processor:44 | ============================================================
+2025-10-05 17:35:13,576 | [32mINFO[0m | processor:54 | Dimensions: 2481x3506px
+2025-10-05 17:35:13,587 | [32mINFO[0m | image_utils:21 | DPI détecté: 299
+2025-10-05 17:35:13,587 | [32mINFO[0m | processor:61 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 17:35:13,587 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 17:35:13,606 | [32mINFO[0m | opencv_detector:54 | OpenCV: 5 timbre(s) détecté(s)
+2025-10-05 17:35:13,609 | [32mINFO[0m | processor:80 | ✓ 5 timbre(s) détecté(s)
+2025-10-05 17:35:13,639 | [31mERROR[0m | image_utils:170 | Erreur sauvegarde: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1146: error: (-215:Assertion failed) !_img.empty() in function 'cv::imwrite'
+
+2025-10-05 17:39:13,530 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-05 17:39:13,687 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-05 17:39:13,786 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-05 17:39:13,786 | [32mINFO[0m | opencv_detector:14 | ✓ OpenCV disponible (fallback)
+2025-10-05 17:39:13,786 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-05 17:39:13,786 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-10-05 17:39:14,315 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-05 17:39:25,720 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-05 17:39:25,721 | [32mINFO[0m | processor:64 | Traitement: Sans titre.png
+2025-10-05 17:39:25,721 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-05 17:39:25,858 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-05 17:39:25,993 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-05 17:39:25,994 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 17:39:25,994 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 17:39:26,011 | [32mINFO[0m | opencv_detector:54 | OpenCV: 5 timbre(s) détecté(s)
+2025-10-05 17:39:26,014 | [32mINFO[0m | processor:104 | ✓ 5 timbre(s) détecté(s)
+2025-10-05 17:39:26,072 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_001.png
+2025-10-05 17:39:26,106 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_001.jpg
+2025-10-05 17:39:26,166 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_002.png
+2025-10-05 17:39:26,196 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_002.jpg
+2025-10-05 17:39:26,250 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_003.png
+2025-10-05 17:39:26,279 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_003.jpg
+2025-10-05 17:39:26,334 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_004.png
+2025-10-05 17:39:26,364 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_004.jpg
+2025-10-05 17:39:26,417 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_005.png
+2025-10-05 17:39:26,445 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_005.jpg
+2025-10-05 17:39:26,446 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 10 fichier(s) généré(s)
+2025-10-05 17:39:26,601 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-05 17:39:26,626 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-05 17:39:26,651 | [31mERROR[0m | processor:207 | Erreur annotation timbre 3: module 'numpy' has no attribute 'int0'
+2025-10-05 17:39:26,676 | [31mERROR[0m | processor:207 | Erreur annotation timbre 4: module 'numpy' has no attribute 'int0'
+2025-10-05 17:39:26,700 | [31mERROR[0m | processor:207 | Erreur annotation timbre 5: module 'numpy' has no attribute 'int0'
+2025-10-05 17:45:36,768 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-05 17:45:36,769 | [32mINFO[0m | processor:64 | Traitement: f2.png
+2025-10-05 17:45:36,769 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-05 17:45:36,875 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-05 17:45:36,877 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-05 17:45:36,877 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 17:45:36,877 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 17:45:36,897 | [32mINFO[0m | opencv_detector:54 | OpenCV: 5 timbre(s) détecté(s)
+2025-10-05 17:45:36,900 | [32mINFO[0m | processor:104 | ✓ 5 timbre(s) détecté(s)
+2025-10-05 17:45:36,958 | [32mINFO[0m | image_utils:272 | ✓ PNG: f2_stamp_001.png
+2025-10-05 17:45:37,018 | [32mINFO[0m | image_utils:272 | ✓ PNG: f2_stamp_002.png
+2025-10-05 17:45:37,079 | [32mINFO[0m | image_utils:272 | ✓ PNG: f2_stamp_003.png
+2025-10-05 17:45:37,131 | [32mINFO[0m | image_utils:272 | ✓ PNG: f2_stamp_004.png
+2025-10-05 17:45:37,176 | [32mINFO[0m | image_utils:272 | ✓ PNG: f2_stamp_005.png
+2025-10-05 17:45:37,176 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 5 fichier(s) généré(s)
+2025-10-05 17:45:37,300 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-05 17:45:37,325 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-05 17:45:37,350 | [31mERROR[0m | processor:207 | Erreur annotation timbre 3: module 'numpy' has no attribute 'int0'
+2025-10-05 17:45:37,375 | [31mERROR[0m | processor:207 | Erreur annotation timbre 4: module 'numpy' has no attribute 'int0'
+2025-10-05 17:45:37,401 | [31mERROR[0m | processor:207 | Erreur annotation timbre 5: module 'numpy' has no attribute 'int0'
+2025-10-05 17:52:33,962 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-05 17:52:33,963 | [32mINFO[0m | processor:64 | Traitement: f3.png
+2025-10-05 17:52:33,963 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-05 17:52:34,087 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-05 17:52:34,088 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-05 17:52:34,089 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 17:52:34,089 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 17:52:34,105 | [32mINFO[0m | opencv_detector:54 | OpenCV: 5 timbre(s) détecté(s)
+2025-10-05 17:52:34,108 | [32mINFO[0m | processor:104 | ✓ 5 timbre(s) détecté(s)
+2025-10-05 17:52:34,167 | [32mINFO[0m | image_utils:272 | ✓ PNG: f3_stamp_001.png
+2025-10-05 17:52:34,225 | [32mINFO[0m | image_utils:272 | ✓ PNG: f3_stamp_002.png
+2025-10-05 17:52:34,284 | [32mINFO[0m | image_utils:272 | ✓ PNG: f3_stamp_003.png
+2025-10-05 17:52:34,338 | [32mINFO[0m | image_utils:272 | ✓ PNG: f3_stamp_004.png
+2025-10-05 17:52:34,397 | [32mINFO[0m | image_utils:272 | ✓ PNG: f3_stamp_005.png
+2025-10-05 17:52:34,397 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 5 fichier(s) généré(s)
+2025-10-05 17:52:34,538 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-05 17:52:34,563 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-05 17:52:34,588 | [31mERROR[0m | processor:207 | Erreur annotation timbre 3: module 'numpy' has no attribute 'int0'
+2025-10-05 17:52:34,613 | [31mERROR[0m | processor:207 | Erreur annotation timbre 4: module 'numpy' has no attribute 'int0'
+2025-10-05 17:52:34,637 | [31mERROR[0m | processor:207 | Erreur annotation timbre 5: module 'numpy' has no attribute 'int0'
+2025-10-05 20:55:58,152 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-05 20:55:58,152 | [32mINFO[0m | processor:64 | Traitement: Sans titre.png
+2025-10-05 20:55:58,152 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-05 20:55:58,288 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-05 20:55:58,289 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-05 20:55:58,290 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 20:55:58,290 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 20:55:58,306 | [32mINFO[0m | opencv_detector:54 | OpenCV: 5 timbre(s) détecté(s)
+2025-10-05 20:55:58,309 | [32mINFO[0m | processor:104 | ✓ 5 timbre(s) détecté(s)
+2025-10-05 20:55:58,368 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_001.png
+2025-10-05 20:55:58,430 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_002.png
+2025-10-05 20:55:58,491 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_003.png
+2025-10-05 20:55:58,555 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_004.png
+2025-10-05 20:55:58,610 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_005.png
+2025-10-05 20:55:58,610 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 5 fichier(s) généré(s)
+2025-10-05 20:55:58,761 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-05 20:55:58,786 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-05 20:55:58,811 | [31mERROR[0m | processor:207 | Erreur annotation timbre 3: module 'numpy' has no attribute 'int0'
+2025-10-05 20:55:58,836 | [31mERROR[0m | processor:207 | Erreur annotation timbre 4: module 'numpy' has no attribute 'int0'
+2025-10-05 20:55:58,860 | [31mERROR[0m | processor:207 | Erreur annotation timbre 5: module 'numpy' has no attribute 'int0'
+2025-10-05 20:56:35,534 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-05 20:56:35,535 | [32mINFO[0m | processor:64 | Traitement: f4.png
+2025-10-05 20:56:35,535 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-05 20:56:35,662 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-05 20:56:35,663 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-05 20:56:35,663 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 20:56:35,664 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 20:56:35,683 | [32mINFO[0m | opencv_detector:54 | OpenCV: 5 timbre(s) détecté(s)
+2025-10-05 20:56:35,687 | [32mINFO[0m | processor:104 | ✓ 5 timbre(s) détecté(s)
+2025-10-05 20:56:35,737 | [32mINFO[0m | image_utils:272 | ✓ PNG: f4_stamp_001.png
+2025-10-05 20:56:35,803 | [32mINFO[0m | image_utils:272 | ✓ PNG: f4_stamp_002.png
+2025-10-05 20:56:35,863 | [32mINFO[0m | image_utils:272 | ✓ PNG: f4_stamp_003.png
+2025-10-05 20:56:35,916 | [32mINFO[0m | image_utils:272 | ✓ PNG: f4_stamp_004.png
+2025-10-05 20:56:35,961 | [32mINFO[0m | image_utils:272 | ✓ PNG: f4_stamp_005.png
+2025-10-05 20:56:35,962 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 5 fichier(s) généré(s)
+2025-10-05 20:56:36,103 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-05 20:56:36,128 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-05 20:56:36,153 | [31mERROR[0m | processor:207 | Erreur annotation timbre 3: module 'numpy' has no attribute 'int0'
+2025-10-05 20:56:36,178 | [31mERROR[0m | processor:207 | Erreur annotation timbre 4: module 'numpy' has no attribute 'int0'
+2025-10-05 20:56:36,204 | [31mERROR[0m | processor:207 | Erreur annotation timbre 5: module 'numpy' has no attribute 'int0'
+2025-10-05 21:07:17,707 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-05 21:07:17,707 | [32mINFO[0m | processor:64 | Traitement: f5.png
+2025-10-05 21:07:17,707 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-05 21:07:17,827 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-05 21:07:17,829 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-05 21:07:17,829 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 21:07:17,830 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 21:07:17,846 | [32mINFO[0m | opencv_detector:54 | OpenCV: 5 timbre(s) détecté(s)
+2025-10-05 21:07:17,848 | [32mINFO[0m | processor:104 | ✓ 5 timbre(s) détecté(s)
+2025-10-05 21:07:17,906 | [32mINFO[0m | image_utils:272 | ✓ PNG: f5_stamp_001.png
+2025-10-05 21:07:17,966 | [32mINFO[0m | image_utils:272 | ✓ PNG: f5_stamp_002.png
+2025-10-05 21:07:18,032 | [32mINFO[0m | image_utils:272 | ✓ PNG: f5_stamp_003.png
+2025-10-05 21:07:18,086 | [32mINFO[0m | image_utils:272 | ✓ PNG: f5_stamp_004.png
+2025-10-05 21:07:18,141 | [32mINFO[0m | image_utils:272 | ✓ PNG: f5_stamp_005.png
+2025-10-05 21:07:18,141 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 5 fichier(s) généré(s)
+2025-10-05 21:07:18,277 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-05 21:07:18,302 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-05 21:07:18,327 | [31mERROR[0m | processor:207 | Erreur annotation timbre 3: module 'numpy' has no attribute 'int0'
+2025-10-05 21:07:18,352 | [31mERROR[0m | processor:207 | Erreur annotation timbre 4: module 'numpy' has no attribute 'int0'
+2025-10-05 21:07:18,377 | [31mERROR[0m | processor:207 | Erreur annotation timbre 5: module 'numpy' has no attribute 'int0'
+2025-10-05 21:13:30,107 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-05 21:13:30,107 | [32mINFO[0m | processor:64 | Traitement: f6.png
+2025-10-05 21:13:30,107 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-05 21:13:30,236 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-05 21:13:30,238 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-05 21:13:30,238 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 21:13:30,238 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 21:13:30,256 | [32mINFO[0m | opencv_detector:54 | OpenCV: 6 timbre(s) détecté(s)
+2025-10-05 21:13:30,259 | [32mINFO[0m | processor:104 | ✓ 6 timbre(s) détecté(s)
+2025-10-05 21:13:30,316 | [32mINFO[0m | image_utils:272 | ✓ PNG: f6_stamp_001.png
+2025-10-05 21:13:30,376 | [32mINFO[0m | image_utils:272 | ✓ PNG: f6_stamp_002.png
+2025-10-05 21:13:30,430 | [32mINFO[0m | image_utils:272 | ✓ PNG: f6_stamp_003.png
+2025-10-05 21:13:30,484 | [32mINFO[0m | image_utils:272 | ✓ PNG: f6_stamp_004.png
+2025-10-05 21:13:30,537 | [32mINFO[0m | image_utils:272 | ✓ PNG: f6_stamp_005.png
+2025-10-05 21:13:30,591 | [32mINFO[0m | image_utils:272 | ✓ PNG: f6_stamp_006.png
+2025-10-05 21:13:30,591 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 6 fichier(s) généré(s)
+2025-10-05 21:13:30,737 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-05 21:13:30,763 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-05 21:13:30,788 | [31mERROR[0m | processor:207 | Erreur annotation timbre 3: module 'numpy' has no attribute 'int0'
+2025-10-05 21:13:30,813 | [31mERROR[0m | processor:207 | Erreur annotation timbre 4: module 'numpy' has no attribute 'int0'
+2025-10-05 21:13:30,839 | [31mERROR[0m | processor:207 | Erreur annotation timbre 5: module 'numpy' has no attribute 'int0'
+2025-10-05 21:13:30,865 | [31mERROR[0m | processor:207 | Erreur annotation timbre 6: module 'numpy' has no attribute 'int0'
+2025-10-05 22:49:24,829 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-05 22:49:24,966 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-05 22:49:25,055 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-05 22:49:25,055 | [32mINFO[0m | opencv_detector:14 | ✓ OpenCV disponible (fallback)
+2025-10-05 22:49:25,055 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-05 22:49:25,056 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-10-05 22:49:25,703 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-05 22:49:33,588 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-05 22:49:33,588 | [32mINFO[0m | processor:64 | Traitement: pa 100 110.png
+2025-10-05 22:49:33,589 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-05 22:49:33,717 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-05 22:49:33,850 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-05 22:49:33,850 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 22:49:33,851 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 22:49:33,868 | [32mINFO[0m | opencv_detector:54 | OpenCV: 0 timbre(s) détecté(s)
+2025-10-05 22:49:33,871 | [33mWARNING[0m | processor:93 | ⚠️ Aucun timbre détecté
+2025-10-05 22:49:41,214 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-05 22:49:41,214 | [32mINFO[0m | processor:64 | Traitement: pa 102 180.png
+2025-10-05 22:49:41,214 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-05 22:49:41,336 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-05 22:49:41,337 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-05 22:49:41,337 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 22:49:41,339 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 22:49:41,357 | [32mINFO[0m | opencv_detector:54 | OpenCV: 0 timbre(s) détecté(s)
+2025-10-05 22:49:41,359 | [33mWARNING[0m | processor:93 | ⚠️ Aucun timbre détecté
+2025-10-05 22:50:09,442 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-05 22:50:09,442 | [32mINFO[0m | processor:64 | Traitement: pa 100 110.png
+2025-10-05 22:50:09,443 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-05 22:50:09,571 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-05 22:50:09,571 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-05 22:50:09,573 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 22:50:09,573 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 22:50:09,592 | [32mINFO[0m | opencv_detector:54 | OpenCV: 0 timbre(s) détecté(s)
+2025-10-05 22:50:09,596 | [33mWARNING[0m | processor:93 | ⚠️ Aucun timbre détecté
+2025-10-05 22:50:13,413 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-05 22:50:13,414 | [32mINFO[0m | processor:64 | Traitement: pa 101 150.png
+2025-10-05 22:50:13,414 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-05 22:50:13,542 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-05 22:50:13,543 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-05 22:50:13,544 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 22:50:13,544 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 22:50:13,560 | [32mINFO[0m | opencv_detector:54 | OpenCV: 0 timbre(s) détecté(s)
+2025-10-05 22:50:13,563 | [33mWARNING[0m | processor:93 | ⚠️ Aucun timbre détecté
+2025-10-05 22:50:55,848 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-05 22:50:55,849 | [32mINFO[0m | processor:64 | Traitement: pa 102 180.png
+2025-10-05 22:50:55,849 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-05 22:50:55,954 | [32mINFO[0m | processor:76 | Dimensions: 3506x2481px
+2025-10-05 22:50:55,955 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-05 22:50:55,956 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 22:50:55,956 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 22:50:55,974 | [32mINFO[0m | opencv_detector:54 | OpenCV: 0 timbre(s) détecté(s)
+2025-10-05 22:50:55,977 | [33mWARNING[0m | processor:93 | ⚠️ Aucun timbre détecté
+2025-10-05 22:50:59,955 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-05 22:50:59,955 | [32mINFO[0m | processor:64 | Traitement: pa 101 150.png
+2025-10-05 22:50:59,955 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-05 22:51:00,057 | [32mINFO[0m | processor:76 | Dimensions: 3506x2481px
+2025-10-05 22:51:00,058 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-05 22:51:00,058 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 22:51:00,059 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 22:51:00,075 | [32mINFO[0m | opencv_detector:54 | OpenCV: 0 timbre(s) détecté(s)
+2025-10-05 22:51:00,078 | [33mWARNING[0m | processor:93 | ⚠️ Aucun timbre détecté
+2025-10-05 22:51:03,813 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-05 22:51:03,813 | [32mINFO[0m | processor:64 | Traitement: pa 100 110.png
+2025-10-05 22:51:03,813 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-05 22:51:03,940 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-05 22:51:03,942 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-05 22:51:03,942 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-05 22:51:03,942 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 22:51:03,959 | [32mINFO[0m | opencv_detector:54 | OpenCV: 0 timbre(s) détecté(s)
+2025-10-05 22:51:03,961 | [33mWARNING[0m | processor:93 | ⚠️ Aucun timbre détecté
+2025-10-05 22:51:12,343 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-05 22:51:12,344 | [32mINFO[0m | processor:64 | Traitement: GUYANE 30-42 165 35.jpg
+2025-10-05 22:51:12,344 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-05 22:51:12,352 | [32mINFO[0m | processor:76 | Dimensions: 2422x825px
+2025-10-05 22:51:12,352 | [32mINFO[0m | image_utils:30 | DPI détecté: 144
+2025-10-05 22:51:12,353 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 6px @ 144DPI
+2025-10-05 22:51:12,353 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-05 22:51:12,364 | [32mINFO[0m | opencv_detector:54 | OpenCV: 13 timbre(s) détecté(s)
+2025-10-05 22:51:12,364 | [32mINFO[0m | processor:104 | ✓ 13 timbre(s) détecté(s)
+2025-10-05 22:51:12,376 | [32mINFO[0m | image_utils:272 | ✓ PNG: GUYANE 30-42 165 35_stamp_001.png
+2025-10-05 22:51:12,380 | [32mINFO[0m | image_utils:292 | ✓ JPG: GUYANE 30-42 165 35_stamp_001.jpg
+2025-10-05 22:51:12,392 | [32mINFO[0m | image_utils:272 | ✓ PNG: GUYANE 30-42 165 35_stamp_002.png
+2025-10-05 22:51:12,396 | [32mINFO[0m | image_utils:292 | ✓ JPG: GUYANE 30-42 165 35_stamp_002.jpg
+2025-10-05 22:51:12,407 | [32mINFO[0m | image_utils:272 | ✓ PNG: GUYANE 30-42 165 35_stamp_003.png
+2025-10-05 22:51:12,411 | [32mINFO[0m | image_utils:292 | ✓ JPG: GUYANE 30-42 165 35_stamp_003.jpg
+2025-10-05 22:51:12,422 | [32mINFO[0m | image_utils:272 | ✓ PNG: GUYANE 30-42 165 35_stamp_004.png
+2025-10-05 22:51:12,427 | [32mINFO[0m | image_utils:292 | ✓ JPG: GUYANE 30-42 165 35_stamp_004.jpg
+2025-10-05 22:51:12,437 | [32mINFO[0m | image_utils:272 | ✓ PNG: GUYANE 30-42 165 35_stamp_005.png
+2025-10-05 22:51:12,441 | [32mINFO[0m | image_utils:292 | ✓ JPG: GUYANE 30-42 165 35_stamp_005.jpg
+2025-10-05 22:51:12,452 | [32mINFO[0m | image_utils:272 | ✓ PNG: GUYANE 30-42 165 35_stamp_006.png
+2025-10-05 22:51:12,456 | [32mINFO[0m | image_utils:292 | ✓ JPG: GUYANE 30-42 165 35_stamp_006.jpg
+2025-10-05 22:51:12,471 | [32mINFO[0m | image_utils:272 | ✓ PNG: GUYANE 30-42 165 35_stamp_007.png
+2025-10-05 22:51:12,479 | [32mINFO[0m | image_utils:292 | ✓ JPG: GUYANE 30-42 165 35_stamp_007.jpg
+2025-10-05 22:51:12,491 | [32mINFO[0m | image_utils:272 | ✓ PNG: GUYANE 30-42 165 35_stamp_008.png
+2025-10-05 22:51:12,495 | [32mINFO[0m | image_utils:292 | ✓ JPG: GUYANE 30-42 165 35_stamp_008.jpg
+2025-10-05 22:51:12,507 | [32mINFO[0m | image_utils:272 | ✓ PNG: GUYANE 30-42 165 35_stamp_009.png
+2025-10-05 22:51:12,511 | [32mINFO[0m | image_utils:292 | ✓ JPG: GUYANE 30-42 165 35_stamp_009.jpg
+2025-10-05 22:51:12,524 | [32mINFO[0m | image_utils:272 | ✓ PNG: GUYANE 30-42 165 35_stamp_010.png
+2025-10-05 22:51:12,529 | [32mINFO[0m | image_utils:292 | ✓ JPG: GUYANE 30-42 165 35_stamp_010.jpg
+2025-10-05 22:51:12,541 | [32mINFO[0m | image_utils:272 | ✓ PNG: GUYANE 30-42 165 35_stamp_011.png
+2025-10-05 22:51:12,544 | [32mINFO[0m | image_utils:292 | ✓ JPG: GUYANE 30-42 165 35_stamp_011.jpg
+2025-10-05 22:51:12,556 | [32mINFO[0m | image_utils:272 | ✓ PNG: GUYANE 30-42 165 35_stamp_012.png
+2025-10-05 22:51:12,560 | [32mINFO[0m | image_utils:292 | ✓ JPG: GUYANE 30-42 165 35_stamp_012.jpg
+2025-10-05 22:51:12,571 | [32mINFO[0m | image_utils:272 | ✓ PNG: GUYANE 30-42 165 35_stamp_013.png
+2025-10-05 22:51:12,575 | [32mINFO[0m | image_utils:292 | ✓ JPG: GUYANE 30-42 165 35_stamp_013.jpg
+2025-10-05 22:51:12,575 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 26 fichier(s) généré(s)
+2025-10-05 22:51:12,592 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-05 22:51:12,595 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-05 22:51:12,599 | [31mERROR[0m | processor:207 | Erreur annotation timbre 3: module 'numpy' has no attribute 'int0'
+2025-10-05 22:51:12,602 | [31mERROR[0m | processor:207 | Erreur annotation timbre 4: module 'numpy' has no attribute 'int0'
+2025-10-05 22:51:12,606 | [31mERROR[0m | processor:207 | Erreur annotation timbre 5: module 'numpy' has no attribute 'int0'
+2025-10-05 22:51:12,610 | [31mERROR[0m | processor:207 | Erreur annotation timbre 6: module 'numpy' has no attribute 'int0'
+2025-10-05 22:51:12,613 | [31mERROR[0m | processor:207 | Erreur annotation timbre 7: module 'numpy' has no attribute 'int0'
+2025-10-05 22:51:12,617 | [31mERROR[0m | processor:207 | Erreur annotation timbre 8: module 'numpy' has no attribute 'int0'
+2025-10-05 22:51:12,621 | [31mERROR[0m | processor:207 | Erreur annotation timbre 9: module 'numpy' has no attribute 'int0'
+2025-10-05 22:51:12,624 | [31mERROR[0m | processor:207 | Erreur annotation timbre 10: module 'numpy' has no attribute 'int0'
+2025-10-05 22:51:12,628 | [31mERROR[0m | processor:207 | Erreur annotation timbre 11: module 'numpy' has no attribute 'int0'
+2025-10-05 22:51:12,631 | [31mERROR[0m | processor:207 | Erreur annotation timbre 12: module 'numpy' has no attribute 'int0'
+2025-10-05 22:51:12,635 | [31mERROR[0m | processor:207 | Erreur annotation timbre 13: module 'numpy' has no attribute 'int0'

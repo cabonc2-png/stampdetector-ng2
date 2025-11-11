@@ -1,0 +1,318 @@
+2025-10-06 18:27:18,847 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-06 18:27:18,985 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-06 18:27:19,063 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-06 18:27:19,067 | [32mINFO[0m | opencv_detector:14 | ✓ OpenCV disponible (fallback)
+2025-10-06 18:27:19,067 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-06 18:27:19,067 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-10-06 18:27:19,592 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-06 18:27:39,064 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-06 18:27:39,064 | [32mINFO[0m | processor:64 | Traitement: Sans titre.png
+2025-10-06 18:27:39,064 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-06 18:27:39,183 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-06 18:27:39,334 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-06 18:27:39,335 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-06 18:27:39,335 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-06 18:27:39,359 | [32mINFO[0m | opencv_detector:54 | OpenCV: 16 timbre(s) détecté(s)
+2025-10-06 18:27:39,363 | [32mINFO[0m | processor:104 | ✓ 16 timbre(s) détecté(s)
+2025-10-06 18:27:39,384 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_001.png
+2025-10-06 18:27:39,388 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_001.jpg
+2025-10-06 18:27:39,409 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_002.png
+2025-10-06 18:27:39,414 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_002.jpg
+2025-10-06 18:27:39,422 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_003.png
+2025-10-06 18:27:39,430 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_003.jpg
+2025-10-06 18:27:39,447 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_004.png
+2025-10-06 18:27:39,455 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_004.jpg
+2025-10-06 18:27:39,477 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_005.png
+2025-10-06 18:27:39,485 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_005.jpg
+2025-10-06 18:27:39,506 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_006.png
+2025-10-06 18:27:39,515 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_006.jpg
+2025-10-06 18:27:39,535 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_007.png
+2025-10-06 18:27:39,539 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_007.jpg
+2025-10-06 18:27:39,560 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_008.png
+2025-10-06 18:27:39,568 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_008.jpg
+2025-10-06 18:27:39,585 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_009.png
+2025-10-06 18:27:39,589 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_009.jpg
+2025-10-06 18:27:39,610 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_010.png
+2025-10-06 18:27:39,614 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_010.jpg
+2025-10-06 18:27:39,631 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_011.png
+2025-10-06 18:27:39,635 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_011.jpg
+2025-10-06 18:27:39,656 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_012.png
+2025-10-06 18:27:39,656 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_012.jpg
+2025-10-06 18:27:39,678 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_013.png
+2025-10-06 18:27:39,682 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_013.jpg
+2025-10-06 18:27:39,702 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_014.png
+2025-10-06 18:27:39,706 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_014.jpg
+2025-10-06 18:27:39,723 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_015.png
+2025-10-06 18:27:39,727 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_015.jpg
+2025-10-06 18:27:39,748 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_016.png
+2025-10-06 18:27:39,752 | [32mINFO[0m | image_utils:292 | ✓ JPG: Sans titre_stamp_016.jpg
+2025-10-06 18:27:39,756 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 32 fichier(s) généré(s)
+2025-10-06 18:27:39,894 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-06 18:27:39,912 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-06 18:27:39,929 | [31mERROR[0m | processor:207 | Erreur annotation timbre 3: module 'numpy' has no attribute 'int0'
+2025-10-06 18:27:39,946 | [31mERROR[0m | processor:207 | Erreur annotation timbre 4: module 'numpy' has no attribute 'int0'
+2025-10-06 18:27:39,962 | [31mERROR[0m | processor:207 | Erreur annotation timbre 5: module 'numpy' has no attribute 'int0'
+2025-10-06 18:27:39,979 | [31mERROR[0m | processor:207 | Erreur annotation timbre 6: module 'numpy' has no attribute 'int0'
+2025-10-06 18:27:39,992 | [31mERROR[0m | processor:207 | Erreur annotation timbre 7: module 'numpy' has no attribute 'int0'
+2025-10-06 18:27:40,009 | [31mERROR[0m | processor:207 | Erreur annotation timbre 8: module 'numpy' has no attribute 'int0'
+2025-10-06 18:27:40,026 | [31mERROR[0m | processor:207 | Erreur annotation timbre 9: module 'numpy' has no attribute 'int0'
+2025-10-06 18:27:40,042 | [31mERROR[0m | processor:207 | Erreur annotation timbre 10: module 'numpy' has no attribute 'int0'
+2025-10-06 18:27:40,058 | [31mERROR[0m | processor:207 | Erreur annotation timbre 11: module 'numpy' has no attribute 'int0'
+2025-10-06 18:27:40,076 | [31mERROR[0m | processor:207 | Erreur annotation timbre 12: module 'numpy' has no attribute 'int0'
+2025-10-06 18:27:40,093 | [31mERROR[0m | processor:207 | Erreur annotation timbre 13: module 'numpy' has no attribute 'int0'
+2025-10-06 18:27:40,105 | [31mERROR[0m | processor:207 | Erreur annotation timbre 14: module 'numpy' has no attribute 'int0'
+2025-10-06 18:27:40,122 | [31mERROR[0m | processor:207 | Erreur annotation timbre 15: module 'numpy' has no attribute 'int0'
+2025-10-06 18:27:40,138 | [31mERROR[0m | processor:207 | Erreur annotation timbre 16: module 'numpy' has no attribute 'int0'
+2025-10-06 18:38:32,131 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-06 18:38:32,131 | [32mINFO[0m | processor:64 | Traitement: Numérisation_20251006.png
+2025-10-06 18:38:32,131 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-06 18:38:57,099 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-06 18:38:57,099 | [32mINFO[0m | processor:64 | Traitement: Numérisation_20251006.png
+2025-10-06 18:38:57,099 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-06 18:39:15,071 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-06 18:39:15,084 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-06 18:39:15,126 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-06 18:39:15,128 | [32mINFO[0m | opencv_detector:14 | ✓ OpenCV disponible (fallback)
+2025-10-06 18:39:15,128 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-06 18:39:15,128 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-10-06 18:39:15,572 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-06 18:39:34,493 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-06 18:39:34,493 | [32mINFO[0m | processor:64 | Traitement: Numérisation_20251006.png
+2025-10-06 18:39:34,493 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-06 18:39:46,159 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-06 18:39:46,159 | [32mINFO[0m | processor:64 | Traitement: Sans titre.png
+2025-10-06 18:39:46,159 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-06 18:39:46,288 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-06 18:39:46,297 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-06 18:39:46,297 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-06 18:39:46,297 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-06 18:39:46,318 | [32mINFO[0m | opencv_detector:54 | OpenCV: 16 timbre(s) détecté(s)
+2025-10-06 18:39:46,318 | [32mINFO[0m | processor:104 | ✓ 16 timbre(s) détecté(s)
+2025-10-06 18:39:46,339 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_001.png
+2025-10-06 18:39:46,359 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_002.png
+2025-10-06 18:39:46,371 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_003.png
+2025-10-06 18:39:46,392 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_004.png
+2025-10-06 18:39:46,422 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_005.png
+2025-10-06 18:39:46,443 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_006.png
+2025-10-06 18:39:46,468 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_007.png
+2025-10-06 18:39:46,489 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_008.png
+2025-10-06 18:39:46,510 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_009.png
+2025-10-06 18:39:46,531 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_010.png
+2025-10-06 18:39:46,548 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_011.png
+2025-10-06 18:39:46,569 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_012.png
+2025-10-06 18:39:46,591 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_013.png
+2025-10-06 18:39:46,609 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_014.png
+2025-10-06 18:39:46,625 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_015.png
+2025-10-06 18:39:46,650 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_016.png
+2025-10-06 18:39:46,650 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 16 fichier(s) généré(s)
+2025-10-06 18:39:46,786 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-06 18:39:46,803 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-06 18:39:46,819 | [31mERROR[0m | processor:207 | Erreur annotation timbre 3: module 'numpy' has no attribute 'int0'
+2025-10-06 18:39:46,837 | [31mERROR[0m | processor:207 | Erreur annotation timbre 4: module 'numpy' has no attribute 'int0'
+2025-10-06 18:39:46,854 | [31mERROR[0m | processor:207 | Erreur annotation timbre 5: module 'numpy' has no attribute 'int0'
+2025-10-06 18:39:46,870 | [31mERROR[0m | processor:207 | Erreur annotation timbre 6: module 'numpy' has no attribute 'int0'
+2025-10-06 18:39:46,886 | [31mERROR[0m | processor:207 | Erreur annotation timbre 7: module 'numpy' has no attribute 'int0'
+2025-10-06 18:39:46,903 | [31mERROR[0m | processor:207 | Erreur annotation timbre 8: module 'numpy' has no attribute 'int0'
+2025-10-06 18:39:46,920 | [31mERROR[0m | processor:207 | Erreur annotation timbre 9: module 'numpy' has no attribute 'int0'
+2025-10-06 18:39:46,937 | [31mERROR[0m | processor:207 | Erreur annotation timbre 10: module 'numpy' has no attribute 'int0'
+2025-10-06 18:39:46,953 | [31mERROR[0m | processor:207 | Erreur annotation timbre 11: module 'numpy' has no attribute 'int0'
+2025-10-06 18:39:46,971 | [31mERROR[0m | processor:207 | Erreur annotation timbre 12: module 'numpy' has no attribute 'int0'
+2025-10-06 18:39:46,987 | [31mERROR[0m | processor:207 | Erreur annotation timbre 13: module 'numpy' has no attribute 'int0'
+2025-10-06 18:39:47,004 | [31mERROR[0m | processor:207 | Erreur annotation timbre 14: module 'numpy' has no attribute 'int0'
+2025-10-06 18:39:47,021 | [31mERROR[0m | processor:207 | Erreur annotation timbre 15: module 'numpy' has no attribute 'int0'
+2025-10-06 18:39:47,037 | [31mERROR[0m | processor:207 | Erreur annotation timbre 16: module 'numpy' has no attribute 'int0'
+2025-10-06 18:40:23,476 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-06 18:40:23,485 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-06 18:40:23,519 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-06 18:40:23,519 | [32mINFO[0m | opencv_detector:14 | ✓ OpenCV disponible (fallback)
+2025-10-06 18:40:23,519 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-06 18:40:23,519 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-10-06 18:40:23,936 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-06 18:41:02,482 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-06 18:41:02,482 | [32mINFO[0m | processor:64 | Traitement: Numrisation20251006.png
+2025-10-06 18:41:02,482 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-06 18:41:02,596 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-06 18:41:02,609 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-06 18:41:02,609 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-06 18:41:02,609 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-06 18:41:02,625 | [32mINFO[0m | opencv_detector:54 | OpenCV: 5 timbre(s) détecté(s)
+2025-10-06 18:41:02,630 | [32mINFO[0m | processor:104 | ✓ 5 timbre(s) détecté(s)
+2025-10-06 18:41:02,651 | [32mINFO[0m | image_utils:272 | ✓ PNG: Numrisation20251006_stamp_001.png
+2025-10-06 18:41:02,655 | [32mINFO[0m | image_utils:292 | ✓ JPG: Numrisation20251006_stamp_001.jpg
+2025-10-06 18:41:02,672 | [32mINFO[0m | image_utils:272 | ✓ PNG: Numrisation20251006_stamp_002.png
+2025-10-06 18:41:02,676 | [32mINFO[0m | image_utils:292 | ✓ JPG: Numrisation20251006_stamp_002.jpg
+2025-10-06 18:41:02,697 | [32mINFO[0m | image_utils:272 | ✓ PNG: Numrisation20251006_stamp_003.png
+2025-10-06 18:41:02,701 | [32mINFO[0m | image_utils:292 | ✓ JPG: Numrisation20251006_stamp_003.jpg
+2025-10-06 18:41:02,721 | [32mINFO[0m | image_utils:272 | ✓ PNG: Numrisation20251006_stamp_004.png
+2025-10-06 18:41:02,725 | [32mINFO[0m | image_utils:292 | ✓ JPG: Numrisation20251006_stamp_004.jpg
+2025-10-06 18:41:02,746 | [32mINFO[0m | image_utils:272 | ✓ PNG: Numrisation20251006_stamp_005.png
+2025-10-06 18:41:02,750 | [32mINFO[0m | image_utils:292 | ✓ JPG: Numrisation20251006_stamp_005.jpg
+2025-10-06 18:41:02,750 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 10 fichier(s) généré(s)
+2025-10-06 18:41:02,891 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-06 18:41:02,905 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-06 18:41:02,923 | [31mERROR[0m | processor:207 | Erreur annotation timbre 3: module 'numpy' has no attribute 'int0'
+2025-10-06 18:41:02,940 | [31mERROR[0m | processor:207 | Erreur annotation timbre 4: module 'numpy' has no attribute 'int0'
+2025-10-06 18:41:02,952 | [31mERROR[0m | processor:207 | Erreur annotation timbre 5: module 'numpy' has no attribute 'int0'
+2025-10-06 18:42:05,028 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-06 18:42:05,028 | [32mINFO[0m | processor:64 | Traitement: Numrisation20251006.png
+2025-10-06 18:42:05,028 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-06 18:42:05,144 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-06 18:42:05,144 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-06 18:42:05,144 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-06 18:42:05,144 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-06 18:42:05,160 | [32mINFO[0m | opencv_detector:54 | OpenCV: 5 timbre(s) détecté(s)
+2025-10-06 18:42:05,164 | [32mINFO[0m | processor:104 | ✓ 5 timbre(s) détecté(s)
+2025-10-06 18:42:05,181 | [32mINFO[0m | image_utils:272 | ✓ PNG: Numrisation20251006_stamp_001.png
+2025-10-06 18:42:05,198 | [32mINFO[0m | image_utils:272 | ✓ PNG: Numrisation20251006_stamp_002.png
+2025-10-06 18:42:05,222 | [32mINFO[0m | image_utils:272 | ✓ PNG: Numrisation20251006_stamp_003.png
+2025-10-06 18:42:05,239 | [32mINFO[0m | image_utils:272 | ✓ PNG: Numrisation20251006_stamp_004.png
+2025-10-06 18:42:05,259 | [32mINFO[0m | image_utils:272 | ✓ PNG: Numrisation20251006_stamp_005.png
+2025-10-06 18:42:05,259 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 5 fichier(s) généré(s)
+2025-10-06 18:42:05,398 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-06 18:42:05,416 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-06 18:42:05,433 | [31mERROR[0m | processor:207 | Erreur annotation timbre 3: module 'numpy' has no attribute 'int0'
+2025-10-06 18:42:05,451 | [31mERROR[0m | processor:207 | Erreur annotation timbre 4: module 'numpy' has no attribute 'int0'
+2025-10-06 18:42:05,468 | [31mERROR[0m | processor:207 | Erreur annotation timbre 5: module 'numpy' has no attribute 'int0'
+2025-10-06 20:08:53,176 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-06 20:08:53,176 | [32mINFO[0m | processor:64 | Traitement: Sans titre.png
+2025-10-06 20:08:53,176 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-06 20:08:53,307 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-06 20:08:53,307 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-06 20:08:53,311 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-06 20:08:53,311 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-06 20:08:53,329 | [32mINFO[0m | opencv_detector:54 | OpenCV: 16 timbre(s) détecté(s)
+2025-10-06 20:08:53,333 | [32mINFO[0m | processor:104 | ✓ 16 timbre(s) détecté(s)
+2025-10-06 20:08:53,353 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_001.png
+2025-10-06 20:08:53,378 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_002.png
+2025-10-06 20:08:53,386 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_003.png
+2025-10-06 20:08:53,406 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_004.png
+2025-10-06 20:08:53,431 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_005.png
+2025-10-06 20:08:53,451 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_006.png
+2025-10-06 20:08:53,476 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_007.png
+2025-10-06 20:08:53,497 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_008.png
+2025-10-06 20:08:53,518 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_009.png
+2025-10-06 20:08:53,538 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_010.png
+2025-10-06 20:08:53,561 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_011.png
+2025-10-06 20:08:53,579 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_012.png
+2025-10-06 20:08:53,596 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_013.png
+2025-10-06 20:08:53,617 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_014.png
+2025-10-06 20:08:53,637 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_015.png
+2025-10-06 20:08:53,658 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_016.png
+2025-10-06 20:08:53,658 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 16 fichier(s) généré(s)
+2025-10-06 20:08:53,795 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-06 20:08:53,812 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-06 20:08:53,828 | [31mERROR[0m | processor:207 | Erreur annotation timbre 3: module 'numpy' has no attribute 'int0'
+2025-10-06 20:08:53,845 | [31mERROR[0m | processor:207 | Erreur annotation timbre 4: module 'numpy' has no attribute 'int0'
+2025-10-06 20:08:53,866 | [31mERROR[0m | processor:207 | Erreur annotation timbre 5: module 'numpy' has no attribute 'int0'
+2025-10-06 20:08:53,882 | [31mERROR[0m | processor:207 | Erreur annotation timbre 6: module 'numpy' has no attribute 'int0'
+2025-10-06 20:08:53,899 | [31mERROR[0m | processor:207 | Erreur annotation timbre 7: module 'numpy' has no attribute 'int0'
+2025-10-06 20:08:53,915 | [31mERROR[0m | processor:207 | Erreur annotation timbre 8: module 'numpy' has no attribute 'int0'
+2025-10-06 20:08:53,928 | [31mERROR[0m | processor:207 | Erreur annotation timbre 9: module 'numpy' has no attribute 'int0'
+2025-10-06 20:08:53,945 | [31mERROR[0m | processor:207 | Erreur annotation timbre 10: module 'numpy' has no attribute 'int0'
+2025-10-06 20:08:53,961 | [31mERROR[0m | processor:207 | Erreur annotation timbre 11: module 'numpy' has no attribute 'int0'
+2025-10-06 20:08:53,978 | [31mERROR[0m | processor:207 | Erreur annotation timbre 12: module 'numpy' has no attribute 'int0'
+2025-10-06 20:08:53,994 | [31mERROR[0m | processor:207 | Erreur annotation timbre 13: module 'numpy' has no attribute 'int0'
+2025-10-06 20:08:54,011 | [31mERROR[0m | processor:207 | Erreur annotation timbre 14: module 'numpy' has no attribute 'int0'
+2025-10-06 20:08:54,028 | [31mERROR[0m | processor:207 | Erreur annotation timbre 15: module 'numpy' has no attribute 'int0'
+2025-10-06 20:08:54,045 | [31mERROR[0m | processor:207 | Erreur annotation timbre 16: module 'numpy' has no attribute 'int0'
+2025-10-06 20:28:39,349 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-06 20:28:39,349 | [32mINFO[0m | processor:64 | Traitement: dvde.png
+2025-10-06 20:28:39,349 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-06 20:28:39,471 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-06 20:28:39,471 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-06 20:28:39,471 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-06 20:28:39,471 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-06 20:28:39,484 | [32mINFO[0m | opencv_detector:54 | OpenCV: 3 timbre(s) détecté(s)
+2025-10-06 20:28:39,488 | [32mINFO[0m | processor:104 | ✓ 3 timbre(s) détecté(s)
+2025-10-06 20:28:39,509 | [32mINFO[0m | image_utils:272 | ✓ PNG: dvde_stamp_001.png
+2025-10-06 20:28:39,530 | [32mINFO[0m | image_utils:272 | ✓ PNG: dvde_stamp_002.png
+2025-10-06 20:28:39,555 | [32mINFO[0m | image_utils:272 | ✓ PNG: dvde_stamp_003.png
+2025-10-06 20:28:39,555 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 3 fichier(s) généré(s)
+2025-10-06 20:28:39,698 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-06 20:28:39,716 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-06 20:28:39,732 | [31mERROR[0m | processor:207 | Erreur annotation timbre 3: module 'numpy' has no attribute 'int0'
+2025-10-07 20:39:17,265 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-07 20:39:17,269 | [32mINFO[0m | processor:64 | Traitement: Sans titre.png
+2025-10-07 20:39:17,269 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-07 20:39:17,391 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-07 20:39:17,391 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-07 20:39:17,391 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-07 20:39:17,391 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-07 20:39:17,406 | [32mINFO[0m | opencv_detector:54 | OpenCV: 6 timbre(s) détecté(s)
+2025-10-07 20:39:17,411 | [32mINFO[0m | processor:104 | ✓ 6 timbre(s) détecté(s)
+2025-10-07 20:39:17,436 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_001.png
+2025-10-07 20:39:17,456 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_002.png
+2025-10-07 20:39:17,476 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_003.png
+2025-10-07 20:39:17,497 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_004.png
+2025-10-07 20:39:17,520 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_005.png
+2025-10-07 20:39:17,541 | [32mINFO[0m | image_utils:272 | ✓ PNG: Sans titre_stamp_006.png
+2025-10-07 20:39:17,545 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 6 fichier(s) généré(s)
+2025-10-07 20:39:17,689 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-07 20:39:17,707 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-07 20:39:17,724 | [31mERROR[0m | processor:207 | Erreur annotation timbre 3: module 'numpy' has no attribute 'int0'
+2025-10-07 20:39:17,741 | [31mERROR[0m | processor:207 | Erreur annotation timbre 4: module 'numpy' has no attribute 'int0'
+2025-10-07 20:39:17,756 | [31mERROR[0m | processor:207 | Erreur annotation timbre 5: module 'numpy' has no attribute 'int0'
+2025-10-07 20:39:17,771 | [31mERROR[0m | processor:207 | Erreur annotation timbre 6: module 'numpy' has no attribute 'int0'
+2025-10-07 20:39:21,924 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-07 20:39:21,924 | [32mINFO[0m | processor:64 | Traitement: 2.png
+2025-10-07 20:39:21,924 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-07 20:39:22,043 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-07 20:39:22,043 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-07 20:39:22,047 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-07 20:39:22,047 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-07 20:39:22,059 | [32mINFO[0m | opencv_detector:54 | OpenCV: 7 timbre(s) détecté(s)
+2025-10-07 20:39:22,064 | [32mINFO[0m | processor:104 | ✓ 7 timbre(s) détecté(s)
+2025-10-07 20:39:22,080 | [32mINFO[0m | image_utils:272 | ✓ PNG: 2_stamp_001.png
+2025-10-07 20:39:22,112 | [32mINFO[0m | image_utils:272 | ✓ PNG: 2_stamp_002.png
+2025-10-07 20:39:22,128 | [32mINFO[0m | image_utils:272 | ✓ PNG: 2_stamp_003.png
+2025-10-07 20:39:22,149 | [32mINFO[0m | image_utils:272 | ✓ PNG: 2_stamp_004.png
+2025-10-07 20:39:22,174 | [32mINFO[0m | image_utils:272 | ✓ PNG: 2_stamp_005.png
+2025-10-07 20:39:22,195 | [32mINFO[0m | image_utils:272 | ✓ PNG: 2_stamp_006.png
+2025-10-07 20:39:22,223 | [32mINFO[0m | image_utils:272 | ✓ PNG: 2_stamp_007.png
+2025-10-07 20:39:22,223 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 7 fichier(s) généré(s)
+2025-10-07 20:39:22,357 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-07 20:39:22,378 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-07 20:39:22,390 | [31mERROR[0m | processor:207 | Erreur annotation timbre 3: module 'numpy' has no attribute 'int0'
+2025-10-07 20:39:22,407 | [31mERROR[0m | processor:207 | Erreur annotation timbre 4: module 'numpy' has no attribute 'int0'
+2025-10-07 20:39:22,424 | [31mERROR[0m | processor:207 | Erreur annotation timbre 5: module 'numpy' has no attribute 'int0'
+2025-10-07 20:39:22,440 | [31mERROR[0m | processor:207 | Erreur annotation timbre 6: module 'numpy' has no attribute 'int0'
+2025-10-07 20:39:22,453 | [31mERROR[0m | processor:207 | Erreur annotation timbre 7: module 'numpy' has no attribute 'int0'
+2025-10-08 23:05:40,400 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-08 23:05:40,400 | [32mINFO[0m | processor:64 | Traitement: bf f3365 15.png
+2025-10-08 23:05:40,404 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-08 23:05:40,543 | [32mINFO[0m | processor:76 | Dimensions: 2481x3506px
+2025-10-08 23:05:40,545 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-08 23:05:40,545 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-08 23:05:40,545 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-08 23:05:40,561 | [32mINFO[0m | opencv_detector:54 | OpenCV: 1 timbre(s) détecté(s)
+2025-10-08 23:05:40,561 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-08 23:05:40,772 | [32mINFO[0m | image_utils:272 | ✓ PNG: bf f3365 15_stamp_001.png
+2025-10-08 23:05:40,773 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-10-08 23:05:40,965 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-08 23:05:44,828 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-08 23:05:44,828 | [32mINFO[0m | processor:64 | Traitement: bf10.png
+2025-10-08 23:05:44,828 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-08 23:05:58,180 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-08 23:05:58,180 | [32mINFO[0m | processor:64 | Traitement: bf10.png
+2025-10-08 23:05:58,180 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-08 23:06:14,292 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-08 23:06:14,292 | [32mINFO[0m | processor:64 | Traitement: Sans titre.png
+2025-10-08 23:06:14,292 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-08 23:06:14,362 | [32mINFO[0m | processor:76 | Dimensions: 2180x1736px
+2025-10-08 23:06:14,362 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-08 23:06:14,362 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-08 23:06:14,362 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-08 23:06:14,374 | [32mINFO[0m | opencv_detector:54 | OpenCV: 0 timbre(s) détecté(s)
+2025-10-08 23:06:14,374 | [33mWARNING[0m | processor:93 | ⚠️ Aucun timbre détecté
+2025-10-08 23:06:20,203 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-08 23:06:20,203 | [32mINFO[0m | processor:64 | Traitement: Sans titre.png
+2025-10-08 23:06:20,203 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-08 23:06:20,274 | [32mINFO[0m | processor:76 | Dimensions: 2180x1736px
+2025-10-08 23:06:20,275 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-08 23:06:20,275 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-08 23:06:20,275 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-08 23:06:20,283 | [32mINFO[0m | opencv_detector:54 | OpenCV: 0 timbre(s) détecté(s)
+2025-10-08 23:06:20,283 | [33mWARNING[0m | processor:93 | ⚠️ Aucun timbre détecté
+2025-10-08 23:06:25,321 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-08 23:06:25,321 | [32mINFO[0m | processor:64 | Traitement: bf10.png
+2025-10-08 23:06:25,321 | [32mINFO[0m | processor:65 | ============================================================

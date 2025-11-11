@@ -1,0 +1,737 @@
+2025-10-12 10:14:41,447 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-12 10:14:42,099 | [32mINFO[0m | stamp_recognition:24 | ✓ Tesseract configuré: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-10-12 10:14:42,103 | [32mINFO[0m | stamp_recognition:29 | ✓ Données françaises disponibles
+2025-10-12 10:14:42,116 | [32mINFO[0m | main_window:50 | ✓ Reconnaissance visuelle intelligente disponible
+2025-10-12 10:14:42,143 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-12 10:14:42,338 | [32mINFO[0m | scanner_utils:42 | ✓ 1 scanner(s) trouvé(s)
+2025-10-12 10:14:43,355 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-12 10:14:43,462 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-12 10:14:43,462 | [32mINFO[0m | opencv_detector:15 | ✓ OpenCV disponible (fallback)
+2025-10-12 10:14:43,462 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-12 10:14:43,462 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-10-12 10:23:08,830 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-12 10:23:08,869 | [32mINFO[0m | stamp_recognition:24 | ✓ Tesseract configuré: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-10-12 10:23:08,869 | [32mINFO[0m | stamp_recognition:29 | ✓ Données françaises disponibles
+2025-10-12 10:23:08,954 | [32mINFO[0m | main_window:42 | ✓ Reconnaissance visuelle intelligente disponible
+2025-10-12 10:23:09,094 | [32mINFO[0m | main_window:52 | ✓ Google Vision API configurée et prête ⭐
+2025-10-12 10:23:09,094 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-12 10:23:09,143 | [32mINFO[0m | scanner_utils:42 | ✓ 1 scanner(s) trouvé(s)
+2025-10-12 10:23:09,536 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-12 10:23:09,627 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-12 10:23:09,627 | [32mINFO[0m | opencv_detector:15 | ✓ OpenCV disponible (fallback)
+2025-10-12 10:23:09,627 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-12 10:23:09,627 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-10-12 10:26:36,532 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 10:26:36,563 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 10:27:00,141 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_102636.png
+2025-10-12 10:27:05,606 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 10:27:05,606 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_102636.png
+2025-10-12 10:27:05,606 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 10:27:05,619 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 10:27:05,758 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 10:27:05,758 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 10:27:05,758 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 10:27:05,788 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 10:27:05,792 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 10:27:05,967 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_102636_stamp_001.png
+2025-10-12 10:27:06,106 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_102636_stamp_002.png
+2025-10-12 10:27:06,106 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 10:27:19,511 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 10:27:19,511 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_102636.png
+2025-10-12 10:27:19,511 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 10:27:19,523 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 10:27:19,527 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 10:27:19,527 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 10:27:19,527 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 10:27:19,548 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 10:27:19,548 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 10:27:19,718 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_102636_stamp_001.png
+2025-10-12 10:27:19,846 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_102636_stamp_002.png
+2025-10-12 10:27:19,846 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 10:27:19,932 | [32mINFO[0m | smart_recognition:238 | 🌐 Reconnaissance visuelle en ligne...
+2025-10-12 10:27:37,760 | [33mWARNING[0m | smart_recognition:61 | Échec upload ImgBB: 400
+2025-10-12 10:27:37,761 | [32mINFO[0m | smart_recognition:290 | Reconnaissance: 0% de confiance
+2025-10-12 10:27:37,762 | [32mINFO[0m | main_window:115 | Timbre 1: Reconnaissance visuelle terminée
+2025-10-12 10:27:37,806 | [32mINFO[0m | smart_recognition:238 | 🌐 Reconnaissance visuelle en ligne...
+2025-10-12 10:27:42,513 | [33mWARNING[0m | smart_recognition:61 | Échec upload ImgBB: 400
+2025-10-12 10:27:42,513 | [32mINFO[0m | smart_recognition:290 | Reconnaissance: 0% de confiance
+2025-10-12 10:27:42,518 | [32mINFO[0m | main_window:115 | Timbre 2: Reconnaissance visuelle terminée
+2025-10-12 10:27:42,518 | [32mINFO[0m | main_window:166 | ✓ Reconnaissance terminée pour 2 timbre(s)
+2025-10-12 11:07:41,914 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 11:07:41,935 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 11:08:05,382 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_110741.png
+2025-10-12 11:08:07,965 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 11:08:07,965 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_110741.png
+2025-10-12 11:08:07,965 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 11:08:07,981 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 11:08:07,981 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 11:08:07,981 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 11:08:07,981 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 11:08:07,998 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 11:08:08,002 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 11:08:08,107 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_110741_stamp_001.png
+2025-10-12 11:08:08,220 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_110741_stamp_002.png
+2025-10-12 11:08:08,220 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 11:10:08,475 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 11:10:08,475 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_110741.png
+2025-10-12 11:10:08,475 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 11:10:08,492 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 11:10:08,492 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 11:10:08,492 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 11:10:08,492 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 11:10:08,512 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 11:10:08,516 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 11:10:08,624 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_110741_stamp_001.png
+2025-10-12 11:10:08,733 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_110741_stamp_002.png
+2025-10-12 11:10:08,733 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 11:10:17,555 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 11:10:17,580 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 11:10:41,123 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_111017.png
+2025-10-12 11:11:40,050 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 11:11:40,050 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_111017.png
+2025-10-12 11:11:40,050 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 11:11:40,066 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 11:11:40,066 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 11:11:40,066 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 11:11:40,066 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 11:11:40,089 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 11:11:40,092 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 11:11:40,249 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111017_stamp_001.png
+2025-10-12 11:11:40,354 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111017_stamp_002.png
+2025-10-12 11:11:40,354 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 11:13:29,089 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 11:13:29,114 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 11:13:52,233 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_111329.png
+2025-10-12 11:13:53,040 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 11:13:53,040 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_111329.png
+2025-10-12 11:13:53,040 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 11:13:53,056 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 11:13:53,056 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 11:13:53,056 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 11:13:53,056 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 11:13:53,075 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 11:13:53,077 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 11:13:53,235 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111329_stamp_001.png
+2025-10-12 11:13:53,340 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111329_stamp_002.png
+2025-10-12 11:13:53,340 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 11:16:42,357 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 11:16:42,382 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 11:17:05,768 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_111642.png
+2025-10-12 11:17:30,508 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 11:17:30,511 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_111642.png
+2025-10-12 11:17:30,511 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 11:17:30,524 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 11:17:30,524 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 11:17:30,528 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 11:17:30,528 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 11:17:30,550 | [32mINFO[0m | opencv_detector:89 | OpenCV: 19 timbre(s)/bloc(s) détecté(s)
+2025-10-12 11:17:30,552 | [32mINFO[0m | processor:104 | ✓ 19 timbre(s) détecté(s)
+2025-10-12 11:17:30,610 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_001.png
+2025-10-12 11:17:30,721 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_002.png
+2025-10-12 11:17:30,745 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_003.png
+2025-10-12 11:17:30,769 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_004.png
+2025-10-12 11:17:30,791 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_005.png
+2025-10-12 11:17:30,812 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_006.png
+2025-10-12 11:17:30,835 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_007.png
+2025-10-12 11:17:30,857 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_008.png
+2025-10-12 11:17:30,899 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_009.png
+2025-10-12 11:17:30,920 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_010.png
+2025-10-12 11:17:30,941 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_011.png
+2025-10-12 11:17:30,962 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_012.png
+2025-10-12 11:17:30,988 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_013.png
+2025-10-12 11:17:31,009 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_014.png
+2025-10-12 11:17:31,030 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_015.png
+2025-10-12 11:17:31,054 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_016.png
+2025-10-12 11:17:31,078 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_017.png
+2025-10-12 11:17:31,099 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_018.png
+2025-10-12 11:17:31,124 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111642_stamp_019.png
+2025-10-12 11:17:31,128 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 19 fichier(s) généré(s)
+2025-10-12 11:19:43,600 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 11:19:43,626 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 11:20:06,907 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_111943.png
+2025-10-12 11:20:09,075 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 11:20:09,075 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_111943.png
+2025-10-12 11:20:09,075 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 11:20:09,088 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 11:20:09,088 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 11:20:09,088 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 11:20:09,088 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 11:20:09,113 | [32mINFO[0m | opencv_detector:89 | OpenCV: 19 timbre(s)/bloc(s) détecté(s)
+2025-10-12 11:20:09,117 | [32mINFO[0m | processor:104 | ✓ 19 timbre(s) détecté(s)
+2025-10-12 11:20:09,281 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_001.png
+2025-10-12 11:20:09,306 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_002.png
+2025-10-12 11:20:09,330 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_003.png
+2025-10-12 11:20:09,357 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_004.png
+2025-10-12 11:20:09,376 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_005.png
+2025-10-12 11:20:09,400 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_006.png
+2025-10-12 11:20:09,430 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_007.png
+2025-10-12 11:20:09,455 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_008.png
+2025-10-12 11:20:09,471 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_009.png
+2025-10-12 11:20:09,488 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_010.png
+2025-10-12 11:20:09,495 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_011.png
+2025-10-12 11:20:09,502 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_012.png
+2025-10-12 11:20:09,527 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_013.png
+2025-10-12 11:20:09,548 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_014.png
+2025-10-12 11:20:09,573 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_015.png
+2025-10-12 11:20:09,594 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_016.png
+2025-10-12 11:20:09,611 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_017.png
+2025-10-12 11:20:09,645 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_018.png
+2025-10-12 11:20:09,668 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_019.png
+2025-10-12 11:20:09,668 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 19 fichier(s) généré(s)
+2025-10-12 11:21:21,994 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 11:21:21,994 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_111943.png
+2025-10-12 11:21:21,994 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 11:21:22,009 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 11:21:22,014 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 11:21:22,014 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 11:21:22,014 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 11:21:22,035 | [32mINFO[0m | opencv_detector:89 | OpenCV: 19 timbre(s)/bloc(s) détecté(s)
+2025-10-12 11:21:22,039 | [32mINFO[0m | processor:104 | ✓ 19 timbre(s) détecté(s)
+2025-10-12 11:21:22,207 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_001.png
+2025-10-12 11:21:22,232 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_002.png
+2025-10-12 11:21:22,257 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_003.png
+2025-10-12 11:21:22,278 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_004.png
+2025-10-12 11:21:22,303 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_005.png
+2025-10-12 11:21:22,324 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_006.png
+2025-10-12 11:21:22,353 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_007.png
+2025-10-12 11:21:22,377 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_008.png
+2025-10-12 11:21:22,394 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_009.png
+2025-10-12 11:21:22,411 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_010.png
+2025-10-12 11:21:22,419 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_011.png
+2025-10-12 11:21:22,428 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_012.png
+2025-10-12 11:21:22,448 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_013.png
+2025-10-12 11:21:22,469 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_014.png
+2025-10-12 11:21:22,494 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_015.png
+2025-10-12 11:21:22,514 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_016.png
+2025-10-12 11:21:22,530 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_017.png
+2025-10-12 11:21:22,555 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_018.png
+2025-10-12 11:21:22,576 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_111943_stamp_019.png
+2025-10-12 11:21:22,576 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 19 fichier(s) généré(s)
+2025-10-12 11:26:14,605 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 11:26:14,630 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 11:26:37,995 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_112614.png
+2025-10-12 11:45:08,973 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 11:45:08,973 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_112614.png
+2025-10-12 11:45:08,973 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 11:45:08,989 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 11:45:08,989 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 11:45:08,990 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 11:45:08,990 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 11:45:09,010 | [32mINFO[0m | opencv_detector:89 | OpenCV: 13 timbre(s)/bloc(s) détecté(s)
+2025-10-12 11:45:09,014 | [32mINFO[0m | processor:104 | ✓ 13 timbre(s) détecté(s)
+2025-10-12 11:45:09,032 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_112614_stamp_001.png
+2025-10-12 11:45:09,049 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_112614_stamp_002.png
+2025-10-12 11:45:09,063 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_112614_stamp_003.png
+2025-10-12 11:45:09,082 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_112614_stamp_004.png
+2025-10-12 11:45:09,105 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_112614_stamp_005.png
+2025-10-12 11:45:09,123 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_112614_stamp_006.png
+2025-10-12 11:45:09,140 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_112614_stamp_007.png
+2025-10-12 11:45:09,159 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_112614_stamp_008.png
+2025-10-12 11:45:09,175 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_112614_stamp_009.png
+2025-10-12 11:45:09,198 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_112614_stamp_010.png
+2025-10-12 11:45:09,234 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_112614_stamp_011.png
+2025-10-12 11:45:09,251 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_112614_stamp_012.png
+2025-10-12 11:45:09,428 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_112614_stamp_013.png
+2025-10-12 11:45:09,429 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 13 fichier(s) généré(s)
+2025-10-12 11:45:54,209 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 11:45:54,232 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 11:46:17,631 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_114554.png
+2025-10-12 11:46:20,237 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 11:46:20,237 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_114554.png
+2025-10-12 11:46:20,238 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 11:46:20,251 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 11:46:20,253 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 11:46:20,253 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 11:46:20,254 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 11:46:20,268 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 11:46:20,273 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 11:46:20,375 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_114554_stamp_001.png
+2025-10-12 11:46:20,456 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_114554_stamp_002.png
+2025-10-12 11:46:20,456 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 11:48:44,891 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 11:48:44,919 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 11:49:08,212 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_114844.png
+2025-10-12 11:49:34,743 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 11:49:34,743 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_114844.png
+2025-10-12 11:49:34,744 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 11:49:34,759 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 11:49:34,761 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 11:49:34,761 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 11:49:34,761 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 11:49:34,781 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 11:49:34,785 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 11:49:34,903 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_114844_stamp_001.png
+2025-10-12 11:49:35,071 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_114844_stamp_002.png
+2025-10-12 11:49:35,071 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 11:56:05,180 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 11:56:05,205 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 11:56:27,817 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_115605.png
+2025-10-12 11:56:30,187 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 11:56:30,187 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_115605.png
+2025-10-12 11:56:30,188 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 11:56:30,202 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 11:56:30,203 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 11:56:30,204 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 11:56:30,204 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 11:56:30,225 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 11:56:30,228 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 11:56:30,330 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115605_stamp_001.png
+2025-10-12 11:56:30,487 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115605_stamp_002.png
+2025-10-12 11:56:30,487 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 11:58:47,629 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 11:58:47,652 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 11:59:10,865 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_115847.png
+2025-10-12 11:59:14,266 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 11:59:14,266 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_115847.png
+2025-10-12 11:59:14,266 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 11:59:14,280 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 11:59:14,282 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 11:59:14,282 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 11:59:14,283 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 11:59:14,303 | [32mINFO[0m | opencv_detector:89 | OpenCV: 15 timbre(s)/bloc(s) détecté(s)
+2025-10-12 11:59:14,307 | [32mINFO[0m | processor:104 | ✓ 15 timbre(s) détecté(s)
+2025-10-12 11:59:14,315 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115847_stamp_001.png
+2025-10-12 11:59:14,330 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115847_stamp_002.png
+2025-10-12 11:59:14,347 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115847_stamp_003.png
+2025-10-12 11:59:14,364 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115847_stamp_004.png
+2025-10-12 11:59:14,381 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115847_stamp_005.png
+2025-10-12 11:59:14,409 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115847_stamp_006.png
+2025-10-12 11:59:14,427 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115847_stamp_007.png
+2025-10-12 11:59:14,443 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115847_stamp_008.png
+2025-10-12 11:59:14,464 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115847_stamp_009.png
+2025-10-12 11:59:14,630 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115847_stamp_010.png
+2025-10-12 11:59:14,636 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115847_stamp_011.png
+2025-10-12 11:59:14,639 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115847_stamp_012.png
+2025-10-12 11:59:14,652 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115847_stamp_013.png
+2025-10-12 11:59:14,667 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115847_stamp_014.png
+2025-10-12 11:59:14,692 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115847_stamp_015.png
+2025-10-12 11:59:14,692 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 15 fichier(s) généré(s)
+2025-10-12 11:59:33,369 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 11:59:33,393 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 11:59:56,588 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_115933.png
+2025-10-12 12:00:01,134 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 12:00:01,135 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_115933.png
+2025-10-12 12:00:01,135 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 12:00:01,152 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 12:00:01,153 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 12:00:01,153 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 12:00:01,154 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 12:00:01,178 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 12:00:01,181 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 12:00:01,338 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115933_stamp_001.png
+2025-10-12 12:00:01,436 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_115933_stamp_002.png
+2025-10-12 12:00:01,436 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 12:03:01,529 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 12:03:01,555 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 12:03:24,786 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_120301.png
+2025-10-12 12:03:27,202 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 12:03:27,202 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_120301.png
+2025-10-12 12:03:27,202 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 12:03:27,216 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 12:03:27,218 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 12:03:27,218 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 12:03:27,218 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 12:03:27,235 | [32mINFO[0m | opencv_detector:89 | OpenCV: 3 timbre(s)/bloc(s) détecté(s)
+2025-10-12 12:03:27,240 | [32mINFO[0m | processor:104 | ✓ 3 timbre(s) détecté(s)
+2025-10-12 12:03:27,319 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_120301_stamp_001.png
+2025-10-12 12:03:27,429 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_120301_stamp_002.png
+2025-10-12 12:03:27,537 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_120301_stamp_003.png
+2025-10-12 12:03:27,538 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 3 fichier(s) généré(s)
+2025-10-12 12:06:19,320 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 12:06:19,345 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 12:06:42,583 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_120619.png
+2025-10-12 12:06:50,342 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 12:06:50,342 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_120619.png
+2025-10-12 12:06:50,343 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 12:06:50,357 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 12:06:50,358 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 12:06:50,359 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 12:06:50,359 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 12:06:50,375 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 12:06:50,378 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 12:06:50,473 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_120619_stamp_001.png
+2025-10-12 12:06:50,583 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_120619_stamp_002.png
+2025-10-12 12:06:50,583 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 12:09:01,925 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 12:09:01,950 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 12:09:25,236 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_120901.png
+2025-10-12 12:09:33,300 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 12:09:33,301 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_120901.png
+2025-10-12 12:09:33,301 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 12:09:33,315 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 12:09:33,316 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 12:09:33,317 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 12:09:33,317 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 12:09:33,334 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 12:09:33,338 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 12:09:33,447 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_120901_stamp_001.png
+2025-10-12 12:09:33,617 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_120901_stamp_002.png
+2025-10-12 12:09:33,617 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 12:11:45,276 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 12:11:45,301 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 12:12:08,508 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_121145.png
+2025-10-12 12:12:14,127 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 12:12:14,128 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_121145.png
+2025-10-12 12:12:14,128 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 12:12:14,143 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 12:12:14,144 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 12:12:14,144 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 12:12:14,145 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 12:12:14,164 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 12:12:14,168 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 12:12:14,337 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_121145_stamp_001.png
+2025-10-12 12:12:14,430 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_121145_stamp_002.png
+2025-10-12 12:12:14,431 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 12:13:51,673 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 12:13:51,698 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 12:14:07,577 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 12:14:07,577 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_121145.png
+2025-10-12 12:14:07,577 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 12:14:07,593 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 12:14:07,594 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 12:14:07,594 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 12:14:07,594 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 12:14:07,613 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 12:14:07,616 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 12:14:07,785 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_121145_stamp_001.png
+2025-10-12 12:14:07,878 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_121145_stamp_002.png
+2025-10-12 12:14:07,879 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 12:14:15,079 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_121351.png
+2025-10-12 12:14:23,265 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 12:14:23,265 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_121351.png
+2025-10-12 12:14:23,265 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 12:14:23,280 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 12:14:23,281 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 12:14:23,282 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 12:14:23,282 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 12:14:23,305 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 12:14:23,308 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 12:14:23,491 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_121351_stamp_001.png
+2025-10-12 12:14:23,600 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_121351_stamp_002.png
+2025-10-12 12:14:23,600 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 12:16:34,840 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 12:16:34,863 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 12:16:58,237 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_121634.png
+2025-10-12 12:16:59,545 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 12:16:59,545 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_121634.png
+2025-10-12 12:16:59,546 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 12:16:59,562 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 12:16:59,564 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 12:16:59,564 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 12:16:59,564 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 12:16:59,582 | [32mINFO[0m | opencv_detector:89 | OpenCV: 3 timbre(s)/bloc(s) détecté(s)
+2025-10-12 12:16:59,587 | [32mINFO[0m | processor:104 | ✓ 3 timbre(s) détecté(s)
+2025-10-12 12:16:59,692 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_121634_stamp_001.png
+2025-10-12 12:16:59,770 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_121634_stamp_002.png
+2025-10-12 12:16:59,879 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_121634_stamp_003.png
+2025-10-12 12:16:59,879 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 3 fichier(s) généré(s)
+2025-10-12 12:19:06,219 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 12:19:06,242 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 12:19:29,459 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_121906.png
+2025-10-12 12:19:49,736 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 12:19:49,759 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 12:19:54,043 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 12:19:54,044 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_121906.png
+2025-10-12 12:19:54,044 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 12:19:54,059 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 12:19:54,060 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 12:19:54,061 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 12:19:54,061 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 12:19:54,077 | [32mINFO[0m | opencv_detector:89 | OpenCV: 3 timbre(s)/bloc(s) détecté(s)
+2025-10-12 12:19:54,081 | [32mINFO[0m | processor:104 | ✓ 3 timbre(s) détecté(s)
+2025-10-12 12:19:54,159 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_121906_stamp_001.png
+2025-10-12 12:19:54,229 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_121906_stamp_002.png
+2025-10-12 12:19:54,331 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_121906_stamp_003.png
+2025-10-12 12:19:54,332 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 3 fichier(s) généré(s)
+2025-10-12 12:20:13,002 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_121949.png
+2025-10-12 12:22:38,457 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 12:22:38,481 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 12:23:01,701 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_122238.png
+2025-10-12 12:23:04,807 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 12:23:04,807 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_122238.png
+2025-10-12 12:23:04,807 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 12:23:04,821 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 12:23:04,822 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 12:23:04,823 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 12:23:04,823 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 12:23:04,842 | [32mINFO[0m | opencv_detector:89 | OpenCV: 5 timbre(s)/bloc(s) détecté(s)
+2025-10-12 12:23:04,845 | [32mINFO[0m | processor:104 | ✓ 5 timbre(s) détecté(s)
+2025-10-12 12:23:04,860 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_122238_stamp_001.png
+2025-10-12 12:23:04,876 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_122238_stamp_002.png
+2025-10-12 12:23:04,923 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_122238_stamp_003.png
+2025-10-12 12:23:05,009 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_122238_stamp_004.png
+2025-10-12 12:23:05,120 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_122238_stamp_005.png
+2025-10-12 12:23:05,120 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 5 fichier(s) généré(s)
+2025-10-12 12:25:19,371 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 12:25:19,396 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 12:25:42,844 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_122519.png
+2025-10-12 12:25:47,505 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 12:25:47,505 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_122519.png
+2025-10-12 12:25:47,506 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 12:25:47,520 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 12:25:47,521 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 12:25:47,521 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 12:25:47,521 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 12:25:47,541 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 12:25:47,545 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 12:25:47,695 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_122519_stamp_001.png
+2025-10-12 12:25:47,798 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_122519_stamp_002.png
+2025-10-12 12:25:47,798 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 15:20:59,522 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 15:20:59,549 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 15:21:22,883 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_152059.png
+2025-10-12 15:21:24,423 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 15:21:24,423 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_152059.png
+2025-10-12 15:21:24,423 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 15:21:24,450 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 15:21:24,451 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 15:21:24,452 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 15:21:24,452 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 15:21:24,478 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 15:21:24,482 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 15:21:24,591 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_152059_stamp_001.png
+2025-10-12 15:21:24,755 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_152059_stamp_002.png
+2025-10-12 15:21:24,755 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 15:23:34,855 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 15:23:34,878 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 15:23:58,016 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_152334.png
+2025-10-12 15:24:05,080 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 15:24:05,080 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_152334.png
+2025-10-12 15:24:05,080 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 15:24:05,099 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 15:24:05,100 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 15:24:05,101 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 15:24:05,102 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 15:24:05,122 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-10-12 15:24:05,127 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-12 15:24:05,245 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_152334_stamp_001.png
+2025-10-12 15:24:05,245 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-10-12 15:25:05,012 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 15:25:05,038 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 15:25:28,210 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_152505.png
+2025-10-12 15:25:30,400 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 15:25:30,400 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_152505.png
+2025-10-12 15:25:30,401 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 15:25:30,415 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 15:25:30,416 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 15:25:30,417 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 15:25:30,417 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 15:25:30,436 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-10-12 15:25:30,440 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-12 15:25:30,754 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_152505_stamp_001.png
+2025-10-12 15:25:30,754 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-10-12 15:26:36,467 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 15:26:36,493 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 15:26:59,721 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_152636.png
+2025-10-12 15:27:03,584 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 15:27:03,585 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_152636.png
+2025-10-12 15:27:03,585 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 15:27:03,604 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 15:27:03,605 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 15:27:03,607 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 15:27:03,607 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 15:27:03,634 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-10-12 15:27:03,639 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-12 15:27:03,967 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_152636_stamp_001.png
+2025-10-12 15:27:03,967 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-10-12 15:28:23,725 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 15:28:23,753 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 15:28:46,928 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_152823.png
+2025-10-12 15:29:25,879 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 15:29:25,879 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_152823.png
+2025-10-12 15:29:25,879 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 15:29:25,899 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 15:29:25,900 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 15:29:25,901 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 15:29:25,901 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 15:29:25,925 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-10-12 15:29:25,929 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-12 15:29:26,137 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_152823_stamp_001.png
+2025-10-12 15:29:26,138 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-10-12 15:31:03,723 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 15:31:03,748 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 15:31:27,233 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_153103.png
+2025-10-12 15:31:30,012 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 15:31:30,013 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_153103.png
+2025-10-12 15:31:30,013 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 15:31:30,027 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 15:31:30,029 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 15:31:30,029 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 15:31:30,029 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 15:31:30,045 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-10-12 15:31:30,049 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-12 15:31:30,251 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_153103_stamp_001.png
+2025-10-12 15:31:30,251 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-10-12 15:32:36,979 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 15:32:37,007 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 15:33:00,187 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_153236.png
+2025-10-12 15:33:04,678 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 15:33:04,678 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_153236.png
+2025-10-12 15:33:04,678 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 15:33:04,693 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 15:33:04,695 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 15:33:04,695 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 15:33:04,695 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 15:33:04,712 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-10-12 15:33:04,716 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-12 15:33:04,914 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_153236_stamp_001.png
+2025-10-12 15:33:04,914 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-10-12 15:34:29,197 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 15:34:29,220 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 15:34:51,841 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_153429.png
+2025-10-12 15:34:55,745 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 15:34:55,745 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_153429.png
+2025-10-12 15:34:55,745 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 15:34:55,760 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 15:34:55,761 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 15:34:55,761 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 15:34:55,761 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 15:34:55,781 | [32mINFO[0m | opencv_detector:89 | OpenCV: 3 timbre(s)/bloc(s) détecté(s)
+2025-10-12 15:34:55,784 | [32mINFO[0m | processor:104 | ✓ 3 timbre(s) détecté(s)
+2025-10-12 15:34:55,893 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_153429_stamp_001.png
+2025-10-12 15:34:55,995 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_153429_stamp_002.png
+2025-10-12 15:34:56,087 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_153429_stamp_003.png
+2025-10-12 15:34:56,087 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 3 fichier(s) généré(s)
+2025-10-12 15:40:06,686 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 15:40:06,712 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 15:40:29,910 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_154006.png
+2025-10-12 15:40:31,903 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 15:40:31,903 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_154006.png
+2025-10-12 15:40:31,904 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 15:40:31,921 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 15:40:31,923 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 15:40:31,924 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 15:40:31,924 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 15:40:31,945 | [32mINFO[0m | opencv_detector:89 | OpenCV: 3 timbre(s)/bloc(s) détecté(s)
+2025-10-12 15:40:31,949 | [32mINFO[0m | processor:104 | ✓ 3 timbre(s) détecté(s)
+2025-10-12 15:40:32,062 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_154006_stamp_001.png
+2025-10-12 15:40:32,187 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_154006_stamp_002.png
+2025-10-12 15:40:32,310 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_154006_stamp_003.png
+2025-10-12 15:40:32,310 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 3 fichier(s) généré(s)
+2025-10-12 15:44:25,397 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 15:44:25,422 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 15:44:48,593 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_154425.png
+2025-10-12 15:44:50,454 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 15:44:50,455 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_154425.png
+2025-10-12 15:44:50,455 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 15:44:50,469 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 15:44:50,470 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 15:44:50,470 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 15:44:50,471 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 15:44:50,489 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-12 15:44:50,492 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-12 15:44:50,701 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_154425_stamp_001.png
+2025-10-12 15:44:50,797 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_154425_stamp_002.png
+2025-10-12 15:44:50,797 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-12 15:46:39,738 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 15:46:39,763 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 15:47:02,982 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_154639.png
+2025-10-12 15:47:12,370 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 15:47:12,370 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_154639.png
+2025-10-12 15:47:12,371 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 15:47:12,387 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 15:47:12,388 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 15:47:12,390 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 15:47:12,390 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 15:47:12,409 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-10-12 15:47:12,413 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-12 15:47:12,623 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_154639_stamp_001.png
+2025-10-12 15:47:12,623 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-10-12 17:38:23,419 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 17:38:23,444 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 17:38:46,631 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_173823.png
+2025-10-12 17:38:48,670 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 17:38:48,671 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_173823.png
+2025-10-12 17:38:48,671 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 17:38:48,685 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 17:38:48,687 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 17:38:48,687 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 17:38:48,687 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 17:38:48,706 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-10-12 17:38:48,709 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-12 17:38:49,017 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_173823_stamp_001.png
+2025-10-12 17:38:49,018 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-10-12 17:40:06,028 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 17:40:06,053 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 17:40:29,211 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_174006.png
+2025-10-12 17:40:54,877 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 17:40:54,878 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_174006.png
+2025-10-12 17:40:54,878 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 17:40:54,893 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 17:40:54,894 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 17:40:54,894 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 17:40:54,894 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 17:40:54,916 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-10-12 17:40:54,919 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-12 17:40:55,236 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_174006_stamp_001.png
+2025-10-12 17:40:55,236 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-10-12 17:42:13,900 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 17:42:13,923 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 17:42:37,389 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_174213.png
+2025-10-12 17:42:40,280 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 17:42:40,280 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_174213.png
+2025-10-12 17:42:40,280 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 17:42:40,294 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 17:42:40,296 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 17:42:40,296 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 17:42:40,296 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 17:42:40,318 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-10-12 17:42:40,321 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-12 17:42:40,638 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_174213_stamp_001.png
+2025-10-12 17:42:40,638 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-10-12 17:43:49,594 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 17:43:49,618 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 17:44:12,891 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_174349.png
+2025-10-12 17:44:18,101 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 17:44:18,101 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_174349.png
+2025-10-12 17:44:18,101 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 17:44:18,116 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 17:44:18,117 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 17:44:18,117 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 17:44:18,118 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 17:44:18,140 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-10-12 17:44:18,143 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-12 17:44:18,462 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_174349_stamp_001.png
+2025-10-12 17:44:18,462 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-10-12 17:45:19,156 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 17:45:19,180 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 17:45:42,339 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_174519.png
+2025-10-12 17:45:48,675 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 17:45:48,675 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_174519.png
+2025-10-12 17:45:48,675 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 17:45:48,690 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 17:45:48,692 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 17:45:48,692 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 17:45:48,692 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 17:45:48,714 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-10-12 17:45:48,717 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-12 17:45:49,032 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_174519_stamp_001.png
+2025-10-12 17:45:49,033 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-10-12 17:46:26,034 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 17:46:26,057 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 17:46:49,374 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_174626.png
+2025-10-12 17:47:02,539 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 17:47:02,539 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_174626.png
+2025-10-12 17:47:02,540 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 17:47:02,554 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 17:47:02,555 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 17:47:02,555 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 17:47:02,555 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 17:47:02,574 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-10-12 17:47:02,578 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-12 17:47:02,891 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_174626_stamp_001.png
+2025-10-12 17:47:02,892 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-10-12 17:47:59,304 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-12 17:47:59,327 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-12 17:48:21,834 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251012_174759.png
+2025-10-12 17:48:36,538 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-12 17:48:36,539 | [32mINFO[0m | processor:64 | Traitement: scan_20251012_174759.png
+2025-10-12 17:48:36,539 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-12 17:48:36,555 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-12 17:48:36,556 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-12 17:48:36,557 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-12 17:48:36,558 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-12 17:48:36,579 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-10-12 17:48:36,583 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-12 17:48:36,912 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251012_174759_stamp_001.png
+2025-10-12 17:48:36,913 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)

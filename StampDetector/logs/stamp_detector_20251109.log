@@ -1,0 +1,276 @@
+2025-11-09 17:11:15,775 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-11-09 17:11:16,402 | [32mINFO[0m | stamp_recognition:24 | ✓ Tesseract configuré: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-11-09 17:11:16,403 | [32mINFO[0m | stamp_recognition:29 | ✓ Données françaises disponibles
+2025-11-09 17:11:17,100 | [32mINFO[0m | main_window:42 | ✓ Reconnaissance visuelle intelligente disponible
+2025-11-09 17:11:19,763 | [32mINFO[0m | main_window:54 | Google Vision disponible mais credentials non configurés
+2025-11-09 17:11:19,765 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-11-09 17:11:19,948 | [32mINFO[0m | scanner_utils:42 | ✓ 2 scanner(s) trouvé(s)
+2025-11-09 17:11:20,529 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-11-09 17:11:20,648 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-11-09 17:11:20,649 | [32mINFO[0m | opencv_detector:15 | ✓ OpenCV disponible (fallback)
+2025-11-09 17:11:20,649 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-11-09 17:11:20,649 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-11-09 17:11:23,354 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-11-09 17:11:23,384 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-11-09 17:11:46,503 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251109_171123.png
+2025-11-09 17:13:02,980 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 17:13:03,003 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-11-09 17:13:10,328 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251109_171302.png
+2025-11-09 17:13:19,392 | [32mINFO[0m | processor:63 | ============================================================
+2025-11-09 17:13:19,392 | [32mINFO[0m | processor:64 | Traitement: scan_20251109_171302.png
+2025-11-09 17:13:19,392 | [32mINFO[0m | processor:65 | ============================================================
+2025-11-09 17:13:19,396 | [32mINFO[0m | processor:76 | Dimensions: 1240x1753px
+2025-11-09 17:13:19,552 | [32mINFO[0m | image_utils:30 | DPI détecté: 149
+2025-11-09 17:13:19,552 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 6px @ 149DPI
+2025-11-09 17:13:19,553 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-11-09 17:13:19,568 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-11-09 17:13:19,569 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-11-09 17:13:19,581 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_171302_stamp_001.png
+2025-11-09 17:13:19,582 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-11-09 17:14:59,091 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 17:14:59,117 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 400DPI, color...
+2025-11-09 17:15:06,457 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251109_171459.png
+2025-11-09 17:15:13,137 | [32mINFO[0m | processor:63 | ============================================================
+2025-11-09 17:15:13,137 | [32mINFO[0m | processor:64 | Traitement: scan_20251109_171459.png
+2025-11-09 17:15:13,138 | [32mINFO[0m | processor:65 | ============================================================
+2025-11-09 17:15:13,141 | [32mINFO[0m | processor:76 | Dimensions: 1239x1753px
+2025-11-09 17:15:13,142 | [32mINFO[0m | image_utils:30 | DPI détecté: 149
+2025-11-09 17:15:13,142 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 6px @ 149DPI
+2025-11-09 17:15:13,142 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-11-09 17:15:13,146 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-11-09 17:15:13,146 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-11-09 17:15:13,154 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_171459_stamp_001.png
+2025-11-09 17:15:13,155 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-11-09 20:29:59,576 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-11-09 20:29:59,971 | [32mINFO[0m | stamp_recognition:24 | ✓ Tesseract configuré: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-11-09 20:29:59,971 | [32mINFO[0m | stamp_recognition:29 | ✓ Données françaises disponibles
+2025-11-09 20:30:00,471 | [32mINFO[0m | main_window:42 | ✓ Reconnaissance visuelle intelligente disponible
+2025-11-09 20:30:01,914 | [32mINFO[0m | main_window:54 | Google Vision disponible mais credentials non configurés
+2025-11-09 20:30:01,930 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-11-09 20:30:02,078 | [32mINFO[0m | scanner_utils:42 | ✓ 1 scanner(s) trouvé(s)
+2025-11-09 20:30:02,881 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-11-09 20:30:02,963 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-11-09 20:30:02,963 | [32mINFO[0m | opencv_detector:15 | ✓ OpenCV disponible (fallback)
+2025-11-09 20:30:02,963 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-11-09 20:30:02,963 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-11-09 20:30:12,270 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 20:30:12,295 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 400DPI, color...
+2025-11-09 20:30:12,310 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: 'NoneType' object has no attribute 'SaveFile'
+2025-11-09 20:30:27,207 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 20:30:27,229 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 400DPI, color...
+2025-11-09 20:30:37,635 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251109_203027.png
+2025-11-09 20:30:42,791 | [32mINFO[0m | processor:63 | ============================================================
+2025-11-09 20:30:42,792 | [32mINFO[0m | processor:64 | Traitement: scan_20251109_203027.png
+2025-11-09 20:30:42,792 | [32mINFO[0m | processor:65 | ============================================================
+2025-11-09 20:30:42,795 | [32mINFO[0m | processor:76 | Dimensions: 1239x1753px
+2025-11-09 20:30:42,898 | [32mINFO[0m | image_utils:30 | DPI détecté: 149
+2025-11-09 20:30:42,899 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 6px @ 149DPI
+2025-11-09 20:30:42,899 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-11-09 20:30:42,905 | [32mINFO[0m | opencv_detector:89 | OpenCV: 4 timbre(s)/bloc(s) détecté(s)
+2025-11-09 20:30:42,906 | [32mINFO[0m | processor:104 | ✓ 4 timbre(s) détecté(s)
+2025-11-09 20:30:42,919 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_203027_stamp_001.png
+2025-11-09 20:30:42,927 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_203027_stamp_002.png
+2025-11-09 20:30:42,936 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_203027_stamp_003.png
+2025-11-09 20:30:42,943 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_203027_stamp_004.png
+2025-11-09 20:30:42,944 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 4 fichier(s) généré(s)
+2025-11-09 20:32:28,187 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 20:32:28,209 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 500DPI, color...
+2025-11-09 20:32:38,571 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251109_203228.png
+2025-11-09 20:32:43,660 | [32mINFO[0m | processor:63 | ============================================================
+2025-11-09 20:32:43,661 | [32mINFO[0m | processor:64 | Traitement: scan_20251109_203228.png
+2025-11-09 20:32:43,661 | [32mINFO[0m | processor:65 | ============================================================
+2025-11-09 20:32:43,664 | [32mINFO[0m | processor:76 | Dimensions: 1239x1753px
+2025-11-09 20:32:43,665 | [32mINFO[0m | image_utils:30 | DPI détecté: 149
+2025-11-09 20:32:43,665 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 6px @ 149DPI
+2025-11-09 20:32:43,666 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-11-09 20:32:43,671 | [32mINFO[0m | opencv_detector:89 | OpenCV: 4 timbre(s)/bloc(s) détecté(s)
+2025-11-09 20:32:43,671 | [32mINFO[0m | processor:104 | ✓ 4 timbre(s) détecté(s)
+2025-11-09 20:32:43,684 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_203228_stamp_001.png
+2025-11-09 20:32:43,690 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_203228_stamp_002.png
+2025-11-09 20:32:43,699 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_203228_stamp_003.png
+2025-11-09 20:32:43,707 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_203228_stamp_004.png
+2025-11-09 20:32:43,707 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 4 fichier(s) généré(s)
+2025-11-09 20:34:46,687 | [32mINFO[0m | processor:63 | ============================================================
+2025-11-09 20:34:46,687 | [32mINFO[0m | processor:64 | Traitement: scan_20251109_203228.png
+2025-11-09 20:34:46,687 | [32mINFO[0m | processor:65 | ============================================================
+2025-11-09 20:34:46,691 | [32mINFO[0m | processor:76 | Dimensions: 1239x1753px
+2025-11-09 20:34:46,692 | [32mINFO[0m | image_utils:30 | DPI détecté: 149
+2025-11-09 20:34:46,692 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 6px @ 149DPI
+2025-11-09 20:34:46,693 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-11-09 20:34:46,699 | [32mINFO[0m | opencv_detector:89 | OpenCV: 4 timbre(s)/bloc(s) détecté(s)
+2025-11-09 20:34:46,699 | [32mINFO[0m | processor:104 | ✓ 4 timbre(s) détecté(s)
+2025-11-09 20:34:46,713 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_203228_stamp_001.png
+2025-11-09 20:34:46,720 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_203228_stamp_002.png
+2025-11-09 20:34:46,728 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_203228_stamp_003.png
+2025-11-09 20:34:46,735 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_203228_stamp_004.png
+2025-11-09 20:34:46,735 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 4 fichier(s) généré(s)
+2025-11-09 20:34:48,986 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 20:34:49,011 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 500DPI, color...
+2025-11-09 20:34:59,400 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251109_203448.png
+2025-11-09 20:35:03,201 | [32mINFO[0m | processor:63 | ============================================================
+2025-11-09 20:35:03,202 | [32mINFO[0m | processor:64 | Traitement: scan_20251109_203448.png
+2025-11-09 20:35:03,202 | [32mINFO[0m | processor:65 | ============================================================
+2025-11-09 20:35:03,205 | [32mINFO[0m | processor:76 | Dimensions: 1239x1753px
+2025-11-09 20:35:03,206 | [32mINFO[0m | image_utils:30 | DPI détecté: 149
+2025-11-09 20:35:03,206 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 6px @ 149DPI
+2025-11-09 20:35:03,207 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-11-09 20:35:03,213 | [32mINFO[0m | opencv_detector:89 | OpenCV: 4 timbre(s)/bloc(s) détecté(s)
+2025-11-09 20:35:03,213 | [32mINFO[0m | processor:104 | ✓ 4 timbre(s) détecté(s)
+2025-11-09 20:35:03,226 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_203448_stamp_001.png
+2025-11-09 20:35:03,228 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_203448_stamp_002.png
+2025-11-09 20:35:03,237 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_203448_stamp_003.png
+2025-11-09 20:35:03,245 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_203448_stamp_004.png
+2025-11-09 20:35:03,245 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 4 fichier(s) généré(s)
+2025-11-09 20:44:18,090 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 20:44:18,113 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 500DPI, color...
+2025-11-09 20:44:20,241 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: 'NoneType' object has no attribute 'SaveFile'
+2025-11-09 20:44:27,776 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 20:44:27,799 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 400DPI, color...
+2025-11-09 20:44:27,811 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: 'NoneType' object has no attribute 'SaveFile'
+2025-11-09 20:44:30,148 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 20:44:30,170 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 400DPI, color...
+2025-11-09 20:44:30,182 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: 'NoneType' object has no attribute 'SaveFile'
+2025-11-09 20:44:44,911 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 20:44:44,933 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 400DPI, color...
+2025-11-09 20:44:49,885 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: 'NoneType' object has no attribute 'SaveFile'
+2025-11-09 20:44:55,586 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 20:44:55,611 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 400DPI, color...
+2025-11-09 20:44:55,621 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: 'NoneType' object has no attribute 'SaveFile'
+2025-11-09 20:45:01,797 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 20:45:01,820 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 400DPI, color...
+2025-11-09 20:45:01,831 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: 'NoneType' object has no attribute 'SaveFile'
+2025-11-09 20:45:17,982 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 20:45:18,004 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 400DPI, color...
+2025-11-09 20:45:21,134 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: 'NoneType' object has no attribute 'SaveFile'
+2025-11-09 20:45:47,446 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 20:45:47,470 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 400DPI, color...
+2025-11-09 20:45:47,480 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: 'NoneType' object has no attribute 'SaveFile'
+2025-11-09 20:45:50,015 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 20:45:50,039 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 400DPI, color...
+2025-11-09 20:45:50,050 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: 'NoneType' object has no attribute 'SaveFile'
+2025-11-09 20:46:02,595 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 20:46:02,620 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 400DPI, color...
+2025-11-09 20:46:02,631 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: 'NoneType' object has no attribute 'SaveFile'
+2025-11-09 20:47:36,060 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 20:47:36,082 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 400DPI, color...
+2025-11-09 20:47:46,119 | [31mERROR[0m | scanner_utils:137 | Erreur lors du scan: 'NoneType' object has no attribute 'SaveFile'
+2025-11-09 20:53:41,864 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 20:53:41,887 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 400DPI, color...
+2025-11-09 20:53:49,230 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251109_205341.png
+2025-11-09 20:53:55,479 | [32mINFO[0m | processor:63 | ============================================================
+2025-11-09 20:53:55,479 | [32mINFO[0m | processor:64 | Traitement: scan_20251109_205341.png
+2025-11-09 20:53:55,479 | [32mINFO[0m | processor:65 | ============================================================
+2025-11-09 20:53:55,483 | [32mINFO[0m | processor:76 | Dimensions: 1239x1753px
+2025-11-09 20:53:55,483 | [32mINFO[0m | image_utils:30 | DPI détecté: 149
+2025-11-09 20:53:55,483 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 6px @ 149DPI
+2025-11-09 20:53:55,484 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-11-09 20:53:55,490 | [32mINFO[0m | opencv_detector:89 | OpenCV: 4 timbre(s)/bloc(s) détecté(s)
+2025-11-09 20:53:55,491 | [32mINFO[0m | processor:104 | ✓ 4 timbre(s) détecté(s)
+2025-11-09 20:53:55,503 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_205341_stamp_001.png
+2025-11-09 20:53:55,510 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_205341_stamp_002.png
+2025-11-09 20:53:55,520 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_205341_stamp_003.png
+2025-11-09 20:53:55,527 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_205341_stamp_004.png
+2025-11-09 20:53:55,527 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 4 fichier(s) généré(s)
+2025-11-09 21:30:27,396 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-11-09 21:30:27,442 | [32mINFO[0m | stamp_recognition:24 | ✓ Tesseract configuré: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-11-09 21:30:27,443 | [32mINFO[0m | stamp_recognition:29 | ✓ Données françaises disponibles
+2025-11-09 21:30:27,540 | [32mINFO[0m | main_window:42 | ✓ Reconnaissance visuelle intelligente disponible
+2025-11-09 21:30:27,695 | [32mINFO[0m | main_window:54 | Google Vision disponible mais credentials non configurés
+2025-11-09 21:30:27,696 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-11-09 21:30:27,741 | [32mINFO[0m | scanner_utils:42 | ✓ 1 scanner(s) trouvé(s)
+2025-11-09 21:30:28,337 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-11-09 21:30:28,423 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-11-09 21:30:28,424 | [32mINFO[0m | opencv_detector:15 | ✓ OpenCV disponible (fallback)
+2025-11-09 21:30:28,424 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-11-09 21:30:28,424 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-11-09 21:32:39,754 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-11-09 21:32:39,798 | [32mINFO[0m | stamp_recognition:24 | ✓ Tesseract configuré: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-11-09 21:32:39,798 | [32mINFO[0m | stamp_recognition:29 | ✓ Données françaises disponibles
+2025-11-09 21:32:39,879 | [32mINFO[0m | main_window:42 | ✓ Reconnaissance visuelle intelligente disponible
+2025-11-09 21:32:40,020 | [32mINFO[0m | main_window:54 | Google Vision disponible mais credentials non configurés
+2025-11-09 21:32:40,022 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-11-09 21:32:40,065 | [32mINFO[0m | scanner_utils:42 | ✓ 1 scanner(s) trouvé(s)
+2025-11-09 21:32:40,536 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-11-09 21:32:40,621 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-11-09 21:32:40,621 | [32mINFO[0m | opencv_detector:15 | ✓ OpenCV disponible (fallback)
+2025-11-09 21:32:40,621 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-11-09 21:32:40,622 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-11-09 21:33:03,839 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 21:33:03,864 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 600DPI, color...
+2025-11-09 21:33:16,573 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251109_213303.png
+2025-11-09 21:33:27,495 | [32mINFO[0m | processor:63 | ============================================================
+2025-11-09 21:33:27,496 | [32mINFO[0m | processor:64 | Traitement: scan_20251109_213303.png
+2025-11-09 21:33:27,496 | [32mINFO[0m | processor:65 | ============================================================
+2025-11-09 21:33:27,500 | [32mINFO[0m | processor:76 | Dimensions: 1240x1753px
+2025-11-09 21:33:27,510 | [32mINFO[0m | image_utils:30 | DPI détecté: 149
+2025-11-09 21:33:27,511 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 6px @ 149DPI
+2025-11-09 21:33:27,511 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-11-09 21:33:27,517 | [32mINFO[0m | opencv_detector:89 | OpenCV: 6 timbre(s)/bloc(s) détecté(s)
+2025-11-09 21:33:27,517 | [32mINFO[0m | processor:104 | ✓ 6 timbre(s) détecté(s)
+2025-11-09 21:33:27,524 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213303_stamp_001.png
+2025-11-09 21:33:27,532 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213303_stamp_002.png
+2025-11-09 21:33:27,543 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213303_stamp_003.png
+2025-11-09 21:33:27,551 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213303_stamp_004.png
+2025-11-09 21:33:27,559 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213303_stamp_005.png
+2025-11-09 21:33:27,566 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213303_stamp_006.png
+2025-11-09 21:33:27,567 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 6 fichier(s) généré(s)
+2025-11-09 21:33:27,581 | [32mINFO[0m | smart_recognition:238 | 🌐 Reconnaissance visuelle en ligne...
+2025-11-09 21:33:39,423 | [33mWARNING[0m | smart_recognition:61 | Échec upload ImgBB: 400
+2025-11-09 21:33:39,423 | [32mINFO[0m | smart_recognition:290 | Reconnaissance: 0% de confiance
+2025-11-09 21:33:39,424 | [32mINFO[0m | main_window:115 | Timbre 1: Reconnaissance visuelle terminée
+2025-11-09 21:33:39,432 | [32mINFO[0m | smart_recognition:238 | 🌐 Reconnaissance visuelle en ligne...
+2025-11-09 21:33:39,584 | [33mWARNING[0m | smart_recognition:61 | Échec upload ImgBB: 400
+2025-11-09 21:33:39,585 | [32mINFO[0m | smart_recognition:290 | Reconnaissance: 0% de confiance
+2025-11-09 21:33:39,587 | [32mINFO[0m | main_window:115 | Timbre 2: Reconnaissance visuelle terminée
+2025-11-09 21:33:39,597 | [32mINFO[0m | smart_recognition:238 | 🌐 Reconnaissance visuelle en ligne...
+2025-11-09 21:33:39,786 | [33mWARNING[0m | smart_recognition:61 | Échec upload ImgBB: 400
+2025-11-09 21:33:39,787 | [32mINFO[0m | smart_recognition:290 | Reconnaissance: 0% de confiance
+2025-11-09 21:33:39,789 | [32mINFO[0m | main_window:115 | Timbre 3: Reconnaissance visuelle terminée
+2025-11-09 21:33:39,800 | [32mINFO[0m | smart_recognition:238 | 🌐 Reconnaissance visuelle en ligne...
+2025-11-09 21:33:39,991 | [33mWARNING[0m | smart_recognition:61 | Échec upload ImgBB: 400
+2025-11-09 21:33:39,991 | [32mINFO[0m | smart_recognition:290 | Reconnaissance: 0% de confiance
+2025-11-09 21:33:39,993 | [32mINFO[0m | main_window:115 | Timbre 4: Reconnaissance visuelle terminée
+2025-11-09 21:33:40,004 | [32mINFO[0m | smart_recognition:238 | 🌐 Reconnaissance visuelle en ligne...
+2025-11-09 21:33:40,209 | [33mWARNING[0m | smart_recognition:61 | Échec upload ImgBB: 400
+2025-11-09 21:33:40,211 | [32mINFO[0m | smart_recognition:290 | Reconnaissance: 0% de confiance
+2025-11-09 21:33:40,212 | [32mINFO[0m | main_window:115 | Timbre 5: Reconnaissance visuelle terminée
+2025-11-09 21:33:40,234 | [32mINFO[0m | smart_recognition:238 | 🌐 Reconnaissance visuelle en ligne...
+2025-11-09 21:33:40,513 | [33mWARNING[0m | smart_recognition:61 | Échec upload ImgBB: 400
+2025-11-09 21:33:40,514 | [32mINFO[0m | smart_recognition:290 | Reconnaissance: 0% de confiance
+2025-11-09 21:33:40,516 | [32mINFO[0m | main_window:115 | Timbre 6: Reconnaissance visuelle terminée
+2025-11-09 21:33:40,517 | [32mINFO[0m | main_window:166 | ✓ Reconnaissance terminée pour 6 timbre(s)
+2025-11-09 21:38:04,639 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: CanoScan LiDE 400
+2025-11-09 21:38:04,662 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 600DPI, color...
+2025-11-09 21:38:11,989 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251109_213804.png
+2025-11-09 21:38:22,354 | [32mINFO[0m | processor:63 | ============================================================
+2025-11-09 21:38:22,354 | [32mINFO[0m | processor:64 | Traitement: scan_20251109_213804.png
+2025-11-09 21:38:22,355 | [32mINFO[0m | processor:65 | ============================================================
+2025-11-09 21:38:22,358 | [32mINFO[0m | processor:76 | Dimensions: 1240x1753px
+2025-11-09 21:38:22,359 | [32mINFO[0m | image_utils:30 | DPI détecté: 149
+2025-11-09 21:38:22,359 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 6px @ 149DPI
+2025-11-09 21:38:22,359 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-11-09 21:38:22,365 | [32mINFO[0m | opencv_detector:89 | OpenCV: 6 timbre(s)/bloc(s) détecté(s)
+2025-11-09 21:38:22,365 | [32mINFO[0m | processor:104 | ✓ 6 timbre(s) détecté(s)
+2025-11-09 21:38:22,374 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213804_stamp_001.png
+2025-11-09 21:38:22,381 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213804_stamp_002.png
+2025-11-09 21:38:22,388 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213804_stamp_003.png
+2025-11-09 21:38:22,395 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213804_stamp_004.png
+2025-11-09 21:38:22,403 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213804_stamp_005.png
+2025-11-09 21:38:22,410 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213804_stamp_006.png
+2025-11-09 21:38:22,411 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 6 fichier(s) généré(s)
+2025-11-09 21:45:48,263 | [32mINFO[0m | processor:63 | ============================================================
+2025-11-09 21:45:48,264 | [32mINFO[0m | processor:64 | Traitement: scan_20251109_213804.png
+2025-11-09 21:45:48,264 | [32mINFO[0m | processor:65 | ============================================================
+2025-11-09 21:45:48,268 | [32mINFO[0m | processor:76 | Dimensions: 1240x1753px
+2025-11-09 21:45:48,269 | [32mINFO[0m | image_utils:30 | DPI détecté: 149
+2025-11-09 21:45:48,270 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 6px @ 149DPI
+2025-11-09 21:45:48,270 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-11-09 21:45:48,275 | [32mINFO[0m | opencv_detector:89 | OpenCV: 6 timbre(s)/bloc(s) détecté(s)
+2025-11-09 21:45:48,275 | [32mINFO[0m | processor:104 | ✓ 6 timbre(s) détecté(s)
+2025-11-09 21:45:48,283 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213804_stamp_001.png
+2025-11-09 21:45:48,290 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213804_stamp_002.png
+2025-11-09 21:45:48,297 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213804_stamp_003.png
+2025-11-09 21:45:48,305 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213804_stamp_004.png
+2025-11-09 21:45:48,312 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213804_stamp_005.png
+2025-11-09 21:45:48,320 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251109_213804_stamp_006.png
+2025-11-09 21:45:48,320 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 6 fichier(s) généré(s)

@@ -1,0 +1,365 @@
+2025-10-11 12:07:37,893 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-11 12:11:42,312 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-11 12:11:42,876 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-11 12:11:43,034 | [32mINFO[0m | scanner_utils:42 | ✓ 1 scanner(s) trouvé(s)
+2025-10-11 12:11:43,775 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-11 12:11:43,879 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-11 12:11:43,879 | [32mINFO[0m | opencv_detector:15 | ✓ OpenCV disponible (fallback)
+2025-10-11 12:11:43,879 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-11 12:11:43,879 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-10-11 12:12:32,175 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-11 12:12:32,196 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-11 12:12:56,324 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251011_121232.png
+2025-10-11 12:13:08,485 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 12:13:08,485 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_121232.png
+2025-10-11 12:13:08,485 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 12:13:08,501 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-11 12:13:08,650 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-11 12:13:08,650 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-11 12:13:08,650 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 12:13:08,670 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-10-11 12:13:08,674 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-11 12:13:09,004 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_121232_stamp_001.png
+2025-10-11 12:13:09,004 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-10-11 12:13:09,205 | [31mERROR[0m | stamp_recognition:93 | Erreur OCR: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-10-11 12:13:09,309 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-11 12:14:55,331 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-11 12:14:55,357 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-11 12:15:17,934 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251011_121455.png
+2025-10-11 12:15:21,242 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 12:15:21,242 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_121455.png
+2025-10-11 12:15:21,242 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 12:15:21,259 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-11 12:15:21,259 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-11 12:15:21,259 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-11 12:15:21,259 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 12:15:21,279 | [32mINFO[0m | opencv_detector:89 | OpenCV: 1 timbre(s)/bloc(s) détecté(s)
+2025-10-11 12:15:21,283 | [32mINFO[0m | processor:104 | ✓ 1 timbre(s) détecté(s)
+2025-10-11 12:15:21,545 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_121455_stamp_001.png
+2025-10-11 12:15:21,545 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 1 fichier(s) généré(s)
+2025-10-11 12:15:21,725 | [31mERROR[0m | stamp_recognition:93 | Erreur OCR: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-10-11 12:15:21,814 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-11 13:44:45,882 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-11 13:44:45,963 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-11 13:44:46,043 | [32mINFO[0m | scanner_utils:42 | ✓ 1 scanner(s) trouvé(s)
+2025-10-11 13:44:46,533 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-11 13:44:46,616 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-11 13:44:46,616 | [32mINFO[0m | opencv_detector:15 | ✓ OpenCV disponible (fallback)
+2025-10-11 13:44:46,617 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-11 13:44:46,617 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-10-11 13:44:49,126 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-11 13:44:49,150 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-11 13:45:12,317 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251011_134449.png
+2025-10-11 13:46:45,915 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-11 13:46:45,937 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-11 13:47:09,294 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251011_134645.png
+2025-10-11 13:47:11,185 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 13:47:11,185 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_134645.png
+2025-10-11 13:47:11,185 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 13:47:11,198 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-11 13:47:11,207 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-11 13:47:11,207 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-11 13:47:11,207 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 13:47:11,228 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-11 13:47:11,232 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-11 13:47:11,403 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_134645_stamp_001.png
+2025-10-11 13:47:11,518 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_134645_stamp_002.png
+2025-10-11 13:47:11,518 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-11 13:47:11,654 | [31mERROR[0m | stamp_recognition:93 | Erreur OCR: (1, 'Error opening data file C:\\Program Files\\Tesseract-OCR/tessdata/fra.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory. Failed loading language \'fra\' Tesseract couldn\'t load any languages! Could not initialize tesseract.')
+2025-10-11 13:47:11,733 | [31mERROR[0m | stamp_recognition:93 | Erreur OCR: (1, 'Error opening data file C:\\Program Files\\Tesseract-OCR/tessdata/fra.traineddata Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory. Failed loading language \'fra\' Tesseract couldn\'t load any languages! Could not initialize tesseract.')
+2025-10-11 13:47:11,798 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-11 13:47:11,840 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-11 13:59:08,430 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 13:59:08,430 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_134645.png
+2025-10-11 13:59:08,430 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 13:59:08,446 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-11 13:59:08,446 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-11 13:59:08,446 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-11 13:59:08,446 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 13:59:08,466 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-11 13:59:08,471 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-11 13:59:08,637 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_134645_stamp_001.png
+2025-10-11 13:59:08,753 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_134645_stamp_002.png
+2025-10-11 13:59:08,753 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-11 13:59:10,778 | [31mERROR[0m | processor:207 | Erreur annotation timbre 1: module 'numpy' has no attribute 'int0'
+2025-10-11 13:59:10,819 | [31mERROR[0m | processor:207 | Erreur annotation timbre 2: module 'numpy' has no attribute 'int0'
+2025-10-11 13:59:22,371 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-11 13:59:22,433 | [32mINFO[0m | stamp_recognition:24 | ✓ Tesseract configuré: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-10-11 13:59:22,433 | [32mINFO[0m | stamp_recognition:29 | ✓ Données françaises disponibles
+2025-10-11 13:59:22,433 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-11 13:59:22,506 | [32mINFO[0m | scanner_utils:42 | ✓ 1 scanner(s) trouvé(s)
+2025-10-11 13:59:23,028 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-11 13:59:23,114 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-11 13:59:23,114 | [32mINFO[0m | opencv_detector:15 | ✓ OpenCV disponible (fallback)
+2025-10-11 13:59:23,114 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-11 13:59:23,114 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-10-11 13:59:24,820 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-11 13:59:24,846 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-11 13:59:47,426 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251011_135924.png
+2025-10-11 13:59:49,679 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 13:59:49,684 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_135924.png
+2025-10-11 13:59:49,684 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 13:59:49,696 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-11 13:59:49,705 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-11 13:59:49,705 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-11 13:59:49,709 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 13:59:49,730 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-11 13:59:49,732 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-11 13:59:49,905 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_135924_stamp_001.png
+2025-10-11 13:59:50,016 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_135924_stamp_002.png
+2025-10-11 13:59:50,020 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-11 14:00:35,097 | [32mINFO[0m | stamp_recognition:278 | ✓ Timbre identifié: Marianne (confiance: 25%, patterns: ['rf'])
+2025-10-11 14:12:17,376 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-11 14:12:17,421 | [32mINFO[0m | stamp_recognition:24 | ✓ Tesseract configuré: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-10-11 14:12:17,421 | [32mINFO[0m | stamp_recognition:29 | ✓ Données françaises disponibles
+2025-10-11 14:12:19,771 | [32mINFO[0m | online_recognition:21 | ✓ Google Vision API disponible
+2025-10-11 14:12:19,784 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-11 14:12:19,824 | [32mINFO[0m | scanner_utils:42 | ✓ 1 scanner(s) trouvé(s)
+2025-10-11 14:12:20,356 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-11 14:12:20,445 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-11 14:12:20,445 | [32mINFO[0m | opencv_detector:15 | ✓ OpenCV disponible (fallback)
+2025-10-11 14:12:20,445 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-11 14:12:20,445 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-10-11 14:12:29,017 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-11 14:12:29,042 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-11 14:12:52,502 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251011_141229.png
+2025-10-11 14:13:04,042 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 14:13:04,042 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_141229.png
+2025-10-11 14:13:04,042 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 14:13:04,055 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-11 14:13:04,063 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-11 14:13:04,063 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-11 14:13:04,067 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 14:13:04,088 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-11 14:13:04,092 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-11 14:13:04,259 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_141229_stamp_001.png
+2025-10-11 14:13:04,387 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_141229_stamp_002.png
+2025-10-11 14:13:04,387 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-11 14:13:51,341 | [32mINFO[0m | stamp_recognition:278 | ✓ Timbre identifié: Marianne (confiance: 25%, patterns: ['rf'])
+2025-10-11 14:15:04,154 | [32mINFO[0m | main_window:132 | ✓ Reconnaissance terminée pour 2 timbre(s)
+2025-10-11 14:16:49,848 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 14:16:49,848 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_141229.png
+2025-10-11 14:16:49,848 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 14:16:49,861 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-11 14:16:49,865 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-11 14:16:49,865 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-11 14:16:49,865 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 14:16:49,882 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-11 14:16:49,886 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-11 14:16:50,057 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_141229_stamp_001.png
+2025-10-11 14:16:50,179 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_141229_stamp_002.png
+2025-10-11 14:16:50,179 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-11 14:37:53,567 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-11 14:37:53,605 | [32mINFO[0m | stamp_recognition:24 | ✓ Tesseract configuré: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-10-11 14:37:53,605 | [32mINFO[0m | stamp_recognition:29 | ✓ Données françaises disponibles
+2025-10-11 14:37:53,700 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-11 14:37:53,742 | [32mINFO[0m | scanner_utils:42 | ✓ 1 scanner(s) trouvé(s)
+2025-10-11 14:37:54,178 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-11 14:37:54,265 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-11 14:37:54,265 | [32mINFO[0m | opencv_detector:15 | ✓ OpenCV disponible (fallback)
+2025-10-11 14:37:54,265 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-11 14:37:54,265 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-10-11 14:38:04,785 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-11 14:38:04,810 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-11 14:38:28,083 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251011_143804.png
+2025-10-11 14:38:47,811 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 14:38:47,811 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_143804.png
+2025-10-11 14:38:47,811 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 14:38:47,828 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-11 14:38:47,836 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-11 14:38:47,836 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-11 14:38:47,836 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 14:38:47,857 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-11 14:38:47,861 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-11 14:38:48,031 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_143804_stamp_001.png
+2025-10-11 14:38:48,154 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_143804_stamp_002.png
+2025-10-11 14:38:48,154 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-11 14:38:48,156 | [31mERROR[0m | main_window:135 | Erreur traitement: name 'OnlineStampRecognizer' is not defined
+Traceback (most recent call last):
+  File "C:\Users\cabon\StampDetector\ui\main_window.py", line 78, in run
+    recognizer_online = OnlineStampRecognizer() if ONLINE_RECOGNITION_AVAILABLE and self.use_online else None
+NameError: name 'OnlineStampRecognizer' is not defined
+2025-10-11 14:58:13,926 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-11 14:58:13,959 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-11 14:58:37,320 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251011_145813.png
+2025-10-11 14:58:46,669 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 14:58:46,673 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_145813.png
+2025-10-11 14:58:46,673 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 14:58:46,686 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-11 14:58:46,686 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-11 14:58:46,686 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-11 14:58:46,686 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 14:58:46,707 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-11 14:58:46,711 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-11 14:58:46,876 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_145813_stamp_001.png
+2025-10-11 14:58:47,003 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_145813_stamp_002.png
+2025-10-11 14:58:47,003 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-11 14:58:47,007 | [31mERROR[0m | main_window:135 | Erreur traitement: name 'OnlineStampRecognizer' is not defined
+Traceback (most recent call last):
+  File "C:\Users\cabon\StampDetector\ui\main_window.py", line 78, in run
+    recognizer_online = OnlineStampRecognizer() if ONLINE_RECOGNITION_AVAILABLE and self.use_online else None
+NameError: name 'OnlineStampRecognizer' is not defined
+2025-10-11 14:59:07,274 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 14:59:07,279 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_145813.png
+2025-10-11 14:59:07,279 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 14:59:07,291 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-11 14:59:07,295 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-11 14:59:07,295 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-11 14:59:07,295 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 14:59:07,312 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-11 14:59:07,316 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-11 14:59:07,484 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_145813_stamp_001.png
+2025-10-11 14:59:07,611 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_145813_stamp_002.png
+2025-10-11 14:59:07,611 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-11 14:59:45,553 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 14:59:45,553 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_145813.png
+2025-10-11 14:59:45,553 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 14:59:45,570 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-11 14:59:45,575 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-11 14:59:45,575 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-11 14:59:45,575 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 14:59:45,591 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-11 14:59:45,596 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-11 14:59:45,771 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_145813_stamp_001.png
+2025-10-11 14:59:45,909 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_145813_stamp_002.png
+2025-10-11 14:59:45,909 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-11 14:59:54,598 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 14:59:54,598 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_145813.png
+2025-10-11 14:59:54,598 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 14:59:54,617 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-11 14:59:54,621 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-11 14:59:54,621 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-11 14:59:54,621 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 14:59:54,647 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-11 14:59:54,651 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-11 14:59:54,834 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_145813_stamp_001.png
+2025-10-11 14:59:54,966 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_145813_stamp_002.png
+2025-10-11 14:59:54,966 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-11 18:28:58,182 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-11 18:28:58,226 | [32mINFO[0m | stamp_recognition:24 | ✓ Tesseract configuré: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-10-11 18:28:58,226 | [32mINFO[0m | stamp_recognition:29 | ✓ Données françaises disponibles
+2025-10-11 18:28:58,334 | [32mINFO[0m | main_window:42 | ✓ Reconnaissance visuelle intelligente disponible
+2025-10-11 18:28:58,335 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-11 18:28:58,382 | [32mINFO[0m | scanner_utils:42 | ✓ 1 scanner(s) trouvé(s)
+2025-10-11 18:28:58,882 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-11 18:28:58,967 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-11 18:28:58,967 | [32mINFO[0m | opencv_detector:15 | ✓ OpenCV disponible (fallback)
+2025-10-11 18:28:58,967 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-11 18:28:58,968 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-10-11 18:29:19,370 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 18:29:19,371 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_145813_stamp_002.png
+2025-10-11 18:29:19,371 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 18:29:19,413 | [32mINFO[0m | processor:76 | Dimensions: 1734x1465px
+2025-10-11 18:29:19,426 | [33mWARNING[0m | image_utils:33 | ⚠️ DPI absent dans scan_20251011_145813_stamp_002.png, utilisation de 300 DPI par défaut
+2025-10-11 18:29:19,426 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 300DPI
+2025-10-11 18:29:19,426 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 18:29:19,435 | [32mINFO[0m | opencv_detector:89 | OpenCV: 0 timbre(s)/bloc(s) détecté(s)
+2025-10-11 18:29:19,437 | [33mWARNING[0m | processor:93 | ⚠️ Aucun timbre détecté
+2025-10-11 18:29:19,438 | [32mINFO[0m | main_window:154 | ✓ Reconnaissance terminée pour 0 timbre(s)
+2025-10-11 18:29:36,869 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 18:29:36,870 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_145813_stamp_002.png
+2025-10-11 18:29:36,870 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 18:29:36,910 | [32mINFO[0m | processor:76 | Dimensions: 1734x1465px
+2025-10-11 18:29:36,912 | [33mWARNING[0m | image_utils:33 | ⚠️ DPI absent dans scan_20251011_145813_stamp_002.png, utilisation de 300 DPI par défaut
+2025-10-11 18:29:36,912 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 300DPI
+2025-10-11 18:29:36,912 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 18:29:36,918 | [32mINFO[0m | opencv_detector:89 | OpenCV: 0 timbre(s)/bloc(s) détecté(s)
+2025-10-11 18:29:36,919 | [33mWARNING[0m | processor:93 | ⚠️ Aucun timbre détecté
+2025-10-11 18:29:38,333 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 18:29:38,334 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_145813_stamp_002.png
+2025-10-11 18:29:38,334 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 18:29:38,376 | [32mINFO[0m | processor:76 | Dimensions: 1734x1465px
+2025-10-11 18:29:38,378 | [33mWARNING[0m | image_utils:33 | ⚠️ DPI absent dans scan_20251011_145813_stamp_002.png, utilisation de 300 DPI par défaut
+2025-10-11 18:29:38,378 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 300DPI
+2025-10-11 18:29:38,379 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 18:29:38,385 | [32mINFO[0m | opencv_detector:89 | OpenCV: 0 timbre(s)/bloc(s) détecté(s)
+2025-10-11 18:29:38,386 | [33mWARNING[0m | processor:93 | ⚠️ Aucun timbre détecté
+2025-10-11 18:29:40,312 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-11 18:29:40,337 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-11 18:29:41,944 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 18:29:41,945 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_145813_stamp_002.png
+2025-10-11 18:29:41,945 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 18:29:41,987 | [32mINFO[0m | processor:76 | Dimensions: 1734x1465px
+2025-10-11 18:29:41,987 | [33mWARNING[0m | image_utils:33 | ⚠️ DPI absent dans scan_20251011_145813_stamp_002.png, utilisation de 300 DPI par défaut
+2025-10-11 18:29:41,989 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 300DPI
+2025-10-11 18:29:41,989 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 18:29:41,995 | [32mINFO[0m | opencv_detector:89 | OpenCV: 0 timbre(s)/bloc(s) détecté(s)
+2025-10-11 18:29:41,996 | [33mWARNING[0m | processor:93 | ⚠️ Aucun timbre détecté
+2025-10-11 18:30:03,639 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251011_182940.png
+2025-10-11 18:30:39,571 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 18:30:39,571 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_182940.png
+2025-10-11 18:30:39,572 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 18:30:39,587 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-11 18:30:39,589 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-11 18:30:39,589 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-11 18:30:39,589 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 18:30:39,613 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-11 18:30:39,618 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-11 18:30:39,805 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_182940_stamp_001.png
+2025-10-11 18:30:39,933 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_182940_stamp_002.png
+2025-10-11 18:30:39,933 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-11 18:30:40,001 | [32mINFO[0m | smart_recognition:238 | 🌐 Reconnaissance visuelle en ligne...
+2025-10-11 18:30:58,141 | [33mWARNING[0m | smart_recognition:61 | Échec upload ImgBB: 400
+2025-10-11 18:30:58,141 | [32mINFO[0m | smart_recognition:290 | Reconnaissance: 0% de confiance
+2025-10-11 18:30:58,143 | [32mINFO[0m | main_window:103 | Timbre 1: Reconnaissance visuelle terminée
+2025-10-11 18:30:58,180 | [32mINFO[0m | smart_recognition:238 | 🌐 Reconnaissance visuelle en ligne...
+2025-10-11 18:31:03,515 | [33mWARNING[0m | smart_recognition:61 | Échec upload ImgBB: 400
+2025-10-11 18:31:03,515 | [32mINFO[0m | smart_recognition:290 | Reconnaissance: 0% de confiance
+2025-10-11 18:31:03,516 | [32mINFO[0m | main_window:103 | Timbre 2: Reconnaissance visuelle terminée
+2025-10-11 18:31:03,516 | [32mINFO[0m | main_window:154 | ✓ Reconnaissance terminée pour 2 timbre(s)
+2025-10-11 20:16:13,395 | [33mWARNING[0m | yolo_detector:12 | ⚠️ YOLOv8 non disponible (utilisation d'OpenCV)
+2025-10-11 20:16:13,438 | [32mINFO[0m | stamp_recognition:24 | ✓ Tesseract configuré: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-10-11 20:16:13,438 | [32mINFO[0m | stamp_recognition:29 | ✓ Données françaises disponibles
+2025-10-11 20:16:13,439 | [32mINFO[0m | main_window:50 | ✓ Reconnaissance visuelle intelligente disponible
+2025-10-11 20:16:13,440 | [32mINFO[0m | app:22 | Démarrage de StampDetector...
+2025-10-11 20:16:13,489 | [32mINFO[0m | scanner_utils:42 | ✓ 1 scanner(s) trouvé(s)
+2025-10-11 20:16:14,058 | [32mINFO[0m | app:41 | Interface graphique chargée
+2025-10-11 20:16:14,143 | [32mINFO[0m | detector:19 | Sélection du backend de détection...
+2025-10-11 20:16:14,143 | [32mINFO[0m | opencv_detector:15 | ✓ OpenCV disponible (fallback)
+2025-10-11 20:16:14,144 | [32mINFO[0m | detector:31 | 🎯 Backend sélectionné: OpenCV (fallback)
+2025-10-11 20:16:14,144 | [32mINFO[0m | processor:48 | Processeur initialisé (backend: OpenCV)
+2025-10-11 20:17:45,529 | [32mINFO[0m | scanner_utils:72 | ✓ Connecté au scanner: EPSON ET-2710 Series
+2025-10-11 20:17:45,555 | [32mINFO[0m | scanner_utils:118 | Démarrage du scan: 300DPI, color...
+2025-10-11 20:18:08,691 | [32mINFO[0m | scanner_utils:133 | ✓ Scan terminé: scan_20251011_201745.png
+2025-10-11 20:18:11,903 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 20:18:11,903 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_201745.png
+2025-10-11 20:18:11,903 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 20:18:11,919 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-11 20:18:11,931 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-11 20:18:11,931 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-11 20:18:11,931 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 20:18:11,956 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-11 20:18:11,959 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-11 20:18:12,133 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_201745_stamp_001.png
+2025-10-11 20:18:12,259 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_201745_stamp_002.png
+2025-10-11 20:18:12,261 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-11 20:18:12,329 | [32mINFO[0m | smart_recognition:238 | 🌐 Reconnaissance visuelle en ligne...
+2025-10-11 20:18:21,104 | [33mWARNING[0m | smart_recognition:61 | Échec upload ImgBB: 400
+2025-10-11 20:18:21,106 | [32mINFO[0m | smart_recognition:290 | Reconnaissance: 0% de confiance
+2025-10-11 20:18:21,108 | [32mINFO[0m | main_window:111 | Timbre 1: Reconnaissance visuelle terminée
+2025-10-11 20:18:21,144 | [32mINFO[0m | smart_recognition:238 | 🌐 Reconnaissance visuelle en ligne...
+2025-10-11 20:18:25,786 | [33mWARNING[0m | smart_recognition:61 | Échec upload ImgBB: 400
+2025-10-11 20:18:25,786 | [32mINFO[0m | smart_recognition:290 | Reconnaissance: 0% de confiance
+2025-10-11 20:18:25,788 | [32mINFO[0m | main_window:111 | Timbre 2: Reconnaissance visuelle terminée
+2025-10-11 20:18:25,788 | [32mINFO[0m | main_window:162 | ✓ Reconnaissance terminée pour 2 timbre(s)
+2025-10-11 20:21:04,381 | [32mINFO[0m | processor:63 | ============================================================
+2025-10-11 20:21:04,381 | [32mINFO[0m | processor:64 | Traitement: scan_20251011_182940.png
+2025-10-11 20:21:04,381 | [32mINFO[0m | processor:65 | ============================================================
+2025-10-11 20:21:04,397 | [32mINFO[0m | processor:76 | Dimensions: 2550x3510px
+2025-10-11 20:21:04,399 | [32mINFO[0m | image_utils:30 | DPI détecté: 299
+2025-10-11 20:21:04,399 | [32mINFO[0m | processor:84 | Marge: 1.0mm = 12px @ 299DPI
+2025-10-11 20:21:04,399 | [32mINFO[0m | detector:37 | Détection avec OpenCV...
+2025-10-11 20:21:04,419 | [32mINFO[0m | opencv_detector:89 | OpenCV: 2 timbre(s)/bloc(s) détecté(s)
+2025-10-11 20:21:04,423 | [32mINFO[0m | processor:104 | ✓ 2 timbre(s) détecté(s)
+2025-10-11 20:21:04,590 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_182940_stamp_001.png
+2025-10-11 20:21:04,723 | [32mINFO[0m | image_utils:272 | ✓ PNG: scan_20251011_182940_stamp_002.png
+2025-10-11 20:21:04,725 | [32mINFO[0m | processor:152 | ✓ Traitement terminé: 2 fichier(s) généré(s)
+2025-10-11 20:21:04,794 | [32mINFO[0m | smart_recognition:238 | 🌐 Reconnaissance visuelle en ligne...
+2025-10-11 20:21:10,937 | [33mWARNING[0m | smart_recognition:61 | Échec upload ImgBB: 400
+2025-10-11 20:21:10,938 | [32mINFO[0m | smart_recognition:290 | Reconnaissance: 0% de confiance
+2025-10-11 20:21:10,939 | [32mINFO[0m | main_window:103 | Timbre 1: Reconnaissance visuelle terminée
+2025-10-11 20:21:10,983 | [32mINFO[0m | smart_recognition:238 | 🌐 Reconnaissance visuelle en ligne...
+2025-10-11 20:21:16,711 | [33mWARNING[0m | smart_recognition:61 | Échec upload ImgBB: 400
+2025-10-11 20:21:16,713 | [32mINFO[0m | smart_recognition:290 | Reconnaissance: 0% de confiance
+2025-10-11 20:21:16,713 | [32mINFO[0m | main_window:103 | Timbre 2: Reconnaissance visuelle terminée
+2025-10-11 20:21:16,713 | [32mINFO[0m | main_window:154 | ✓ Reconnaissance terminée pour 2 timbre(s)
