@@ -12,6 +12,7 @@ from vision.detector import AutoDetector
 from utils.image_utils import (
     get_image_dpi,
     mm_to_pixels,
+    calculate_min_stamp_area,
     expand_bbox_with_margin,
     crop_stamp_with_transparency,
     save_stamp,
@@ -83,11 +84,15 @@ class StampProcessor:
         margin_px = mm_to_pixels(margin_mm, dpi)
         logger.info(f"Marge: {margin_mm}mm = {margin_px}px @ {dpi}DPI")
         
-        # Détection
+        # Détection avec seuil adaptatif basé sur le DPI
         if progress_callback:
             progress_callback(30, f"Détection ({self.detector.get_backend_name()})...")
-        
-        detections = self.detector.detect(image)
+
+        # Calculer la surface minimale adaptée au DPI
+        # Les timbres standards font au minimum 15mm x 15mm
+        min_area = calculate_min_stamp_area(dpi, min_width_mm=15.0, min_height_mm=15.0)
+
+        detections = self.detector.detect(image, min_area=min_area)
         
         if not detections:
             logger.warning("⚠️ Aucun timbre détecté")

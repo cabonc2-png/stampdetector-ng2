@@ -40,11 +40,11 @@ def get_image_dpi(image_path: Path) -> Tuple[int, bool]:
 def mm_to_pixels(mm: float, dpi: int) -> int:
     """
     Convertit des millimètres en pixels
-    
+
     Args:
         mm: Valeur en millimètres
         dpi: DPI de l'image
-    
+
     Returns:
         int: Valeur en pixels
     """
@@ -52,6 +52,28 @@ def mm_to_pixels(mm: float, dpi: int) -> int:
     pixels = int(round(mm * px_per_mm))
     logger.debug(f"Conversion: {mm}mm @ {dpi}DPI = {pixels}px")
     return pixels
+
+def calculate_min_stamp_area(dpi: int, min_width_mm: float = 15.0, min_height_mm: float = 15.0) -> int:
+    """
+    Calcule la surface minimale d'un timbre en pixels en fonction du DPI
+
+    Les timbres les plus petits font généralement au moins 15mm x 15mm.
+    Cette fonction garantit que le seuil de détection s'adapte à la résolution.
+
+    Args:
+        dpi: DPI de l'image
+        min_width_mm: Largeur minimale d'un timbre en mm (défaut: 15mm)
+        min_height_mm: Hauteur minimale d'un timbre en mm (défaut: 15mm)
+
+    Returns:
+        int: Surface minimale en pixels²
+    """
+    min_width_px = mm_to_pixels(min_width_mm, dpi)
+    min_height_px = mm_to_pixels(min_height_mm, dpi)
+    min_area = min_width_px * min_height_px
+
+    logger.info(f"Seuil adaptatif @ {dpi}DPI: {min_width_mm}x{min_height_mm}mm = {min_width_px}x{min_height_px}px = {min_area}px²")
+    return min_area
 
 def expand_bbox_with_margin(bbox: Tuple[int, int, int, int], margin_px: int, image_shape: Tuple[int, int]) -> Tuple[int, int, int, int]:
     """
