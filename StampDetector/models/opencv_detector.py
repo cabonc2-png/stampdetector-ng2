@@ -19,8 +19,8 @@ class OpenCVDetector:
     
     def detect(self, image: np.ndarray, min_area: int = 5000, max_area: Optional[int] = None, detect_blocks: bool = True) -> List[Tuple[Tuple[int, int, int, int], Optional[np.ndarray], Optional[np.ndarray]]]:
         """
-        Détecte les timbres par détection de contours améliorée
-        Optimisé pour capturer TOUS les timbres sur une feuille
+        Détecte les timbres par détection de contours
+        Optimisé pour détecter aussi les grands blocs-feuillets
 
         Args:
             image: Image BGR
@@ -43,43 +43,25 @@ class OpenCVDetector:
         logger.info(f"Détection avec aire minimale: {min_area} px² (max: {max_area} px²)")
 
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        blurred = cv2.GaussianBlur(gray, (5, 5), 0)
 
-        # Égalisation d'histogramme pour améliorer le contraste
-        # Crucial pour détecter les timbres peu contrastés
-        gray = cv2.equalizeHist(gray)
+        # Détection adaptative pour les grands objets
+        # Seuils équilibrés pour détecter tous les timbres
+        edges = cv2.Canny(blurred, 30, 100)
 
-        blurred = cv2.GaussianBlur(gray, (3, 3), 0)
+        kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
+        dilated = cv2.dilate(edges, kernel, iterations=2)
 
-        # Approche double pour capturer différentes intensités de contours
-        all_contours = []
+        contours, _ = cv2.findContours(dilated, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
-        # Méthode 1: Canny avec seuils bas (pour contours faibles)
-        edges_low = cv2.Canny(blurred, 30, 80)
-        kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
-        dilated_low = cv2.dilate(edges_low, kernel, iterations=1)
-        contours_low, _ = cv2.findContours(dilated_low, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        all_contours.extend(contours_low)
+        logger.info(f"Contours détectés (bruts): {len(contours)}")
 
-        # Méthode 2: Canny avec seuils moyens (pour contours normaux)
-        edges_mid = cv2.Canny(blurred, 50, 150)
-        dilated_mid = cv2.dilate(edges_mid, kernel, iterations=1)
-        contours_mid, _ = cv2.findContours(dilated_mid, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        all_contours.extend(contours_mid)
-
-        logger.info(f"Contours détectés (bruts): {len(all_contours)}")
-
-        # Filtrage et déduplication des contours
         detections = []
-        seen_boxes = []
-
-        # Compteurs pour debug
         rejected_by_area = 0
-        rejected_by_dimensions = 0
         rejected_by_ratio = 0
         rejected_by_circularity = 0
-        rejected_by_duplicate = 0
 
-        for cnt in all_contours:
+        for cnt in contours:
             area = cv2.contourArea(cnt)
 
             # Filtrage par aire
@@ -88,73 +70,34 @@ class OpenCVDetector:
                 continue
 
             x, y, w_box, h_box = cv2.boundingRect(cnt)
-
-            # Vérifier que le contour n'est pas trop petit en dimensions
-            if w_box < 10 or h_box < 10:
-                rejected_by_dimensions += 1
-                continue
-
             aspect_ratio = max(w_box, h_box) / min(w_box, h_box)
 
-            # Ratio plus permissif pour les timbres rectangulaires
-            max_ratio = 15 if detect_blocks else 5
+            # Accepter un ratio plus large pour les blocs-feuillets
+            max_ratio = 10 if detect_blocks else 4
             if aspect_ratio > max_ratio:
                 rejected_by_ratio += 1
                 continue
 
-            # Vérifier la circularité ET la compacité pour filtrer les formes bizarres
-            perimeter = cv2.arcLength(cnt, True)
-            if perimeter > 0:
-                circularity = 4 * np.pi * area / (perimeter * perimeter)
-                # Équilibré pour timbres dentelés : ni trop strict, ni trop permissif
-                if circularity < 0.10:  # Compromis entre précision et rappel
-                    rejected_by_circularity += 1
-                    continue
-
-                # Compacité : rapport entre aire du contour et aire du rectangle englobant
-                # Élimine les formes trop irrégulières (plages, artefacts)
-                rect_area = w_box * h_box
-                if rect_area > 0:
-                    compactness = area / rect_area
-                    if compactness < 0.5:  # Le timbre doit remplir au moins 50% de son rectangle
-                        rejected_by_circularity += 1  # Compter dans rejets circularité
+            # Filtrer les contours trop proches des bords (artefacts de scan)
+            margin = 10
+            if x < margin or y < margin or x + w_box > w - margin or y + h_box > h - margin:
+                # Vérifier si c'est vraiment un timbre ou juste le bord du scan
+                perimeter = cv2.arcLength(cnt, True)
+                if perimeter > 0:
+                    circularity = 4 * np.pi * area / (perimeter * perimeter)
+                    if circularity < 0.3:  # Trop irrégulier, probablement un artefact
+                        rejected_by_circularity += 1
                         continue
-
-            # Déduplication : vérifier si ce contour chevauche un contour déjà détecté
-            bbox = (x, y, x + w_box, y + h_box)
-            is_duplicate = False
-
-            for seen_box in seen_boxes:
-                # Calculer l'intersection over union (IoU)
-                x1_inter = max(bbox[0], seen_box[0])
-                y1_inter = max(bbox[1], seen_box[1])
-                x2_inter = min(bbox[2], seen_box[2])
-                y2_inter = min(bbox[3], seen_box[3])
-
-                if x1_inter < x2_inter and y1_inter < y2_inter:
-                    inter_area = (x2_inter - x1_inter) * (y2_inter - y1_inter)
-                    box_area = w_box * h_box
-                    seen_area = (seen_box[2] - seen_box[0]) * (seen_box[3] - seen_box[1])
-
-                    # Si chevauchement > 70%, considérer comme doublon
-                    iou = inter_area / min(box_area, seen_area)
-                    if iou > 0.7:
-                        is_duplicate = True
-                        rejected_by_duplicate += 1
-                        break
-
-            if is_duplicate:
-                continue
 
             # Créer le masque pour ce contour
             mask = np.zeros((h, w), dtype=np.uint8)
             cv2.drawContours(mask, [cnt], -1, 255, -1)
 
+            bbox = (x, y, x + w_box, y + h_box)
             detections.append((bbox, mask, cnt))
-            seen_boxes.append(bbox)
 
         # Logging détaillé des rejets
-        logger.info(f"Rejets: aire={rejected_by_area}, dim={rejected_by_dimensions}, ratio={rejected_by_ratio}, circularité={rejected_by_circularity}, doublons={rejected_by_duplicate}")
+        logger.info(f"Rejets: aire={rejected_by_area}, ratio={rejected_by_ratio}, circularité={rejected_by_circularity}")
         logger.info(f"✓ OpenCV: {len(detections)} timbre(s) détecté(s) après filtrage")
         return detections
 
