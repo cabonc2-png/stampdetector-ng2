@@ -222,7 +222,7 @@ class MainWindow(QMainWindow):
     
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("StampDetector Pro - Détection, Scan & Reconnaissance Visuelle")
+        self.setWindowTitle("StampDetector Pro - Détection & Découpage de Timbres")
         self.setMinimumSize(1000, 800)
         
         self.current_image_path = None
@@ -339,7 +339,7 @@ class MainWindow(QMainWindow):
         title.setStyleSheet("font-size: 28px; font-weight: bold; color: #0078d4;")
         title_layout.addWidget(title)
         
-        version_label = QLabel("v2.2 - Smart Vision")
+        version_label = QLabel("v2.3 - Découpage de Précision")
         version_label.setStyleSheet("font-size: 12px; color: #666;")
         title_layout.addWidget(version_label)
         title_layout.addStretch()
@@ -432,9 +432,9 @@ class MainWindow(QMainWindow):
         main_layout.addWidget(self.drop_zone)
         
         # Paramètres de traitement
-        params_group = QGroupBox("⚙️ Paramètres de traitement")
+        params_group = QGroupBox("⚙️ Paramètres de découpage")
         params_layout = QHBoxLayout()
-        
+
         params_layout.addWidget(QLabel("Marge:"))
         self.margin_spin = QDoubleSpinBox()
         self.margin_spin.setRange(0.0, 10.0)
@@ -442,40 +442,18 @@ class MainWindow(QMainWindow):
         self.margin_spin.setSingleStep(0.1)
         self.margin_spin.setSuffix(" mm")
         self.margin_spin.setMinimumWidth(100)
+        self.margin_spin.setToolTip("Marge ajoutée autour de chaque timbre détecté")
         params_layout.addWidget(self.margin_spin)
-        
-        self.jpg_checkbox = QCheckBox("Exporter en JPG")
-        self.jpg_checkbox.setChecked(False)
-        params_layout.addWidget(self.jpg_checkbox)
-        
-        # Options de reconnaissance
-        if RECOGNITION_AVAILABLE or ONLINE_RECOGNITION_AVAILABLE:
-            self.recognize_checkbox = QCheckBox("🔍 Identifier les timbres")
-            self.recognize_checkbox.setChecked(True)
-            self.recognize_checkbox.setStyleSheet("color: #ffd700;")
-            params_layout.addWidget(self.recognize_checkbox)
-            
-            if ONLINE_RECOGNITION_AVAILABLE:
-                self.online_checkbox = QCheckBox("🌐 Reconnaissance visuelle")
-                self.online_checkbox.setChecked(True)
-                self.online_checkbox.setStyleSheet("color: #00ff7f;")
-                self.online_checkbox.setToolTip("Analyse intelligente des couleurs, motifs et caractéristiques visuelles")
-                params_layout.addWidget(self.online_checkbox)
-            else:
-                self.online_checkbox = None
-        else:
-            self.recognize_checkbox = None
-            self.online_checkbox = None
-        
+
         params_layout.addStretch()
-        
+
         # Bouton traiter
-        self.process_btn = QPushButton("🚀 Détecter et Découper")
+        self.process_btn = QPushButton("✂️ Détecter et Découper les Timbres")
         self.process_btn.setEnabled(False)
-        self.process_btn.setMinimumWidth(180)
+        self.process_btn.setMinimumWidth(220)
         self.process_btn.clicked.connect(self._on_process_clicked)
         params_layout.addWidget(self.process_btn)
-        
+
         params_group.setLayout(params_layout)
         main_layout.addWidget(params_group)
         
@@ -485,49 +463,23 @@ class MainWindow(QMainWindow):
         self.progress_bar.setMinimumHeight(25)
         main_layout.addWidget(self.progress_bar)
         
-        # Onglets (Preview + Résultats)
-        self.tabs = QTabWidget()
-        
-        # Onglet Preview
-        preview_tab = QWidget()
-        preview_layout = QVBoxLayout(preview_tab)
-        
+        # Aperçu des détections
+        preview_group = QGroupBox("👁️ Aperçu des détections")
+        preview_layout = QVBoxLayout()
+
         self.preview_scroll = QScrollArea()
         self.preview_scroll.setWidgetResizable(True)
-        self.preview_scroll.setMinimumHeight(300)
-        
-        self.preview_label = QLabel("Aucune détection")
+        self.preview_scroll.setMinimumHeight(350)
+
+        self.preview_label = QLabel("Glissez une image ou lancez un scan pour commencer")
         self.preview_label.setAlignment(Qt.AlignCenter)
-        self.preview_label.setStyleSheet("color: #666; font-size: 14px;")
-        
+        self.preview_label.setStyleSheet("color: #666; font-size: 14px; padding: 40px;")
+
         self.preview_scroll.setWidget(self.preview_label)
         preview_layout.addWidget(self.preview_scroll)
-        
-        self.tabs.addTab(preview_tab, "👁️ Aperçu")
-        
-        # Onglet Résultats (reconnaissance)
-        if RECOGNITION_AVAILABLE or ONLINE_RECOGNITION_AVAILABLE:
-            results_tab = QWidget()
-            results_layout = QVBoxLayout(results_tab)
-            
-            self.results_text = QTextEdit()
-            self.results_text.setReadOnly(True)
-            self.results_text.setStyleSheet("""
-                QTextEdit {
-                    background-color: #1e1e1e;
-                    color: #d4d4d4;
-                    border: 1px solid #3c3c3c;
-                    border-radius: 5px;
-                    padding: 10px;
-                    font-family: 'Segoe UI', Arial, sans-serif;
-                    font-size: 12px;
-                }
-            """)
-            results_layout.addWidget(self.results_text)
-            
-            self.tabs.addTab(results_tab, "🏷️ Identification")
-        
-        main_layout.addWidget(self.tabs)
+
+        preview_group.setLayout(preview_layout)
+        main_layout.addWidget(preview_group)
         
         # Logs
         logs_group = QGroupBox("📋 Logs")
@@ -562,21 +514,12 @@ class MainWindow(QMainWindow):
             self.processor = StampProcessor(output_dir)
             
             backend = self.processor.detector.get_backend_name()
-            self.log_widget.append_log(f"Backend de détection: {backend}", "SUCCESS")
-            self.backend_label.setText(f"Backend: {backend}")
-            
-            # Afficher les services de reconnaissance disponibles
-            recognition_services = []
-            if RECOGNITION_AVAILABLE:
-                recognition_services.append("OCR Local")
-            if ONLINE_RECOGNITION_AVAILABLE:
-                recognition_services.append("Reconnaissance visuelle IA")
-            
-            if recognition_services:
-                services_str = ", ".join(recognition_services)
-                self.log_widget.append_log(f"Services reconnaissance: {services_str}", "INFO")
-            
-            self.status_label.setText(f"✓ Prêt")
+            self.log_widget.append_log(f"Moteur de détection: {backend}", "SUCCESS")
+            self.backend_label.setText(f"Détection: {backend}")
+
+            self.log_widget.append_log("✓ Mode: Découpage de timbres (PNG avec transparence)", "INFO")
+
+            self.status_label.setText(f"✓ Prêt à découper")
             
         except Exception as e:
             self.log_widget.append_log(f"Erreur initialisation: {e}", "ERROR")
@@ -720,31 +663,27 @@ class MainWindow(QMainWindow):
         """Lance le traitement de l'image"""
         if not self.current_image_path or not self.processor:
             return
-        
+
         # Désactiver l'UI
         self.process_btn.setEnabled(False)
         self.progress_bar.setValue(0)
         self.progress_bar.setVisible(True)
-        self.status_label.setText("⏳ Traitement en cours...")
-        
-        # Options de reconnaissance
-        recognize = self.recognize_checkbox.isChecked() if self.recognize_checkbox else False
-        use_online = self.online_checkbox.isChecked() if self.online_checkbox else False
-        
-        # Lancer le traitement dans un thread
+        self.status_label.setText("⏳ Détection et découpage en cours...")
+
+        # Lancer le traitement dans un thread (PNG uniquement, pas de reconnaissance)
         self.processing_thread = ProcessingThread(
             self.processor,
             self.current_image_path,
             self.margin_spin.value(),
-            self.jpg_checkbox.isChecked(),
-            recognize_stamps=recognize,
-            use_online=use_online
+            save_jpg=False,  # Toujours PNG uniquement
+            recognize_stamps=False,  # Pas de reconnaissance
+            use_online=False
         )
-        
+
         self.processing_thread.progress_updated.connect(self._on_progress_updated)
         self.processing_thread.processing_complete.connect(self._on_processing_complete)
         self.processing_thread.error_occurred.connect(self._on_error_occurred)
-        
+
         self.processing_thread.start()
     
     def _on_progress_updated(self, progress, message):
@@ -755,28 +694,42 @@ class MainWindow(QMainWindow):
     def _on_processing_complete(self, result):
         """Gère la fin du traitement"""
         self.current_result = result
-        
+
         # Réactiver l'UI
         self.process_btn.setEnabled(True)
         self.progress_bar.setVisible(False)
-        
+
         # Afficher les résultats
         if result.dpi_was_default:
             self.log_widget.append_log(f"⚠️ DPI par défaut utilisé ({result.dpi})", "WARNING")
-        
+
+        if result.num_stamps == 0:
+            self.log_widget.append_log("⚠️ Aucun timbre détecté", "WARNING")
+            self.status_label.setText("⚠️ Aucun timbre détecté")
+            QMessageBox.warning(
+                self,
+                "Aucun timbre détecté",
+                "Aucun timbre n'a été détecté sur cette image.\n\n"
+                "Conseils:\n"
+                "- Vérifiez que les timbres sont bien visibles\n"
+                "- Augmentez la résolution du scan (300 DPI minimum)\n"
+                "- Assurez-vous que les timbres ont un bon contraste"
+            )
+            return
+
         self.log_widget.append_log(f"✓ {result.num_stamps} timbre(s) détecté(s)", "SUCCESS")
-        self.log_widget.append_log(f"✓ {len(result.output_files)} fichier(s) générés", "SUCCESS")
-        
-        self.status_label.setText(f"✓ {result.num_stamps} timbres → {len(result.output_files)} fichiers")
-        
+        self.log_widget.append_log(f"✓ {len(result.output_files)} fichier(s) PNG générés", "SUCCESS")
+
+        # Afficher le dossier de sortie
+        output_folder = result.output_files[0].parent if result.output_files else None
+        if output_folder:
+            self.log_widget.append_log(f"📁 Dossier: {output_folder}", "INFO")
+
+        self.status_label.setText(f"✓ {result.num_stamps} timbres découpés → {len(result.output_files)} fichiers PNG")
+
         # Afficher l'aperçu avec détections
         if result.detections:
             self._show_detections_preview(result)
-        
-        # Afficher les résultats de reconnaissance
-        if hasattr(result, 'recognized_stamps') and result.recognized_stamps:
-            self._show_recognition_results(result.recognized_stamps)
-            self.tabs.setCurrentIndex(1)  # Passer à l'onglet Identification
     
     def _show_detections_preview(self, result):
         """Affiche l'aperçu avec les détections"""
@@ -805,112 +758,7 @@ class MainWindow(QMainWindow):
             
         except Exception as e:
             logger.error(f"Erreur aperçu détections: {e}")
-    
-    def _show_recognition_results(self, recognized_stamps):
-        """Affiche les résultats de reconnaissance visuelle"""
-        if not (RECOGNITION_AVAILABLE or ONLINE_RECOGNITION_AVAILABLE):
-            return
-        
-        html = """
-        <div style='font-family: Segoe UI, Arial, sans-serif;'>
-            <h2 style='color: #0078d4; border-bottom: 2px solid #0078d4; padding-bottom: 10px;'>
-                🏷️ Résultats de reconnaissance visuelle
-            </h2>
-        """
-        
-        for idx, stamp_data in enumerate(recognized_stamps, start=1):
-            info = stamp_data['info']
-            file_path = stamp_data['file']
-# Couleur de la carte selon statut
-            if info.get('identified', False):
-                border_color = "#00ff7f"  # Vert néon si identifié
-                bg_color = "#1a3a2e"
-            else:
-                border_color = "#888"
-                bg_color = "#2b2b2b"
-            
-            html += f"""
-            <div style='margin: 15px 0; padding: 15px; background-color: {bg_color}; 
-                        border-left: 4px solid {border_color}; border-radius: 5px;'>
-                <h3 style='color: #00ff7f; margin: 0 0 10px 0;'>📮 Timbre #{idx:03d}</h3>
-                <p style='margin: 5px 0; color: #999; font-size: 11px;'>
-                    <b>Fichier:</b> {file_path.name}
-                </p>
-            """
-            
-            # Sources de reconnaissance
-            if info.get('recognition_source'):
-                sources = " • ".join(info['recognition_source'])
-                html += f"<p style='margin: 5px 0; color: #00bfff; font-size: 11px;'>{sources}</p>"
-            
-            # Résultats principaux
-            if info.get('identified', False):
-                confidence_color = "#4ec9b0" if info.get('confidence', 0) > 0.5 else "#dcdcaa"
-                html += f"<p style='margin: 8px 0;'><b>🏷️ Nom:</b> <span style='color: {confidence_color};'>{info.get('name', 'Inconnu')}</span></p>"
-                html += f"<p style='margin: 5px 0;'><b>📊 Confiance:</b> <span style='color: {confidence_color};'>{info.get('confidence', 0):.0%}</span></p>"
-                
-                if info.get('country'):
-                    html += f"<p style='margin: 5px 0;'><b>🌍 Pays:</b> <span style='color: #ffd700;'>{info['country']}</span></p>"
-                
-                if info.get('value'):
-                    html += f"<p style='margin: 5px 0;'><b>💰 Valeur:</b> <span style='color: #ffd700;'>{info['value']}</span></p>"
-                
-                if info.get('year'):
-                    html += f"<p style='margin: 5px 0;'><b>📅 Année:</b> {info['year']}</p>"
-            else:
-                html += "<p style='margin: 8px 0; color: #f48771;'><b>❌ Statut:</b> Non identifié</p>"
-            
-            # Caractéristiques visuelles
-            if info.get('visual_features'):
-                vf = info['visual_features']
-                html += "<hr style='border: 1px dashed #3c3c3c; margin: 10px 0;'>"
-                html += "<p style='margin: 5px 0; color: #888; font-size: 11px;'><b>🎨 Analyse visuelle:</b></p>"
-                
-                if vf.get('dominant_colors'):
-                    colors_str = ", ".join(vf['dominant_colors'][:3])
-                    html += f"<p style='margin: 5px 0 5px 20px; font-size: 10px;'>Couleurs: {colors_str}</p>"
-                
-                if vf.get('has_portrait'):
-                    html += "<p style='margin: 5px 0 5px 20px; font-size: 10px;'>✓ Portrait détecté</p>"
-                
-                if vf.get('estimated_country'):
-                    html += f"<p style='margin: 5px 0 5px 20px; font-size: 10px;'>Pays estimé: {vf['estimated_country']}</p>"
-            
-            # Suggestions
-            if info.get('suggestions'):
-                html += "<hr style='border: 1px dashed #3c3c3c; margin: 10px 0;'>"
-                html += "<p style='margin: 5px 0; color: #00bfff; font-size: 11px;'><b>💡 Suggestions:</b></p>"
-                for suggestion in info['suggestions'][:3]:  # Limiter à 3 suggestions
-                    html += f"<p style='margin: 3px 0 3px 20px; color: #888; font-size: 10px;'>• {suggestion}</p>"
-            
-            html += "</div>"
-        
-        # Résumé final
-        identified_count = sum(1 for s in recognized_stamps if s['info'].get('identified', False))
-        total_count = len(recognized_stamps)
-        success_rate = (identified_count / total_count * 100) if total_count > 0 else 0
-        
-        html += "<hr style='border: 1px solid #3c3c3c; margin-top: 20px;'>"
-        html += f"""
-        <div style='text-align: center; margin-top: 15px; padding: 15px; background-color: #2b2b2b; border-radius: 5px;'>
-            <p style='color: #4ec9b0; margin: 0; font-size: 14px;'>
-                <b>📊 Résumé:</b> {identified_count}/{total_count} timbre(s) identifié(s) ({success_rate:.0f}%)
-            </p>
-        """
-        
-        if identified_count < total_count:
-            html += """
-            <p style='color: #888; margin: 10px 0 0 0; font-size: 11px;'>
-                💡 Pour améliorer la reconnaissance, essayez avec des images de meilleure qualité<br>
-                ou configurez Google Vision API pour des résultats précis
-            </p>
-            """
-        
-        html += "</div>"
-        html += "</div>"
-        
-        self.results_text.setHtml(html)
-    
+
     def _on_error_occurred(self, error_msg):
         """Gère les erreurs de traitement"""
         self.process_btn.setEnabled(True)
