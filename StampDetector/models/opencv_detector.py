@@ -81,17 +81,26 @@ class OpenCVDetector:
         detections = []
         seen_boxes = []
 
+        # Compteurs pour debug
+        rejected_by_area = 0
+        rejected_by_dimensions = 0
+        rejected_by_ratio = 0
+        rejected_by_circularity = 0
+        rejected_by_duplicate = 0
+
         for cnt in all_contours:
             area = cv2.contourArea(cnt)
 
             # Filtrage par aire
             if area < min_area or area > max_area:
+                rejected_by_area += 1
                 continue
 
             x, y, w_box, h_box = cv2.boundingRect(cnt)
 
             # Vérifier que le contour n'est pas trop petit en dimensions
             if w_box < 10 or h_box < 10:
+                rejected_by_dimensions += 1
                 continue
 
             aspect_ratio = max(w_box, h_box) / min(w_box, h_box)
@@ -99,14 +108,16 @@ class OpenCVDetector:
             # Ratio plus permissif pour les timbres rectangulaires
             max_ratio = 15 if detect_blocks else 5
             if aspect_ratio > max_ratio:
+                rejected_by_ratio += 1
                 continue
 
             # Vérifier la circularité pour éviter les formes bizarres
             perimeter = cv2.arcLength(cnt, True)
             if perimeter > 0:
                 circularity = 4 * np.pi * area / (perimeter * perimeter)
-                # Plus permissif : accepter même les formes irrégulières (timbres dentelés)
-                if circularity < 0.15:
+                # Très permissif pour timbres dentelés (dentelures créent périmètre irrégulier)
+                if circularity < 0.05:  # Abaissé de 0.15 à 0.05
+                    rejected_by_circularity += 1
                     continue
 
             # Déduplication : vérifier si ce contour chevauche un contour déjà détecté
@@ -129,6 +140,7 @@ class OpenCVDetector:
                     iou = inter_area / min(box_area, seen_area)
                     if iou > 0.7:
                         is_duplicate = True
+                        rejected_by_duplicate += 1
                         break
 
             if is_duplicate:
@@ -141,6 +153,8 @@ class OpenCVDetector:
             detections.append((bbox, mask, cnt))
             seen_boxes.append(bbox)
 
+        # Logging détaillé des rejets
+        logger.info(f"Rejets: aire={rejected_by_area}, dim={rejected_by_dimensions}, ratio={rejected_by_ratio}, circularité={rejected_by_circularity}, doublons={rejected_by_duplicate}")
         logger.info(f"✓ OpenCV: {len(detections)} timbre(s) détecté(s) après filtrage")
         return detections
 
