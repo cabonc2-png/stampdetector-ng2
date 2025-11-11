@@ -8,7 +8,7 @@ from PySide6.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QPushButton, QLabel, QDoubleSpinBox, QProgressBar,
     QCheckBox, QGroupBox, QScrollArea, QMessageBox, QSpinBox,
-    QTextEdit, QTabWidget
+    QTextEdit, QTabWidget, QComboBox
 )
 from PySide6.QtCore import Qt, QThread, Signal, QTimer
 from PySide6.QtGui import QPixmap, QImage
@@ -173,45 +173,47 @@ class ProcessingThread(QThread):
 
 class ScanThread(QThread):
     """Thread pour le scan"""
-    
+
     scan_complete = Signal(object)
     scan_error = Signal(str)
     scan_status = Signal(str)
-    
-    def __init__(self, dpi, color_mode="color"):
+
+    def __init__(self, dpi, scanner_index=0, color_mode="color"):
         super().__init__()
         self.dpi = dpi
+        self.scanner_index = scanner_index
         self.color_mode = color_mode
-    
+
     def run(self):
         """Exécute le scan dans un thread séparé"""
         try:
             self.scan_status.emit("Connexion au scanner...")
             scanner = ScannerManager()
-            
-            if not scanner.connect_scanner():
+
+            if not scanner.connect_scanner(scanner_index=self.scanner_index):
                 self.scan_error.emit("Impossible de se connecter au scanner")
                 return
-            
-            self.scan_status.emit(f"Scan en cours ({self.dpi} DPI)...")
-            
+
+            scanner_name = scanner.get_scanner_name()
+            self.scan_status.emit(f"Scan avec {scanner_name} ({self.dpi} DPI)...")
+
             # Créer le dossier scans
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             output_path = Path(f"scans/scan_{timestamp}.png")
             output_path.parent.mkdir(exist_ok=True)
-            
+
             scanned_file = scanner.scan_image(
                 output_path,
                 dpi=self.dpi,
                 color_mode=self.color_mode,
                 format="PNG"
             )
-            
+
             if scanned_file and scanned_file.exists():
                 self.scan_complete.emit(scanned_file)
             else:
                 self.scan_error.emit("Échec du scan")
-                
+
         except Exception as e:
             self.scan_error.emit(str(e))
 
@@ -347,29 +349,82 @@ class MainWindow(QMainWindow):
         # Section Scanner (si disponible)
         if SCANNER_AVAILABLE and is_scanner_available():
             scan_group = QGroupBox("📷 Scanner")
-            scan_layout = QHBoxLayout()
-            
+            scan_layout = QVBoxLayout()
+
+            # Ligne 1: Sélection du scanner
+            scanner_select_layout = QHBoxLayout()
+            scanner_select_layout.addWidget(QLabel("Scanner:"))
+
+            self.scanner_combo = QComboBox()
+            self.scanner_combo.setMinimumWidth(250)
+            self.scanner_combo.setStyleSheet("""
+                QComboBox {
+                    background-color: #2b2b2b;
+                    border: 1px solid #3c3c3c;
+                    border-radius: 3px;
+                    padding: 5px;
+                    color: #d4d4d4;
+                }
+                QComboBox::drop-down {
+                    border: none;
+                }
+                QComboBox::down-arrow {
+                    image: url(none);
+                    border-left: 4px solid transparent;
+                    border-right: 4px solid transparent;
+                    border-top: 6px solid #d4d4d4;
+                    margin-right: 5px;
+                }
+                QComboBox:hover {
+                    border: 1px solid #0e639c;
+                }
+                QComboBox QAbstractItemView {
+                    background-color: #2b2b2b;
+                    color: #d4d4d4;
+                    selection-background-color: #0e639c;
+                    border: 1px solid #3c3c3c;
+                }
+            """)
+            scanner_select_layout.addWidget(self.scanner_combo)
+
+            refresh_btn = QPushButton("🔄")
+            refresh_btn.setMaximumWidth(40)
+            refresh_btn.setToolTip("Actualiser la liste des scanners")
+            refresh_btn.clicked.connect(self._refresh_scanners)
+            scanner_select_layout.addWidget(refresh_btn)
+
+            scanner_select_layout.addStretch()
+            scan_layout.addLayout(scanner_select_layout)
+
+            # Ligne 2: Contrôles de scan
+            scan_controls_layout = QHBoxLayout()
+
             self.scan_btn = QPushButton("🖨️ Lancer un scan")
             self.scan_btn.setMinimumWidth(150)
             self.scan_btn.clicked.connect(self._on_scan_clicked)
-            scan_layout.addWidget(self.scan_btn)
-            
-            scan_layout.addWidget(QLabel("Résolution:"))
+            scan_controls_layout.addWidget(self.scan_btn)
+
+            scan_controls_layout.addWidget(QLabel("Résolution:"))
             self.scan_dpi = QSpinBox()
             self.scan_dpi.setRange(150, 1200)
             self.scan_dpi.setValue(300)
             self.scan_dpi.setSuffix(" DPI")
             self.scan_dpi.setMinimumWidth(100)
-            scan_layout.addWidget(self.scan_dpi)
-            
-            scan_layout.addStretch()
-            
+            scan_controls_layout.addWidget(self.scan_dpi)
+
+            scan_controls_layout.addStretch()
+
             self.scan_status_label = QLabel("Scanner prêt")
             self.scan_status_label.setStyleSheet("color: #4ec9b0; padding: 5px;")
-            scan_layout.addWidget(self.scan_status_label)
-            
+            scan_controls_layout.addWidget(self.scan_status_label)
+
+            scan_layout.addLayout(scan_controls_layout)
+
             scan_group.setLayout(scan_layout)
             main_layout.addWidget(scan_group)
+
+            # Remplir la liste des scanners
+            QTimer.singleShot(200, self._refresh_scanners)
         
         # Zone de drop
         self.drop_zone = DropZoneWidget()
@@ -528,28 +583,63 @@ class MainWindow(QMainWindow):
             self.status_label.setText("❌ Erreur d'initialisation")
             QMessageBox.critical(self, "Erreur", f"Impossible d'initialiser:\n{e}")
     
+    def _refresh_scanners(self):
+        """Actualise la liste des scanners disponibles"""
+        if not SCANNER_AVAILABLE:
+            return
+
+        try:
+            scanner_manager = ScannerManager()
+            scanners = scanner_manager.list_scanners()
+
+            self.scanner_combo.clear()
+
+            if scanners:
+                self.scanner_combo.addItems(scanners)
+                self.log_widget.append_log(f"✓ {len(scanners)} scanner(s) trouvé(s)", "SUCCESS")
+                self.scan_status_label.setText(f"✓ {len(scanners)} scanner(s) disponible(s)")
+            else:
+                self.scanner_combo.addItem("Aucun scanner trouvé")
+                self.scan_btn.setEnabled(False)
+                self.log_widget.append_log("⚠️ Aucun scanner trouvé", "WARNING")
+                self.scan_status_label.setText("⚠️ Aucun scanner")
+
+        except Exception as e:
+            self.log_widget.append_log(f"Erreur énumération scanners: {e}", "ERROR")
+            self.scanner_combo.addItem("Erreur détection")
+            self.scan_btn.setEnabled(False)
+
     def _on_scan_clicked(self):
         """Lance un scan"""
         if not SCANNER_AVAILABLE:
             QMessageBox.warning(self, "Scanner", "Module scanner non disponible")
             return
-        
+
+        # Vérifier qu'un scanner est sélectionné
+        if self.scanner_combo.count() == 0 or self.scanner_combo.currentText() == "Aucun scanner trouvé":
+            QMessageBox.warning(self, "Scanner", "Aucun scanner disponible")
+            return
+
         try:
             self.scan_btn.setEnabled(False)
-            self.log_widget.append_log("🖨️ Démarrage du scanner...", "INFO")
-            
+            scanner_index = self.scanner_combo.currentIndex()
+            scanner_name = self.scanner_combo.currentText()
+
+            self.log_widget.append_log(f"🖨️ Scan avec {scanner_name}...", "INFO")
+
             # Lancer le scan dans un thread
             self.scan_thread = ScanThread(
                 dpi=self.scan_dpi.value(),
+                scanner_index=scanner_index,
                 color_mode="color"
             )
-            
+
             self.scan_thread.scan_status.connect(self._on_scan_status)
             self.scan_thread.scan_complete.connect(self._on_scan_complete)
             self.scan_thread.scan_error.connect(self._on_scan_error)
-            
+
             self.scan_thread.start()
-            
+
         except Exception as e:
             self.log_widget.append_log(f"Erreur scan: {e}", "ERROR")
             self.scan_btn.setEnabled(True)
