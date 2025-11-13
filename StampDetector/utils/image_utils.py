@@ -209,14 +209,15 @@ def rotate_and_crop(image: np.ndarray, mask: Optional[np.ndarray], contour: np.n
     
     return rotated_image, bbox
 
-def auto_crop_to_content(crop: np.ndarray, mask: Optional[np.ndarray] = None) -> np.ndarray:
+def auto_crop_to_content(crop: np.ndarray, mask: Optional[np.ndarray] = None, keep_margin_px: int = 0) -> np.ndarray:
     """
     Recadre automatiquement l'image au contenu (supprime les bordures vides)
-    
+
     Args:
         crop: Image BGRA
         mask: Masque optionnel
-    
+        keep_margin_px: Marge en pixels à conserver autour du contenu (défaut: 0)
+
     Returns:
         np.ndarray: Image recadrée au plus juste
     """
@@ -224,20 +225,23 @@ def auto_crop_to_content(crop: np.ndarray, mask: Optional[np.ndarray] = None) ->
     if crop is None or crop.size == 0:
         logger.warning("Image vide détectée, pas de recadrage")
         return crop
-    
+
     # Vérifier les dimensions minimales
     if crop.shape[0] < 1 or crop.shape[1] < 1:
         logger.warning(f"Dimensions invalides {crop.shape}, pas de recadrage")
         return crop
-    
+
     if mask is not None and mask.shape[:2] == crop.shape[:2]:
         coords = cv2.findNonZero(mask)
         if coords is not None:
             x, y, w, h = cv2.boundingRect(coords)
             # Vérifier que les dimensions sont valides
             if w > 0 and h > 0 and x >= 0 and y >= 0:
-                x_end = min(crop.shape[1], x + w)
-                y_end = min(crop.shape[0], y + h)
+                # Ajouter la marge spécifiée
+                x = max(0, x - keep_margin_px)
+                y = max(0, y - keep_margin_px)
+                x_end = min(crop.shape[1], x + w + 2 * keep_margin_px)
+                y_end = min(crop.shape[0], y + h + 2 * keep_margin_px)
                 if x_end > x and y_end > y:
                     return crop[y:y_end, x:x_end]
     
@@ -249,15 +253,16 @@ def auto_crop_to_content(crop: np.ndarray, mask: Optional[np.ndarray] = None) ->
         gray = cv2.cvtColor(crop, cv2.COLOR_BGR2GRAY)
         _, thresh = cv2.threshold(gray, 250, 255, cv2.THRESH_BINARY_INV)
         coords = cv2.findNonZero(thresh)
-    
+
     if coords is not None:
         x, y, w, h = cv2.boundingRect(coords)
-        safety_margin = 2
-        x = max(0, x - safety_margin)
-        y = max(0, y - safety_margin)
-        w = min(crop.shape[1] - x, w + 2 * safety_margin)
-        h = min(crop.shape[0] - y, h + 2 * safety_margin)
-        
+        # Utiliser la marge spécifiée (keep_margin_px) au lieu d'une marge fixe de 2px
+        margin = max(2, keep_margin_px)  # Au minimum 2px pour éviter les coupures
+        x = max(0, x - margin)
+        y = max(0, y - margin)
+        w = min(crop.shape[1] - x, w + 2 * margin)
+        h = min(crop.shape[0] - y, h + 2 * margin)
+
         # Vérifier que les dimensions finales sont valides
         if w > 0 and h > 0 and x + w <= crop.shape[1] and y + h <= crop.shape[0]:
             return crop[y:y+h, x:x+w]

@@ -50,7 +50,8 @@ class OpenCVDetector:
         edges = cv2.Canny(blurred, 30, 100)
 
         kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
-        dilated = cv2.dilate(edges, kernel, iterations=2)
+        # Réduction iterations: 2→1 pour éviter de fusionner les timbres proches
+        dilated = cv2.dilate(edges, kernel, iterations=1)
 
         contours, _ = cv2.findContours(dilated, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
