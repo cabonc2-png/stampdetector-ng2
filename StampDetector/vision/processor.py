@@ -12,7 +12,6 @@ from vision.detector import AutoDetector
 from utils.image_utils import (
     get_image_dpi,
     mm_to_pixels,
-    calculate_min_stamp_area,
     expand_bbox_with_margin,
     crop_stamp_with_transparency,
     save_stamp,
@@ -83,18 +82,12 @@ class StampProcessor:
         dpi, dpi_was_default = get_image_dpi(image_path)
         margin_px = mm_to_pixels(margin_mm, dpi)
         logger.info(f"Marge: {margin_mm}mm = {margin_px}px @ {dpi}DPI")
-        
-        # Détection avec seuil adaptatif intelligent
+
+        # Détection
         if progress_callback:
             progress_callback(30, f"Détection ({self.detector.get_backend_name()})...")
 
-        # Seuil adaptatif raisonnable : 7mm x 7mm
-        # À 300 DPI : ~13,924 px² (2.8× le seuil original de 5000)
-        # À 600 DPI : ~55,696 px² (adapté, évite faux positifs sans être trop strict)
-        # Ce seuil capture tous les vrais timbres (≥7mm) tout en filtrant les artefacts
-        min_area = calculate_min_stamp_area(dpi, min_width_mm=7.0, min_height_mm=7.0)
-
-        detections = self.detector.detect(image, min_area=min_area)
+        detections = self.detector.detect(image)
         
         if not detections:
             logger.warning("⚠️ Aucun timbre détecté")
@@ -136,8 +129,8 @@ class StampProcessor:
                     bbox_with_margin = expand_bbox_with_margin(bbox, margin_px, image.shape[:2])
                     crop = crop_stamp_with_transparency(image, mask, bbox_with_margin)
 
-                # Recadrage automatique au contenu EN CONSERVANT la marge spécifiée
-                crop = auto_crop_to_content(crop, mask, keep_margin_px=margin_px)
+                # Recadrage automatique au contenu
+                crop = auto_crop_to_content(crop, mask)
                 
                 # Vérifier que le crop est valide avant de sauvegarder
                 if crop is not None and crop.size > 0 and crop.shape[0] > 0 and crop.shape[1] > 0:

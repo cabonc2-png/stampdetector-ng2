@@ -50,24 +50,17 @@ class OpenCVDetector:
         edges = cv2.Canny(blurred, 30, 100)
 
         kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
-        # Réduction iterations: 2→1 pour éviter de fusionner les timbres proches
-        dilated = cv2.dilate(edges, kernel, iterations=1)
+        dilated = cv2.dilate(edges, kernel, iterations=2)
 
         contours, _ = cv2.findContours(dilated, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
-        logger.info(f"Contours détectés (bruts): {len(contours)}")
-
         detections = []
-        rejected_by_area = 0
-        rejected_by_ratio = 0
-        rejected_by_circularity = 0
 
         for cnt in contours:
             area = cv2.contourArea(cnt)
 
             # Filtrage par aire
             if area < min_area or area > max_area:
-                rejected_by_area += 1
                 continue
 
             x, y, w_box, h_box = cv2.boundingRect(cnt)
@@ -76,7 +69,6 @@ class OpenCVDetector:
             # Accepter un ratio plus large pour les blocs-feuillets
             max_ratio = 10 if detect_blocks else 4
             if aspect_ratio > max_ratio:
-                rejected_by_ratio += 1
                 continue
 
             # Filtrer les contours trop proches des bords (artefacts de scan)
@@ -87,7 +79,6 @@ class OpenCVDetector:
                 if perimeter > 0:
                     circularity = 4 * np.pi * area / (perimeter * perimeter)
                     if circularity < 0.3:  # Trop irrégulier, probablement un artefact
-                        rejected_by_circularity += 1
                         continue
 
             # Créer le masque pour ce contour
@@ -97,9 +88,7 @@ class OpenCVDetector:
             bbox = (x, y, x + w_box, y + h_box)
             detections.append((bbox, mask, cnt))
 
-        # Logging détaillé des rejets
-        logger.info(f"Rejets: aire={rejected_by_area}, ratio={rejected_by_ratio}, circularité={rejected_by_circularity}")
-        logger.info(f"✓ OpenCV: {len(detections)} timbre(s) détecté(s) après filtrage")
+        logger.info(f"OpenCV: {len(detections)} timbre(s)/bloc(s) détecté(s)")
         return detections
 
 def is_available() -> bool:

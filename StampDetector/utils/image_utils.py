@@ -53,28 +53,6 @@ def mm_to_pixels(mm: float, dpi: int) -> int:
     logger.debug(f"Conversion: {mm}mm @ {dpi}DPI = {pixels}px")
     return pixels
 
-def calculate_min_stamp_area(dpi: int, min_width_mm: float = 15.0, min_height_mm: float = 15.0) -> int:
-    """
-    Calcule la surface minimale d'un timbre en pixels en fonction du DPI
-
-    Les timbres les plus petits font généralement au moins 15mm x 15mm.
-    Cette fonction garantit que le seuil de détection s'adapte à la résolution.
-
-    Args:
-        dpi: DPI de l'image
-        min_width_mm: Largeur minimale d'un timbre en mm (défaut: 15mm)
-        min_height_mm: Hauteur minimale d'un timbre en mm (défaut: 15mm)
-
-    Returns:
-        int: Surface minimale en pixels²
-    """
-    min_width_px = mm_to_pixels(min_width_mm, dpi)
-    min_height_px = mm_to_pixels(min_height_mm, dpi)
-    min_area = min_width_px * min_height_px
-
-    logger.info(f"Seuil adaptatif @ {dpi}DPI: {min_width_mm}x{min_height_mm}mm = {min_width_px}x{min_height_px}px = {min_area}px²")
-    return min_area
-
 def expand_bbox_with_margin(bbox: Tuple[int, int, int, int], margin_px: int, image_shape: Tuple[int, int]) -> Tuple[int, int, int, int]:
     """
     Agrandit une bounding box avec une marge
@@ -209,14 +187,13 @@ def rotate_and_crop(image: np.ndarray, mask: Optional[np.ndarray], contour: np.n
     
     return rotated_image, bbox
 
-def auto_crop_to_content(crop: np.ndarray, mask: Optional[np.ndarray] = None, keep_margin_px: int = 0) -> np.ndarray:
+def auto_crop_to_content(crop: np.ndarray, mask: Optional[np.ndarray] = None) -> np.ndarray:
     """
     Recadre automatiquement l'image au contenu (supprime les bordures vides)
 
     Args:
         crop: Image BGRA
         mask: Masque optionnel
-        keep_margin_px: Marge en pixels à conserver autour du contenu (défaut: 0)
 
     Returns:
         np.ndarray: Image recadrée au plus juste
@@ -237,14 +214,11 @@ def auto_crop_to_content(crop: np.ndarray, mask: Optional[np.ndarray] = None, ke
             x, y, w, h = cv2.boundingRect(coords)
             # Vérifier que les dimensions sont valides
             if w > 0 and h > 0 and x >= 0 and y >= 0:
-                # Ajouter la marge spécifiée
-                x = max(0, x - keep_margin_px)
-                y = max(0, y - keep_margin_px)
-                x_end = min(crop.shape[1], x + w + 2 * keep_margin_px)
-                y_end = min(crop.shape[0], y + h + 2 * keep_margin_px)
+                x_end = min(crop.shape[1], x + w)
+                y_end = min(crop.shape[0], y + h)
                 if x_end > x and y_end > y:
                     return crop[y:y_end, x:x_end]
-    
+
     # Détecter le contenu
     if len(crop.shape) == 3 and crop.shape[2] == 4:
         alpha = crop[:, :, 3]
@@ -256,17 +230,16 @@ def auto_crop_to_content(crop: np.ndarray, mask: Optional[np.ndarray] = None, ke
 
     if coords is not None:
         x, y, w, h = cv2.boundingRect(coords)
-        # Utiliser la marge spécifiée (keep_margin_px) au lieu d'une marge fixe de 2px
-        margin = max(2, keep_margin_px)  # Au minimum 2px pour éviter les coupures
-        x = max(0, x - margin)
-        y = max(0, y - margin)
-        w = min(crop.shape[1] - x, w + 2 * margin)
-        h = min(crop.shape[0] - y, h + 2 * margin)
+        safety_margin = 2
+        x = max(0, x - safety_margin)
+        y = max(0, y - safety_margin)
+        w = min(crop.shape[1] - x, w + 2 * safety_margin)
+        h = min(crop.shape[0] - y, h + 2 * safety_margin)
 
         # Vérifier que les dimensions finales sont valides
         if w > 0 and h > 0 and x + w <= crop.shape[1] and y + h <= crop.shape[0]:
             return crop[y:y+h, x:x+w]
-    
+
     # Si aucun recadrage n'est possible, retourner l'image originale
     logger.debug("Recadrage automatique impossible, conservation de l'image originale")
     return crop
