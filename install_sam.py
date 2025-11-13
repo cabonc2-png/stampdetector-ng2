@@ -35,23 +35,48 @@ def check_python_version():
     print(f"✓ Python {version.major}.{version.minor}.{version.micro}")
     return True
 
-def install_package(package_name, pip_name=None):
+def install_package(package_name, pip_name=None, show_output=False):
     """Installe un package Python"""
     if pip_name is None:
         pip_name = package_name
 
     try:
         print(f"   Installation de {package_name}...")
-        subprocess.check_call(
-            [sys.executable, "-m", "pip", "install", pip_name, "--upgrade"],
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.PIPE
+
+        # Construire la commande
+        cmd = [sys.executable, "-m", "pip", "install"]
+
+        # Ajouter les packages (peut contenir des arguments supplémentaires)
+        if isinstance(pip_name, str):
+            cmd.extend(pip_name.split())
+        else:
+            cmd.extend(pip_name)
+
+        cmd.append("--upgrade")
+
+        # Afficher la commande pour debug
+        if show_output:
+            print(f"   Commande: {' '.join(cmd)}")
+
+        # Exécuter
+        result = subprocess.run(
+            cmd,
+            stdout=subprocess.PIPE if not show_output else None,
+            stderr=subprocess.PIPE if not show_output else None,
+            text=True
         )
+
+        if result.returncode != 0:
+            print(f"   ❌ Erreur lors de l'installation de {package_name}")
+            if result.stderr:
+                print(f"   Détails: {result.stderr[:500]}")
+            return False
+
         print(f"   ✓ {package_name} installé")
         return True
-    except subprocess.CalledProcessError as e:
-        print(f"   ❌ Erreur lors de l'installation de {package_name}")
-        print(f"   {e.stderr.decode() if e.stderr else ''}")
+
+    except Exception as e:
+        print(f"   ❌ Exception lors de l'installation de {package_name}: {e}")
         return False
 
 def download_sam_model():
@@ -151,14 +176,49 @@ def main():
     # Étape 2: Installer PyTorch
     print_step(2, 5, "Installation de PyTorch")
 
-    # PyTorch CPU (plus petit et compatible partout)
-    if system == "Windows":
-        torch_package = "torch torchvision --index-url https://download.pytorch.org/whl/cpu"
-    else:
-        torch_package = "torch torchvision"
+    # Mise à jour de pip d'abord (souvent nécessaire sur Windows)
+    print("   Mise à jour de pip...")
+    subprocess.run([sys.executable, "-m", "pip", "install", "--upgrade", "pip"],
+                   stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
-    if not install_package("PyTorch + TorchVision", torch_package):
-        print("\n❌ Installation échouée")
+    # Essayer plusieurs méthodes d'installation PyTorch
+    torch_installed = False
+
+    # Méthode 1: Index officiel PyTorch CPU (Windows)
+    if system == "Windows" and not torch_installed:
+        print("   Tentative 1/3: Index officiel PyTorch CPU...")
+        torch_installed = install_package(
+            "PyTorch + TorchVision",
+            "torch torchvision --index-url https://download.pytorch.org/whl/cpu"
+        )
+
+    # Méthode 2: PyPI standard
+    if not torch_installed:
+        print("   Tentative 2/3: Installation depuis PyPI standard...")
+        torch_installed = install_package("PyTorch + TorchVision", "torch torchvision")
+
+    # Méthode 3: Installation séparée
+    if not torch_installed:
+        print("   Tentative 3/3: Installation séparée torch puis torchvision...")
+        if install_package("PyTorch", "torch"):
+            torch_installed = install_package("TorchVision", "torchvision")
+
+    if not torch_installed:
+        print("\n" + "="*70)
+        print("❌ Impossible d'installer PyTorch")
+        print("="*70)
+        print("\nSolutions alternatives:")
+        print("\n1. Installation manuelle PyTorch:")
+        print("   python -m pip install torch torchvision")
+        print("\n2. Utiliser le script Windows:")
+        print("   install_sam_windows.bat")
+        print("\n3. Vérifier:")
+        print("   - Connexion Internet stable")
+        print("   - Antivirus désactivé temporairement")
+        print("   - Espace disque suffisant (~2 GB)")
+        print("\n4. Consulter: https://pytorch.org/get-started/locally/")
+        print("\nPuis relancez ce script.")
+        input("\nAppuyez sur Entrée pour quitter...")
         return
 
     # Étape 3: Installer Segment Anything
