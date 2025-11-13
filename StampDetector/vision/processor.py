@@ -87,7 +87,62 @@ class StampProcessor:
         if progress_callback:
             progress_callback(30, f"Détection ({self.detector.get_backend_name()})...")
 
-        detections = self.detector.detect(image)
+        # Optimisation multi-résolution : détection sur image réduite si nécessaire
+        # Pour les images haute résolution (>450 DPI ou >3500px), réduire pour accélérer
+        detection_scale = 1.0
+        detection_image = image
+
+        # Seuil : si image > 450 DPI OU > 3500px de large, réduire à 300 DPI équivalent
+        if dpi > 450 or w > 3500:
+            # Calculer le facteur de réduction pour atteindre ~300 DPI
+            target_dpi = 300
+            if dpi > 450:
+                detection_scale = target_dpi / dpi
+            else:
+                # Basé sur la largeur
+                detection_scale = 2500 / w  # Réduire à ~2500px de large
+
+            new_w = int(w * detection_scale)
+            new_h = int(h * detection_scale)
+
+            logger.info(f"Optimisation multi-résolution activée")
+            logger.info(f"Détection sur image réduite: {new_w}x{new_h}px (échelle: {detection_scale:.2f})")
+
+            detection_image = cv2.resize(image, (new_w, new_h), interpolation=cv2.INTER_AREA)
+
+        # Détection sur l'image (réduite ou originale)
+        detections = self.detector.detect(detection_image)
+
+        # Si détection sur image réduite, redimensionner les bounding boxes
+        if detection_scale < 1.0:
+            logger.info(f"Ajustement des détections à l'image originale (échelle: {1/detection_scale:.2f}x)")
+            adjusted_detections = []
+
+            for bbox, mask, contour in detections:
+                # Redimensionner bbox
+                x1, y1, x2, y2 = bbox
+                x1_orig = int(x1 / detection_scale)
+                y1_orig = int(y1 / detection_scale)
+                x2_orig = int(x2 / detection_scale)
+                y2_orig = int(y2 / detection_scale)
+                bbox_orig = (x1_orig, y1_orig, x2_orig, y2_orig)
+
+                # Redimensionner mask (pour l'image originale)
+                if mask is not None:
+                    mask_orig = cv2.resize(mask, (w, h), interpolation=cv2.INTER_NEAREST)
+                else:
+                    mask_orig = None
+
+                # Redimensionner contour
+                if contour is not None:
+                    contour_orig = (contour / detection_scale).astype(np.int32)
+                else:
+                    contour_orig = None
+
+                adjusted_detections.append((bbox_orig, mask_orig, contour_orig))
+
+            detections = adjusted_detections
+            logger.info(f"✓ Détections ajustées à l'image originale")
         
         if not detections:
             logger.warning("⚠️ Aucun timbre détecté")

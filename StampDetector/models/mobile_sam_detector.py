@@ -42,15 +42,15 @@ class MobileSAMDetector:
             self.sam.to(device=self.device)
 
             # Configuration du générateur de masques automatique
-            # Paramètres strictement optimisés pour timbres (réduit faux positifs)
+            # Paramètres optimisés vitesse/précision pour timbres
             self.mask_generator = SamAutomaticMaskGenerator(
                 model=self.sam,
-                points_per_side=20,              # Réduit pour maximiser vitesse
-                pred_iou_thresh=0.93,            # AUGMENTÉ : moins de faux positifs
-                stability_score_thresh=0.96,      # AUGMENTÉ : masques plus stables
-                crop_n_layers=0,                 # Désactivé : évite sur-détection
+                points_per_side=16,              # RÉDUIT : 20→16 pour +30% vitesse
+                pred_iou_thresh=0.93,            # Qualité haute (anti-faux positifs)
+                stability_score_thresh=0.96,     # Stabilité haute (anti-artefacts)
+                crop_n_layers=0,                 # Désactivé (anti-sur-détection)
                 crop_n_points_downscale_factor=2,
-                min_mask_region_area=8000,       # AUGMENTÉ : ignore petits artefacts
+                min_mask_region_area=10000,      # AUGMENTÉ : 8000→10000 (ignore petits objets)
             )
 
             self.is_loaded = True
