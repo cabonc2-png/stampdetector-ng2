@@ -42,15 +42,15 @@ class MobileSAMDetector:
             self.sam.to(device=self.device)
 
             # Configuration du générateur de masques automatique
-            # Paramètres optimisés pour détection rapide de timbres
+            # Paramètres strictement optimisés pour timbres (réduit faux positifs)
             self.mask_generator = SamAutomaticMaskGenerator(
                 model=self.sam,
-                points_per_side=24,              # Moins de points que SAM (plus rapide)
-                pred_iou_thresh=0.88,            # Seuil de qualité des prédictions
-                stability_score_thresh=0.94,      # Seuil de stabilité des masques
-                crop_n_layers=0,                 # Pas de découpage multi-échelle (plus rapide)
+                points_per_side=20,              # Réduit pour maximiser vitesse
+                pred_iou_thresh=0.93,            # AUGMENTÉ : moins de faux positifs
+                stability_score_thresh=0.96,      # AUGMENTÉ : masques plus stables
+                crop_n_layers=0,                 # Désactivé : évite sur-détection
                 crop_n_points_downscale_factor=2,
-                min_mask_region_area=1500,       # Aire minimale (évite petits artefacts)
+                min_mask_region_area=8000,       # AUGMENTÉ : ignore petits artefacts
             )
 
             self.is_loaded = True
@@ -136,22 +136,29 @@ class MobileSAMDetector:
             if aspect_ratio > max_ratio:
                 continue
 
+            # Extraire le contour depuis le masque (besoin pour calcul compacité)
+            contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+            if len(contours) == 0:
+                continue
+
+            contour = max(contours, key=cv2.contourArea)
+
+            # Filtrage par compacité (évite formes irrégulières/artefacts)
+            perimeter = cv2.arcLength(contour, True)
+            if perimeter > 0:
+                compactness = (4 * np.pi * area) / (perimeter * perimeter)
+                # Timbres rectangulaires: compacité ~ 0.6-0.8
+                # Artefacts irréguliers: compacité < 0.4
+                if compactness < 0.35:  # Trop irrégulier
+                    continue
+
             # Filtrer les masques trop proches des bords (artefacts de scan)
             margin = 10
             if x < margin or y < margin or x + w_box > w - margin or y + h_box > h - margin:
                 # Vérifier la stabilité du masque
                 stability_score = mask_data.get('stability_score', 0)
-                if stability_score < 0.95:  # Probablement un artefact
+                if stability_score < 0.97:  # AUGMENTÉ : plus strict sur les bords
                     continue
-
-            # Extraire le contour depuis le masque
-            contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-
-            if len(contours) == 0:
-                continue
-
-            # Prendre le plus grand contour
-            contour = max(contours, key=cv2.contourArea)
 
             # Ajouter la détection
             detections.append((bbox_converted, mask, contour))
