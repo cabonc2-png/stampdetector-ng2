@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 from typing import List, Tuple, Optional
 from utils.logger import logger
-from models import yolo_detector, sam_detector, opencv_detector
+from models import yolo_detector, sam_detector, mobile_sam_detector, opencv_detector
 
 class AutoDetector:
     """Détecteur automatique avec sélection du meilleur backend"""
@@ -18,7 +18,20 @@ class AutoDetector:
     def _select_backend(self):
         logger.info("Sélection du backend de détection...")
 
-        # Priorité 1: SAM (le plus précis)
+        # Priorité 1: MobileSAM (rapide ET précis - meilleur compromis)
+        if mobile_sam_detector.is_available():
+            try:
+                self.detector = mobile_sam_detector.MobileSAMDetector()
+                if self.detector.load():
+                    self.backend = "MobileSAM"
+                    logger.info("🎯 Backend sélectionné: MobileSAM (IA rapide)")
+                    return
+                else:
+                    logger.warning("Échec du chargement de MobileSAM, essai SAM standard...")
+            except Exception as e:
+                logger.warning(f"Erreur lors du chargement de MobileSAM: {e}")
+
+        # Priorité 2: SAM standard (précis mais plus lent)
         if sam_detector.is_available():
             try:
                 self.detector = sam_detector.SAMDetector()
@@ -31,7 +44,7 @@ class AutoDetector:
             except Exception as e:
                 logger.warning(f"Erreur lors du chargement de SAM: {e}")
 
-        # Priorité 2: YOLO (si disponible)
+        # Priorité 3: YOLO (si disponible)
         if yolo_detector.is_available():
             self.backend = "YOLO"
             logger.info("🎯 Backend: YOLOv8-seg (non chargé)")
