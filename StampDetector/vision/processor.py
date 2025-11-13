@@ -84,14 +84,15 @@ class StampProcessor:
         margin_px = mm_to_pixels(margin_mm, dpi)
         logger.info(f"Marge: {margin_mm}mm = {margin_px}px @ {dpi}DPI")
         
-        # Détection avec seuil adaptatif basé sur le DPI
+        # Détection avec seuil adaptatif intelligent
         if progress_callback:
             progress_callback(30, f"Détection ({self.detector.get_backend_name()})...")
 
-        # Calculer la surface minimale adaptée au DPI
-        # Seuil conservateur: 9mm x 9mm (capture petits timbres, s'adapte au DPI)
-        # À 300 DPI: ~11,300 px² | À 600 DPI: ~45,200 px² (vs 94249 précédemment)
-        min_area = calculate_min_stamp_area(dpi, min_width_mm=9.0, min_height_mm=9.0)
+        # Seuil adaptatif raisonnable : 7mm x 7mm
+        # À 300 DPI : ~13,924 px² (2.8× le seuil original de 5000)
+        # À 600 DPI : ~55,696 px² (adapté, évite faux positifs sans être trop strict)
+        # Ce seuil capture tous les vrais timbres (≥7mm) tout en filtrant les artefacts
+        min_area = calculate_min_stamp_area(dpi, min_width_mm=7.0, min_height_mm=7.0)
 
         detections = self.detector.detect(image, min_area=min_area)
         
