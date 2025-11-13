@@ -1,0 +1,7 @@
+# Ignorer les modèles SAM (trop gros pour Git)
+*.pth
+*.pt
+*.onnx
+
+# Garder le dossier
+!.gitignore

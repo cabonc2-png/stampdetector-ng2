@@ -17,18 +17,31 @@ class AutoDetector:
     
     def _select_backend(self):
         logger.info("Sélection du backend de détection...")
-        
+
+        # Priorité 1: SAM (le plus précis)
+        if sam_detector.is_available():
+            try:
+                self.detector = sam_detector.SAMDetector()
+                if self.detector.load():
+                    self.backend = "SAM"
+                    logger.info("🎯 Backend sélectionné: SAM (IA)")
+                    return
+                else:
+                    logger.warning("Échec du chargement de SAM, fallback vers OpenCV")
+            except Exception as e:
+                logger.warning(f"Erreur lors du chargement de SAM: {e}")
+
+        # Priorité 2: YOLO (si disponible)
         if yolo_detector.is_available():
             self.backend = "YOLO"
             logger.info("🎯 Backend: YOLOv8-seg (non chargé)")
-        elif sam_detector.is_available():
-            self.backend = "SAM2"
-            logger.info("🎯 Backend: SAM2 (non chargé)")
-        else:
-            self.detector = opencv_detector.OpenCVDetector()
-            self.detector.load()
-            self.backend = "OpenCV"
-            logger.info("🎯 Backend sélectionné: OpenCV (fallback)")
+            return
+
+        # Fallback: OpenCV
+        self.detector = opencv_detector.OpenCVDetector()
+        self.detector.load()
+        self.backend = "OpenCV"
+        logger.info("🎯 Backend sélectionné: OpenCV (fallback)")
     
     def detect(self, image: np.ndarray, **kwargs) -> List[Tuple[Tuple[int, int, int, int], Optional[np.ndarray], Optional[np.ndarray]]]:
         if self.detector is None:
