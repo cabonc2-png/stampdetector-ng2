@@ -63,12 +63,13 @@ class ProcessingThread(QThread):
     processing_complete = Signal(object)
     error_occurred = Signal(str)
     
-    def __init__(self, processor, image_path, margin_mm, save_jpg, recognize_stamps=False, use_online=False):
+    def __init__(self, processor, image_path, margin_mm, save_jpg, detection_mode="stamps", recognize_stamps=False, use_online=False):
         super().__init__()
         self.processor = processor
         self.image_path = image_path
         self.margin_mm = margin_mm
         self.save_jpg = save_jpg
+        self.detection_mode = detection_mode
         self.recognize_stamps = recognize_stamps
         self.use_online = use_online
     
@@ -80,6 +81,7 @@ class ProcessingThread(QThread):
                 self.image_path,
                 margin_mm=self.margin_mm,
                 save_jpg=self.save_jpg,
+                detection_mode=self.detection_mode,
                 progress_callback=self.progress_updated.emit
             )
             
@@ -339,7 +341,7 @@ class MainWindow(QMainWindow):
         title.setStyleSheet("font-size: 28px; font-weight: bold; color: #0078d4;")
         title_layout.addWidget(title)
         
-        version_label = QLabel("v2.3 - Découpage de Précision")
+        version_label = QLabel("v2.4 - Mode Carnet")
         version_label.setStyleSheet("font-size: 12px; color: #666;")
         title_layout.addWidget(version_label)
         title_layout.addStretch()
@@ -434,6 +436,47 @@ class MainWindow(QMainWindow):
         # Paramètres de traitement
         params_group = QGroupBox("⚙️ Paramètres de découpage")
         params_layout = QHBoxLayout()
+
+        # Mode de détection
+        params_layout.addWidget(QLabel("Mode:"))
+        self.detection_mode_combo = QComboBox()
+        self.detection_mode_combo.addItem("🔍 Timbres individuels", "stamps")
+        self.detection_mode_combo.addItem("📚 Carnets/Blocs", "booklets")
+        self.detection_mode_combo.setMinimumWidth(180)
+        self.detection_mode_combo.setToolTip("Mode de détection:\n"
+                                              "• Timbres individuels : détecte tous les timbres\n"
+                                              "• Carnets/Blocs : détecte uniquement les grands carnets et blocs")
+        self.detection_mode_combo.setStyleSheet("""
+            QComboBox {
+                background-color: #2b2b2b;
+                border: 1px solid #3c3c3c;
+                border-radius: 3px;
+                padding: 5px;
+                color: #d4d4d4;
+            }
+            QComboBox::drop-down {
+                border: none;
+            }
+            QComboBox::down-arrow {
+                image: url(none);
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                border-top: 6px solid #d4d4d4;
+                margin-right: 5px;
+            }
+            QComboBox:hover {
+                border: 1px solid #0e639c;
+            }
+            QComboBox QAbstractItemView {
+                background-color: #2b2b2b;
+                color: #d4d4d4;
+                selection-background-color: #0e639c;
+                border: 1px solid #3c3c3c;
+            }
+        """)
+        params_layout.addWidget(self.detection_mode_combo)
+
+        params_layout.addSpacing(20)
 
         params_layout.addWidget(QLabel("Marge:"))
         self.margin_spin = QDoubleSpinBox()
@@ -670,12 +713,16 @@ class MainWindow(QMainWindow):
         self.progress_bar.setVisible(True)
         self.status_label.setText("⏳ Détection et découpage en cours...")
 
+        # Récupérer le mode de détection sélectionné
+        detection_mode = self.detection_mode_combo.currentData()  # "stamps" ou "booklets"
+
         # Lancer le traitement dans un thread (PNG uniquement, pas de reconnaissance)
         self.processing_thread = ProcessingThread(
             self.processor,
             self.current_image_path,
             self.margin_spin.value(),
             save_jpg=False,  # Toujours PNG uniquement
+            detection_mode=detection_mode,
             recognize_stamps=False,  # Pas de reconnaissance
             use_online=False
         )

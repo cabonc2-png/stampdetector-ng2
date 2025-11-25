@@ -47,16 +47,17 @@ class StampProcessor:
         self.detector = AutoDetector()
         logger.info(f"Processeur initialisé (backend: {self.detector.get_backend_name()})")
     
-    def process_image(self, image_path: Path, margin_mm: float = 1.0, save_jpg: bool = False, progress_callback: Optional[Callable[[int, str], None]] = None) -> ProcessingResult:
+    def process_image(self, image_path: Path, margin_mm: float = 1.0, save_jpg: bool = False, detection_mode: str = "stamps", progress_callback: Optional[Callable[[int, str], None]] = None) -> ProcessingResult:
         """
         Traite une image complète
-        
+
         Args:
             image_path: Chemin vers l'image source
             margin_mm: Marge en millimètres
             save_jpg: Si True, génère aussi des JPG
+            detection_mode: Mode de détection ("stamps" ou "booklets")
             progress_callback: Callback(progress_pct, message)
-        
+
         Returns:
             ProcessingResult: Résultat du traitement
         """
@@ -111,7 +112,19 @@ class StampProcessor:
             detection_image = cv2.resize(image, (new_w, new_h), interpolation=cv2.INTER_AREA)
 
         # Détection sur l'image (réduite ou originale)
-        detections = self.detector.detect(detection_image)
+        # Paramètres selon le mode de détection
+        if detection_mode == "booklets":
+            # Mode Carnet : seulement les grandes zones (carnets/blocs)
+            min_area = 50000  # Aire minimale plus grande pour ignorer les timbres individuels
+            detect_blocks = True
+            logger.info("Mode Carnet : détection de carnets/blocs uniquement (min_area=50000)")
+        else:
+            # Mode Timbres : tous les timbres (individuels + blocs)
+            min_area = 5000  # Aire minimale par défaut
+            detect_blocks = True
+            logger.info("Mode Timbres : détection de timbres individuels et blocs (min_area=5000)")
+
+        detections = self.detector.detect(detection_image, min_area=min_area, detect_blocks=detect_blocks)
 
         # Si détection sur image réduite, redimensionner les bounding boxes
         if detection_scale < 1.0:

@@ -56,12 +56,12 @@ class AutoDetector:
         self.backend = "OpenCV"
         logger.info("🎯 Backend sélectionné: OpenCV (fallback)")
     
-    def detect(self, image: np.ndarray, **kwargs) -> List[Tuple[Tuple[int, int, int, int], Optional[np.ndarray], Optional[np.ndarray]]]:
+    def detect(self, image: np.ndarray, min_area: int = 5000, max_area: Optional[int] = None, detect_blocks: bool = True) -> List[Tuple[Tuple[int, int, int, int], Optional[np.ndarray], Optional[np.ndarray]]]:
         if self.detector is None:
             raise RuntimeError("Aucun détecteur disponible")
-        
+
         logger.info(f"Détection avec {self.backend}...")
-        return self.detector.detect(image, **kwargs)
+        return self.detector.detect(image, min_area=min_area, max_area=max_area, detect_blocks=detect_blocks)
     
     def get_backend_name(self) -> str:
         return self.backend
